@@ -5,4 +5,5 @@
 ├── result_writer.py   # 결과 파일 저장 모듈
 ├── .gitignore         # env 업로드 방지
 ├── example.yaml       # Prompt 데이터 YAML 파일
+├── requriements.txt   # 다른 환경에서 버전 일치화하는 파일
 └── output.txt         # 실행 결과를 저장하는 파일

@@ -38,10 +38,15 @@ def load_prompt_from_yaml(yaml_file_path: str):
         {final_answer}
         """
     )
+    
+    # Suffix 추가 (질문을 입력하는 영역)
+    suffix = "\nProvide the most accurate and concise answer based on the examples above."
+
     # FewShotPromptTemplate 생성
     prompt = FewShotPromptTemplate(
         examples=examples_data,
         example_prompt=example_prompt,
+        suffix=suffix,
         input_variables=["question"],
     )
     return prompt

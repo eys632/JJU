@@ -1,11 +1,10 @@
-import os
-from langchain_openai import ChatOpenAI
+from langchain.chat_models import ChatOpenAI
 
-def create_llm(api_key: str, model_name="gpt-4o", temperature=0):
+def create_llm(api_key: str, model_name="gpt-4", temperature=0):
     """LLM 객체 생성"""
     return ChatOpenAI(
         temperature=temperature,
-        model_name=model_name,
+        model=model_name,
         openai_api_key=api_key
     )
 

@@ -1,5 +1,11 @@
 import os
+import sys
 from dotenv import load_dotenv
+
+# 현재 파일의 디렉토리를 sys.path에 추가
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(current_dir)
+
 from prompt_loader import load_prompt_from_yaml
 from openai_utils import create_llm, get_response
 from result_writer import save_result
@@ -10,7 +16,7 @@ def main():
     openai_api_key = os.getenv("OPENAI_API_KEY")
 
     # YAML에서 Prompt 로드
-    yaml_path = os.path.join(os.path.dirname(__file__), "example.yaml")
+    yaml_path = os.path.join(current_dir, "example.yaml")
     prompt = load_prompt_from_yaml(yaml_path)
 
     # OpenAI LLM 생성
@@ -21,7 +27,7 @@ def main():
     answer = get_response(llm, prompt, question)
 
     # 결과 저장 경로
-    result_path = os.path.join(os.path.dirname(__file__), "output.txt")
+    result_path = os.path.join(current_dir, "output.txt")
     save_result(result_path, question, answer)
 
 if __name__ == "__main__":

@@ -11,3 +11,8 @@ llama-index-core
 langchain-teddynote
 langchain-upstage
 langchain-openai
+praisonaiagents
+pyyaml
+langchain_openai
+langchain_core
+langchain_teddynote

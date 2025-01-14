@@ -1,0 +1,53 @@
+{
+    "info": {
+        "datast_nm": "국내 재배 아열대·열대 병해충 데이터",
+        "datast_detail": "국내에서 재배하는 아열대·열대 작물의 부위별 병해충 데이터",
+        "path": "/066.국내 재배 아열대·열대 병해충 데이터/",
+        "date_created": "2023-12-03"
+    },
+    "images": {
+        "image_file_id": "HF011_01_022_00020",
+        "image_file_nm": "HF011_01_022_00020.JPG",
+        "file_stre_cours": "1.Datasets/1.원천데이터/011_한라봉/01_잎/022_궤양병/",
+        "rsoltn": " ",
+        "region_nm": "제주특별자치도, 전라남도",
+        "crops_idntfr": "011",
+        "crops_part": "01",
+        "image_file_frmat": "JPG",
+        "image_potogrf_dt": ""
+    },
+    "annotations": {
+        "antn_type": "bbox",
+        "object_class_lclas_code": "011",
+        "object_class_lclas_nm": "한라봉",
+        "object_class_mlsfc_code": "01",
+        "object_class_mlsfc_nm": "잎",
+        "object_class_sclas_code": "022",
+        "object_class_sclas_nm": "궤양병",
+        "bbox_info": [
+            {
+                "bbox_xcrdnt": "109",
+                "bbox_ycrdnt": "179",
+                "bbox_width": "642",
+                "bbox_height": "642"
+            }
+        ]
+    },
+    "environments": {
+        "measure_dt": "2023-11-11 22:10:00",
+        "data_type": "SENSOR",
+        "temp": "8.8",
+        "hum": "64",
+        "soil_condition": "",
+        "soil_temp": "10.9",
+        "soil_pH": "675",
+        "soil_N": "16",
+        "soil_P": "22",
+        "soil_K": "",
+        "soil_EC": "0.072"
+    },
+    "licenses": {
+        "lcnse_nm": "CC-BY-SA-4.0",
+        "lcnse_co": "제주특별자치도 컨소시엄"
+    }
+}

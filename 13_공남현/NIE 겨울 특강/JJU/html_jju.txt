@@ -1,0 +1,178 @@
+
+
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>수퍼스타를 키우는 곳, 전주대학교</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="description" content="수퍼스타를 키우는 곳, 전주대학교 홈페이지 방문을 환영합니다.">
+<link rel="canonical" href="https://www.jj.ac.kr/jj/index.jsp" />
+<link rel="shortcut icon" href="/jj/_res/etc/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/_common/cms.css" />
+<link rel="stylesheet" type="text/css" href="/jj/_css/layout.css" />
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="/_common/ie7.css" />
+<![endif]-->
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="/_common/ie8.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/jj/_css/main-intro.css" />
+
+<link rel="stylesheet" type="text/css" href="/jj/_css/user.css" />
+
+<script type="text/javascript">
+//<![CDATA[
+	var _thisHost = location.protocol+'//'+location.host, _thisUrl = document.location.href,_so_ = false,_cur_menu_cd = '',_edit_content = false,front_page_edit = true,zooInOutMode = 'font',_reouscePath = '/jj/',editorVendor = 'froala',sslYN = 'N',sslPort = '',servicePort = '',locale = 'ko',developMode = false,_cfgUseDevMode = true,_siteId = 'jj',printSelector = '#jwxe_main_content',rootPath = '';
+//]]>
+</script>
+<script type="text/javascript" src="/_common/js/jquery/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="/jj/_js/user/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="/_common/cms.js"></script>
+<script type="text/javascript" src="/jj/_js/user.js"></script>
+<script type="text/javascript" src="/jj/_js/user/main-intro.js"></script>
+
+</head>
+<body id="item_body" >
+<ul id="go_main">
+	<li><a href="#jwxe_main_content" >본문 바로가기</a></li>
+	<li><a href="#jwxe_main_menu" >주메뉴 바로가기</a></li>
+	<li><a href="#jwxe_sub_menu" >서브메뉴 바로가기</a></li>
+</ul>
+
+<div class="inter">
+	<div class="inter-content-wrap">
+		<div class="inter-content-box">
+<div class="inter-content-inner">
+	<div>
+		<div class="inter-first">
+			<div class="inter-video"><span class="fr-video fr-fvc fr-dvi fr-draggable" >
+				<video autoplay="" class="fr-fvc fr-dvi fr-draggable"  muted="" loop="">
+					<source src="/jj/_res/etc/pr_starroad.mp4" type="video/mp4">
+					<source src="/jj/_res/etc/pr_starroad.mp4" type="video/ogg">&nbsp;Your browser does not support the video tag.</video></span></div>
+			<div class="inter-num01">
+				<div>
+					<p class="num">01</p>
+				</div>
+				<div>
+					<p>학생의 미래를 여는 첫걸음, 전주대학교</p>
+					<h3 style="letter-spacing:-2px">2025학년도 신·편입생 모집 원서접수</h3>
+					<ul>
+						<li>- 신입학(정시모집): 2024. 12. 31.(화)~2025. 1. 3.(금)</li>
+						<li>- 편입학: 2024. 12. 26.(목)~2025. 1. 8.(수)</li>
+					</ul>
+				</div>
+			</div>
+			<p class="btn-scroll-down" data-id="jju-home">scroll</p>
+		</div>
+	</div>
+	<div>
+		<ul class="inter-list">
+			<li id="jju-home"><a href="https://www.jj.ac.kr/jj/main.jsp" target="_blank" title="새창열림">
+				<picture>
+					<source media="(max-width:1024px)" srcset="/jj/_res/img/inter/inter-007-m.jpg"><img src="/jj/_res/img/inter/inter-007.jpg" alt="전주대학교 이미지"></picture>
+				<div class="inter-item-top">
+					<p>02</p>
+				</div>
+				<div class="inter-item-bot">
+					<p>대표 홈페이지</p>
+					<p>JJU HOME</p>
+				
+				</div>
+				<p class="btn-scroll-down" data-id="admission">scroll</p></a></li>
+			<li id="admission"><a class="inter-click" href="https://iphak.jj.ac.kr/" target="_blank" title="입학처 홈페이지 새창열림">
+				<picture>
+					<source media="(max-width:1024px)" srcset="/jj/_res/img/inter/inter-006-m.jpg"><img src="/jj/_res/img/inter/inter-006.jpg" alt="입학처 이미지"></picture>
+				<div class="inter-item-top">
+					<p>03</p>
+				</div>
+				<div class="inter-item-bot">
+					<p>입학처 홈페이지</p>
+					<p>ADMISSION</p>
+					
+				</div></a>
+				<!--<div class="inter-popup">
+					<div class="inter-popup-box">
+						<div><img class="mobile-hide" src="/jj/_res/img/inter/inter-03-v-01.jpg" alt=""><img class="pc-hide" src="/jj/_res/img/inter/inter-001-m.jpg" alt=""></div>
+						<div>
+							<div class="inter-popup-con">
+								<div><img src="/jj/_res/img/inter/logo-inter.png" alt="Logo"></div>
+								<div>
+									<p>지역과 60년 세계로 100년</p>
+									<p>IT WILL BE DONE!</p>
+									<p>이제 우리는 100년을 향한 혁신을 위해 새로운 도약을 모색하고 있습니다. <br />
+‘학생 성공과 미래 가치 실현’이라는 비전을 이루기 위해,<br />
+전주대학교의 도전은 계속될 것입니다.<br />
+우리 대학의 무한한 성장과 가능성을 지켜봐 주시기 바랍니다.</p>
+									<p class="sign-p">
+										전주대학교 총장 <span><img src="/jj/_res/img/inter/sign-park.png" alt="박진배"/></span>
+									</p>
+								</div>
+								<div><a href=" https://iphak.jj.ac.kr/" target="_blank" title="입학처 홈페이지 바로가기">입학처 홈페이지 바로가기</a></div><a class="close" href="#close" title="Close"></a></div>
+						</div>
+					</div>
+				</div>-->
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- 모달 팝업(jquery.popup.overlay.js) start -->
+<a id="pop1" class="initialism basic_open btn btn-success" href="#basic" style="display:none !important">Basic Popup</a>
+
+<div id="basic" class="style-1" style="display:none;">
+	<div class="end">
+		<a href="https://iphak.jj.ac.kr/iphak/index.do" target="_blank" style="display:inline-block;width:100%;text-align:center;"><img src="/jj/_res/img/main/popup_241229_1.jpg" alt="학생의 미래를 여는 첫걸음, 전주대학교. 2025학년도 신입생 정시모집 원서접수: 2024. 12. 31.(화) 09:00 ~ 2025. 1. 3.(금) 18:00. · 학년, 횟수, 인원 제한없는 전과제도, 신입생 기숙사 100% 배정 보장, 인문콘텐츠/경영대학, 자유전공학부 신입생 장학금 지급, 전주의 중심, 편리한 교통(서울남부터미널 직통버스 매일 운행)"/></a>
+		<p class="p-style1">인터넷 원서접수: 유웨이어플라이(uwayapply.com)</p>
+		<p class="p-style2">· 방문/전화상담: 대학본관 3층 입학지원실/☎(063)220-2700</p>
+		<div class="btn-1">
+			<a href="https://iphak.jj.ac.kr/iphak/regular/guidelines.do" target="_blank" class="btn_list ty2" style="margin-bottom:5px">입학처 홈페이지(모집요강)</a>
+		</div>
+		<div class="btn-1">
+			<a href="https://pf.kakao.com/_wHipM" target="_blank" class="btn_list ty2">입학상담(카카오톡)</a>
+		</div>
+		<a href="https://ipsi1.uwayapply.com/pyu/jeonju/?CHA=1" target="_blank" style="display:inline-block;width:100%;text-align:center;"><img src="/jj/_res/img/main/popup_241229_2.jpg" alt="2025학년도 편입생 모집 원서접수: 2024. 12. 26.(목) 09:00 ~ 2025. 1. 8.(수) 18:00" style="border-radius:12px" /></a>
+	</div>
+	<p style="margin-bottom:0">
+		<a class="basic_close btn close btn-default" href="#" style="margin-top:1em;margin-left:.3em">창닫기</a>
+	</p>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var blnCookie = getCookie( "popupwin_accounting" );
+        
+        if(!blnCookie){ //팝업을 막기 위해서는 아래 두줄을 막는다.
+            $('#basic').popup('show');
+            $('#pop1').click();
+        }
+    });
+</script>
+</div>
+	</div>
+	<footer>
+		<div class="inter-footer-wrap">
+			<div class="inter-footer-box">
+<div class="footer-inner">
+	<div><img src="/jj/_res/img/inter/logo-inter.png" alt="전주대학교"></div>
+	<div>
+		<div class="footer-txt">수퍼스타를 키우는 곳 - 전주대학교</div>
+		<div class="sns-box">
+			<ul>
+				<li class="in"><a href="https://www.instagram.com/jjuniv/?hl=ko" target="_blank" title="인스타그램 게시물 보기"><span class="hide">인스타그램</span></a></li>
+				<li class="yt"><a href="https://www.youtube.com/user/todwn" target="_blank" title="유튜브 게시물 보기"><span class="hide">유튜브</span></a></li>
+				<li class="fbo"><a href="https://www.facebook.com/discoveryjjss" target="_blank" title="페이스북 게시물 보기"><span class="hide">페이스북</span></a></li>
+				<li class="bl"><a href="https://blog.naver.com/discoveryj" target="_blank" title="블로그 게시물 보기"><span class="hide">블로그</span></a></li>
+				<li class="sns-news"><a href="https://www.jj.ac.kr/jjnews/" target="_blank" title="전주대신문 게시물 보기"><span class="hide">전주대신문</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+		</div>
+	</footer>
+</div>
+<noscript><p>이 사이트는 자바스크립트를 지원하지 않으면 정상적으로 보이지 않을수 있습니다.</p></noscript>
+</body>
+</html>

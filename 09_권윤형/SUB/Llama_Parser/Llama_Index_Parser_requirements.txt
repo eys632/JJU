@@ -1,0 +1,3 @@
+llama_parse
+llama_index
+langchain_community

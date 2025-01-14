@@ -1,0 +1,173 @@
+=== (A) LlamaParse + SimpleDirectoryReader 결과 ===
+
+[문서 1]
+page_content='# TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation
+
+Ehsan Adeli3, Yan Wang4, Le Lu1, Qihang Yu1, Xiangde Luo2, Jieneng Chen1, Yongyi Lu5, Alan L. Yuille1, and Yuyin Zhou3
+
+1Johns Hopkins University
+
+2University of Electronic Science and Technology of China
+
+3Stanford University
+
+4East China Normal University
+
+5PAII Inc.
+
+arXiv:2102.04306v1 · [cs.CV] · 8 Feb 2021
+
+# Abstract
+
+Medical image segmentation is an essential prerequisite for developing healthcare systems, especially for disease diagnosis and treatment planning. On various medical image segmentation tasks, the u-shaped architecture, also known as U-Net, has become the de-facto standard and achieved tremendous success. However, due to the intrinsic locality of convolution operations, U-Net generally demonstrates limitations in explicitly modeling long-range dependency. Transformers, designed for sequence-to-sequence prediction, have emerged as alternative architectures with innate global self-attention mechanisms, but can result in limited localization abilities due to insufficient low-level details. In this paper, we propose TransUNet, which merits both Transformers and U-Net, as a strong alternative for medical image segmentation. On one hand, the Transformer encodes tokenized image patches from a convolution neural network (CNN) feature map as the input sequence for extracting global contexts. On the other hand, the decoder upsamples the encoded features which are then combined with the high-resolution CNN feature maps to enable precise localization. We argue that Transformers can serve as strong encoders for medical image segmentation tasks, with the combination of U-Net to enhance finer details by recovering localized spatial information. TransUNet achieves superior performances to various competing methods on different medical applications including multi-organ segmentation and cardiac segmentation. Code and models are available at https://github.com/Beckschen/TransUNet.
+
+# 1 Introduction
+
+Convolutional neural networks (CNNs), especially fully convolutional networks (FCNs) [8], have become dominant in medical image segmentation. Among different variants, U-Net [12], which consists of a symmetric encoder-decoder network with skip-connections to enhance detail retention, has become the de-facto choice. Based on this line of approach, tremendous success has been achieved in a wide range of medical applications such as cardiac segmentation from' metadata={'file_path': 'C:\\Users\\koll2\\OneDrive\\문서\\GitHub\\JJU3\\06-배진우\\2024_겨울특강\\과제\\data\\TransUNet.pdf', 'file_name': 'TransUNet.pdf', 'file_type': 'application/pdf', 'file_size': 645002, 'creation_date': '2025-01-07', 'last_modified_date': '2025-01-02'}
+
+[문서 2]
+page_content='J. Chen et al.
+
+magnetic resonance (MR) [16], organ segmentation from computed tomography (CT) [7, 17, 19] and polyp segmentation [20] from colonoscopy videos.
+
+In spite of their exceptional representational power, CNN-based approaches generally exhibit limitations for modeling explicit long-range relation, due to the intrinsic locality of convolution operations. Therefore, these architectures generally yield weak performances especially for target structures that show large inter-patient variation in terms of texture, shape and size. To overcome this limitation, existing studies propose to establish self-attention mechanisms based on CNN features [13, 15]. On the other hand, Transformers, designed for sequence-to-sequence prediction, have emerged as alternative architectures which employ dispense convolution operators entirely and solely rely on attention mechanisms instead [14]. Unlike prior CNN-based methods, Transformers are not only powerful at modeling global contexts but also demonstrate superior transferability for downstream tasks under large-scale pre-training. The success has been widely witnessed in the field of machine translation and natural language processing (NLP) [3,14]. More recently, attempts have also matched or even exceeded state-of-the-art performances for various image recognition tasks [4, 18].
+
+In this paper, we present the first study which explores the potential of transformers in the context of medical image segmentation. However, interestingly, we found that a naive usage (i.e., use a transformer for encoding the tokenized image patches, and then directly upsamples the hidden feature representations into a dense output of full resolution) cannot produce a satisfactory result.
+
+This is due to that Transformers treat the input as 1D sequences and exclusively focus on modeling the global context at all stages, therefore result in low-resolution features which lack detailed localization information. And this information cannot be effectively recovered by direct upsampling to the full resolution, therefore leads to a coarse segmentation outcome. On the other hand, CNN architectures (e.g., U-Net [12]) provide an avenue for extracting low-level visual cues which can well remedy such fine spatial details.
+
+To this end, we propose TransUNet, the first medical image segmentation framework, which establishes self-attention mechanisms from the perspective of sequence-to-sequence prediction. To compensate for the loss of feature resolution brought by Transformers, TransUNet employs a hybrid CNN-Transformer architecture to leverage both detailed high-resolution spatial information from CNN features and the global context encoded by Transformers. Inspired by the u-shaped architectural design, the self-attentive feature encoded by Transformers is then upsampled to be combined with different high-resolution CNN features skipped from the encoding path, for enabling precise localization. We show that such a design allows our framework to preserve the advantages of Transformers and also benefit medical image segmentation. Empirical results suggest that our Transformer-based architecture presents a better way to leverage self-attention compared with previous CNN-based self-attention methods. Additionally, we observe that more intensive incorporation of low-level features generally leads to a better segmentation accuracy. Extensive experiments demonstrate the superi' metadata={'file_path': 'C:\\Users\\koll2\\OneDrive\\문서\\GitHub\\JJU3\\06-배진우\\2024_겨울특강\\과제\\data\\TransUNet.pdf', 'file_name': 'TransUNet.pdf', 'file_type': 'application/pdf', 'file_size': 645002, 'creation_date': '2025-01-07', 'last_modified_date': '2025-01-02'}
+
+[문서 3]
+page_content='# Title Suppressed Due to Excessive Length
+
+# 2 Related Works
+
+Combining CNNs with self-attention mechanisms. Various studies have attempted to integrate self-attention mechanisms into CNNs by modeling global interactions of all pixels based on the feature maps. For instance, Wang et al. designed a non-local operator, which can be plugged into multiple intermediate convolution layers [15]. Built upon the encoder-decoder u-shaped architecture, Schlemper et al. [13] proposed additive attention gate modules which are integrated into the skip-connections. Different from these approaches, we employ Transformers for embedding global self-attention in our method.
+
+Transformers. Transformers were first proposed by [14] for machine translation and established state-of-the-arts in many NLP tasks. To make Transformers also applicable for computer vision tasks, several modifications have been made. For instance, Parmar et al. [11] applied the self-attention only in local neighborhoods for each query pixel instead of globally. Child et al. [1] proposed Sparse Transformers, which employ scalable approximations to global self-attention. Recently, Vision Transformer (ViT) [4] achieved state-of-the-art on ImageNet classification by directly applying Transformers with global self-attention to full-sized images. To the best of our knowledge, the proposed TransUNet is the first Transformer-based medical image segmentation framework, which builds upon the highly successful ViT.
+
+# 3 Method
+
+Given an image x ∈ RH×W ×C with a spatial resolution of H × W and C number of channels. Our goal is to predict the corresponding pixel-wise labelmap with size H × W. The most common way is to directly train a CNN (e.g., U-Net) to first encode images into high-level feature representations, which are then decoded back to the full spatial resolution. Unlike existing approaches, our method introduces self-attention mechanisms into the encoder design via the usage of Transformers. We will first introduce how to directly apply transformer for encoding feature representations from decomposed image patches in Section 3.1. Then, the overall framework of TransUNet will be elaborated in Section 3.2.
+
+# 3.1 Transformer as Encoder
+
+Image Sequentialization. Following [4], we first perform tokenization by reshaping the input x into a sequence of flattened 2D patches {xip ∈ RP 2·C |i = 1, .., N}, where each patch is of size P × P and N = P 2HW is the number of image patches (i.e., the input sequence length).' metadata={'file_path': 'C:\\Users\\koll2\\OneDrive\\문서\\GitHub\\JJU3\\06-배진우\\2024_겨울특강\\과제\\data\\TransUNet.pdf', 'file_name': 'TransUNet.pdf', 'file_type': 'application/pdf', 'file_size': 645002, 'creation_date': '2025-01-07', 'last_modified_date': '2025-01-02'}
+
+=== (B) UpstageLayoutAnalysisLoader 결과 ===
+
+[문서 1]
+page_content='TransUNet: Transformers Make Strong
+Encoders for Medical Image Segmentation Jieneng Chen1, Yongyi Lu1, Qihang Yu1, Xiangde Luo2,
+Ehsan Adeli3, Yan Wang4, Le Lu5, Alan L. Yuille1, and Yuyin Zhou3 1Johns Hopkins University 
+2University of Electronic Science and Technology of China 
+3Stanford University 
+4 East China Normal University 
+5PAII Inc. Abstract. Medical image segmentation is an essential prerequisite for
+developing healthcare systems, especially for disease diagnosis and treat-
+ment planning. On various medical image segmentation tasks, the u-
+shaped architecture, also known as U-Net, has become the de-facto stan-
+dard and achieved tremendous success. However, due to the intrinsic
+locality of convolution operations, U-Net generally demonstrates limi-
+tations in explicitly modeling long-range dependency. Transformers, de-
+signed for sequence-to-sequence prediction, have emerged as alternative
+architectures with innate global self-attention mechanisms, but can re-
+sult in limited localization abilities due to insufficient low-level details.
+In this paper, we propose TransUNet, which merits both Transformers
+and U-Net, as a strong alternative for medical image segmentation. On
+one hand, the Transformer encodes tokenized image patches from a con-
+volution neural network (CNN) feature map as the input sequence for
+extracting global contexts. On the other hand, the decoder upsamples
+the encoded features which are then combined with the high-resolution
+CNN feature maps to enable precise localization.
+We argue that Transformers can serve as strong encoders for medical im-
+age segmentation tasks, with the combination of U-Net to enhance finer
+details by recovering localized spatial information. TransUNet achieves
+superior performances to various competing methods on different medical
+applications including multi-organ segmentation and cardiac segmenta-
+tion. Code and models are available at https://github. com/Beckschen/
+TransUNet. 1 Introduction Convolutional neural networks (CNNs), especially fully convolutional networks
+(FCNs) [8], have become dominant in medical image segmentation. Among dif-
+ferent variants, U-Net [12], which consists of a symmetric encoder-decoder net-
+work with skip-connections to enhance detail retention, has become the de-facto
+choice. Based on this line of approach, tremendous success has been achieved
+in a wide range of medical applications such as cardiac segmentation from' metadata={'page': 1}
+
+[문서 2]
+page_content='2 J. Chen et al. magnetic resonance (MR) [16], organ segmentation from computed tomography
+(CT) [7, 17, 19] and polyp segmentation [20] from colonoscopy videos. In spite of their exceptional representational power, CNN-based approaches
+generally exhibit limitations for modeling explicit long-range relation, due to the
+intrinsic locality of convolution operations. Therefore, these architectures gen-
+erally yield weak performances especially for target structures that show large
+inter-patient variation in terms of texture, shape and size. To overcome this lim-
+itation, existing studies propose to establish self-attention mechanisms based on
+CNN features [13, 15]. On the other hand, Transformers, designed for sequence-
+to-sequence prediction, have emerged as alternative architectures which employ
+dispense convolution operators entirely and solely rely on attention mechanisms
+instead [14]. Unlike prior CNN-based methods, Transformers are not only power-
+ful at modeling global contexts but also demonstrate superior transferability for
+downstream tasks under large-scale pre-training. The success has been widely
+witnessed in the field of machine translation and natural language processing
+(NLP) [3,14]. More recently, attempts have also matched or even exceeded state-
+of-the-art performances for various image recognition tasks [4, 18]. In this paper, we present the first study which explores the potential of trans-
+formers in the context of medical image segmentation. However, interestingly,
+we found that a naive usage (i.e., use a transformer for encoding the tokenized
+image patches, and then directly upsamples the hidden feature representations
+into a dense output of full resolution) cannot produce a satisfactory result. This is due to that Transformers treat the input as 1D sequences and ex-
+clusively focus on modeling the global context at all stages, therefore result in
+low-resolution features which lack detailed localization information. And this
+information cannot be effectively recovered by direct upsampling to the full res-
+olution, therefore leads to a coarse segmentation outcome. On the other hand,
+CNN architectures (e.g., U-Net [12]) provide an avenue for extracting low-level
+visual cues which can well remedy such fine spatial details. To this end, we propose TransUNet, the first medical image segmentation
+framework, which establishes self-attention mechanisms from the perspective of
+sequence-to-sequence prediction. To compensate for the loss of feature resolu-
+tion brought by Transformers, TransUNet employs a hybrid CNN-Transformer
+architecture to leverage both detailed high-resolution spatial information from
+CNN features and the global context encoded by Transformers. Inspired by the
+u-shaped architectural design, the self-attentive feature encoded by Transformers
+is then upsampled to be combined with different high-resolution CNN features
+skipped from the encoding path, for enabling precise localization. We show that
+such a design allows our framework to preserve the advantages of Transformers
+and also benefit medical image segmentation. Empirical results suggest that our
+Transformer-based architecture presents a better way to leverage self-attention
+compared with previous CNN-based self-attention methods. Additionally, we ob-
+serve that more intensive incorporation of low-level features generally leads to
+a better segmentation accuracy. Extensive experiments demonstrate the superi-' metadata={'page': 2}
+
+[문서 3]
+page_content='ority of our method against other competing methods on various medical image
+segmentation tasks. 2 Related Works Combining CNNs with self-attention mechanisms. Various studies have
+attempted to integrate self-attention mechanisms into CNNs by modeling global
+interactions of all pixels based on the feature maps. For instance, Wang et al.
+designed a non-local operator, which can be plugged into multiple intermediate
+convolution layers [15]. Built upon the encoder-decoder u-shaped architecture,
+Schlemper et al. [13] proposed additive attention gate modules which are inte-
+grated into the skip-connections. Different from these approaches, we employ
+Transformers for embedding global self-attention in our method. Transformers. Transformers were first proposed by [14] for machine translation
+and established state-of-the-arts in many NLP tasks. To make Transformers also
+applicable for computer vision tasks, several modifications have been made. For
+instance, Parmar et al. [11] applied the self-attention only in local neighborhoods
+for each query pixel instead of globally. Child et al. [1] proposed Sparse Trans-
+formers, which employ scalable approximations to global self-attention. Recently,
+Vision Transformer (ViT) [] achieved state-of-the-art on ImageNet classification
+by directly applying Transformers with global self-attention to full-sized images.
+To the best of our knowledge, the proposed TransUNet is the first Transformer-
+based medical image segmentation framework, which builds upon the highly
+successful ViT. 3 Method Given an image x E RHxWxC
+with an spatial resolution of H x W and C num-
+ber of channels. Our goal is to predict the corresponding pixel-wise labelmap
+with size H x W. The most common way is to directly train a CNN (e.g., U-
+Net) to first encode images into high-level feature representations, which are
+then decoded back to the full spatial resolution. Unlike existing approaches, our
+method introduces self-attention mechanisms into the encoder design via the us-
+age of Transformers. We will first introduce how to directly apply transformer for
+encoding feature representations from decomposed image patches in Section 3.1.
+Then, the overall framework of TransUNet will be elaborated in Section 3.2. 3.1 Transformer as Encoder Image Sequentialization. Following [4], we first perform tokenization by re-
+shaping the input x into a sequence of flattened 2D patches {xi E RP2 �Pi =
+HW of image
+1,... N}, where each patch is of size P x P and N = is the number
+p2
+patches (i.e., the input sequence length).' metadata={'page': 3}
+

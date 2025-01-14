@@ -1,0 +1,54 @@
+> ***Junior Developer***  
+개발과 관련된 다양한 경험을 쌓아왔으며, 새로운 기술을 배우고 적용하는 것을 즐기는 주니어 개발자입니다. 팀 프로젝트에서 원활한 소통과 협업을 통해 최상의 결과물을 만들어내는 것을 목표로 하고 있습니다.
+>  
+---  
+***Contact***  
+***Tel : 010-2494-9713
+E-mail : kyh97910@naver.com***  
+![cha.png](5325a60c-ad57-4c8c-b13a-889a143521e3.png)  
+---
+{'Header 1': 'Pretzels'}
+==============================
+---
+{'Header 1': 'Pretzels', 'Header 2': '*Education*'}
+==============================
+2021.03 ~ 2025.02  |  인공지능학과 [ 4.5  / 4.5 ]  
+- 2022~2023 인공지능학과 학회장
+- 사랑의 연탄나눔 봉사 활동
+{'Header 1': 'Pretzels', 'Header 2': '*Education*', 'Header 3': '[ 전주 대학교 졸업 ]'}
+==============================
+2015.03 ~ 2016.02  |  이공계열  
+- 동아리 : 한국 역사 홍보
+{'Header 1': 'Pretzels', 'Header 2': '*Education*', 'Header 3': '**[문정 고등학교 졸업 ]**'}
+==============================
+---
+{'Header 1': 'Pretzels', 'Header 2': '*Work History*'}
+==============================
+2023.08 ~ 2023.08  |  학생  
+2024.07 ~ 2024.07  |  조교  
+- A.I. Course
+{'Header 1': 'Pretzels', 'Header 2': '*Work History*', 'Header 3': '[ Toronto University ]'}
+==============================
+2022.11 ~ 2023.01  |  학생  
+- English Course
+{'Header 1': 'Pretzels', 'Header 2': '*Work History*', 'Header 3': '[ Malaysia UTM ]'}
+==============================
+---  
+[제목 없음](%E1%84%8C%E1%85%A6%E1%84%86%E1%85%A9%E1%86%A8%20%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%8B%E1%85%B3%E1%86%B7%2016de304e5a14817fa062fc792aae9d5c.csv)
+{'Header 1': 'Pretzels', 'Header 2': '*Certificate*'}
+==============================
+---  
+- 밥먹기 ⭐️⭐️⭐️⭐️⭐️
+- 잠자기 ⭐️⭐️⭐️⭐️
+- 숨쉬기 ⭐️⭐️⭐️⭐️⭐️
+- League of Legend ⭐️⭐️⭐️⭐️⭐️
+- Drink ⭐️⭐️⭐️⭐️⭐️
+{'Header 1': 'Pretzels', 'Header 2': '*Skills*'}
+==============================
+---  
+[제목 없음](%E1%84%8C%E1%85%A6%E1%84%86%E1%85%A9%E1%86%A8%20%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%8B%E1%85%B3%E1%86%B7%2016de304e5a14811d943af66455dc55d3.csv)  
+<aside>
+❤️ *Thank you for your time!*  
+</aside>
+{'Header 1': 'Pretzels', 'Header 2': '*Reference*'}
+==============================

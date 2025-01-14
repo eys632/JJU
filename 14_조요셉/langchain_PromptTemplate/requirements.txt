@@ -1,0 +1,4 @@
+langchain_teddynote
+langchain_core
+langchain_openai
+datetime

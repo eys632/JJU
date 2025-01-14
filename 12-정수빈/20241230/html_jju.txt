@@ -1,0 +1,1499 @@
+
+
+			
+<!doctype html>
+<html lang="ko">
+<head>
+<title>인공지능학과</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://ai.jj.ac.kr:443/ai/index.do"/>
+<meta property="og:locale" content="ko"/>
+<meta property="og:site_name" content="인공지능학과"/>
+<meta property="og:updated_time" content="2024-12-04T14:11:23Z"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="canonical" href="https://ai.jj.ac.kr:443/ai/index.do" />
+
+<link defer rel="stylesheet" type="text/css" href="/_res/_common/css/cms.css" />
+<link href="/_res/jj/_share/css/cms-common.css?19106" rel="stylesheet" type="text/css" />
+<link href="/_res/jj/_share/css/swiper-bundle.min.css?19106" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/_res/jj/_share/css/temp04-common-miniboard.widget.css?19104" />
+<link rel="stylesheet" type="text/css" href="/_res/jj/ai/css/temp04-sns-hashtag-miniboard01.widget.css?89543" />
+
+<link href="/_res/jj/ai/css/cms-common.css?74645" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/_res/jj/ai/css/footer-top.content.css?74644" />
+<link rel="stylesheet" type="text/css" href="/_res/jj/ai/css/top-header.content.css?74644" />
+<link rel="stylesheet" type="text/css" href="/_res/jj/ai/css/main-visual.content.css?74644" />
+<link rel="stylesheet" type="text/css" href="/_res/jj/ai/css/main-content-02.content.css?74644" />
+<link rel="stylesheet" type="text/css" href="/_res/jj/ai/css/main-content-01.content.css?87902" />
+<link rel="stylesheet" type="text/css" href="/_res/jj/ai/css/main-content-03.content.css?20720" />
+<link rel="stylesheet" type="text/css" href="/_res/jj/ai/css/footer-bottom.content.css?74644" />
+<link rel="stylesheet" type="text/css" href="/_res/jj/ai/css/bottom-header.content.css?74644" />
+
+
+<script type="text/javascript" src="/_res/_common/js/jquery/jquery-2.2.4.min.js"></script>
+<script defer type="text/javascript" src="/_res/_common/js/jquery/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	var CMS = {"contentEditAuth":false,"isDevelopAllContent":false,"editImageLimitSize":1200,"editToastUIYn":"N","isCallAdm":false,"editActive":true,"resourcePath":"\/_res\/jj\/ai\/","excludePrintSelector":"","locale":"ko","tableClass":"","isCToken":false,"smoothScroll":"Y","mainContentId":"cms-content","appKey":"","contentEditOnlyMain":false,"servicePort":"","devContentKey":null,"subContentKeyMap":{"BDdudkTyGduE":"\/ai\/_content\/main-content-02.jsp","xfrqBgXyAfid":"\/ai\/_content\/main-content-03.jsp","HsllGROHDuuu":"\/ai\/_content\/main-content-04.jsp"},"boardNo":"","menuCd":"0","ctx":"","sslPort":"","isMobileSite":false,"tokenSec":"0","editorVendor":"froala","localeScriptPath":"\/_custom\/jj\/resource\/js\/","mainContentKey":"\/ai\/_content\/main-content-01","printClass":"cms-print","pageKind":"STATIC","editClass":"cms-edit","cherryPath":"\/_fox","siteId":"ai","isDevelop":false,"device":"pc","isSSL":false}, ctx = '', locale = 'ko';
+
+//]]>
+</script>
+<script src="/_res/_common/js/cms.js?66895" defer type="text/javascript" ></script>
+<script src="/_res/jj/_share/js/cms-common.js?19107" defer type="text/javascript" ></script>
+<script src="/_res/jj/_share/js/swiper-bundle.min.js?19107" defer type="text/javascript" ></script>
+<script src="/_res/jj/ai/js/cms-common.js?74645" defer type="text/javascript" ></script>
+<script defer type="text/javascript" src="/_res/jj/ai/js/footer-top.content.js?74645" ></script>
+<script defer type="text/javascript" src="/_res/jj/ai/js/main-visual.content.js?74645" ></script>
+<script defer type="text/javascript" src="/_res/jj/ai/js/main-content-01.content.js?87902" ></script>
+<script defer type="text/javascript" src="/_res/jj/ai/js/main-content-03.content.js?20720" ></script>
+<script defer type="text/javascript" src="/_res/jj/ai/js/bottom-header.content.js?74644" ></script>
+<script defer type="text/javascript" src="/_res/jj/_share/js/temp04-img02-miniboard.widget.js?19105" ></script>
+
+</head>
+<body class="main  ai-site pc" data-cur-uri="/ai/index.do">
+	<div class="layer-popup-outer">
+
+			<div class="layer-popup-wrap popup-0 hide-important" data-popup-container data-layout-popup-key="/ai/_popup/popup_yXjqiovsMzgTfbe">
+				
+<p style="text-align:center;font-weight:600;font-size:21px;"><a href="https://ai.jj.ac.kr/ai/community/gallery.do?mode=view&articleNo=50479">[2024 빅데이터 분석 경진대회 수상]<br>일시: 2024년 10월 31일 ~ 11월 2일<br><br><img src="/_res/jj/ai/img/main/main_popup_241129.png" alt=""></a></p>
+
+				<div class="btn-box">
+					<a class="btn-layer-close" data-popup-key="/ai/_popup/popup_yXjqiovsMzgTfbe" data-popup-day="7" href="#popup-close">
+						1주일간 보지않기
+					</a>
+					<a class="btn-layer-close" data-popup-key="/ai/_popup/popup_yXjqiovsMzgTfbe" data-popup-day="1" href="#popup-close">
+						1일간 보지않기
+					</a>
+					<a class="btn-layer-close" data-popup-close="" href="#popup-close">팝업닫기</a>
+				</div>
+		    </div>
+			
+			<div class="layer-popup-wrap popup-1 hide-important" data-popup-container data-layout-popup-key="/ai/_popup/popup_qGrHBzdyQmmEYEp">
+				
+<p style="text-align:center;font-weight:600;font-size:21px;"><a href="https://ai.jj.ac.kr/ai/community/gallery.do?mode=view&articleNo=50479">인공지능학과 1학년 재학생, <br>첨단 분야 경진대회 '2024년 CO-SHOW' <br>한국연구재단 이사장상 수상<br>(1학년 이성연, 김두현, 김효준, 오민헌)<br><br><img src="/_res/jj/ai/img/main/popup_241208.png" alt="popup02"></a></p>
+
+
+				<div class="btn-box">
+					<a class="btn-layer-close" data-popup-key="/ai/_popup/popup_qGrHBzdyQmmEYEp" data-popup-day="7" href="#popup-close">
+						1주일간 보지않기
+					</a>
+					<a class="btn-layer-close" data-popup-key="/ai/_popup/popup_qGrHBzdyQmmEYEp" data-popup-day="1" href="#popup-close">
+						1일간 보지않기
+					</a>
+					<a class="btn-layer-close" data-popup-close="" href="#popup-close">팝업닫기</a>
+				</div>
+		    </div>
+			
+	</div>
+
+
+
+
+
+<div class="wrap">
+	<header>
+		<div class="header-wrap">
+			<div class="top-header-wrap">
+				<div class="top-header-box" data-cms-content="/ai/_content/top-header">
+					
+						
+					
+<ul class="top-util-box">
+	<li><a href="/ai" title="home">Home</a></li>
+	<div>
+		
+			
+		
+
+
+	<li>
+		<a class="login-btn" href="/ai/etc/login.do" title="로그인 바로가기">로그인</a>
+	</li>	
+	
+						
+
+	</div>
+</ul>
+				</div>
+			</div>
+			<div class="bottom-header-wrap">
+				<div class="bottom-header-box" data-cms-content="/ai/_content/bottom-header">
+					
+						
+					
+<div class="bottom-header-content">
+  <h1 class="logo"><a href="/ai/" title="전주대학교"><span>인공지능학과</span><img src="/_res/jj/ai/img/common/logo-w.png" alt="전주대학교" class="logo-w"><img src="/_res/jj/ai/img/common/logo.png" alt="전주대학교" class="logo-b"></a></h1>
+  <div class="gnb">
+    
+      
+      
+    
+<ul class="depth_01">
+	
+		
+		<li>
+			<a href="#1930">학과안내</a>
+			
+			
+			<ul class="depth_02">
+				
+				
+					<li>
+						<a href="/ai/info/greeting.do" id="pc-gnb-menu-1931"  title="인사말"  >인사말</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/info/intro.do" id="pc-gnb-menu-1932"  title="학과소개"  >학과소개</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/info/faculty.do" id="pc-gnb-menu-1993"  title="교수진소개"  >교수진소개</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/info/classroom.do" id="pc-gnb-menu-1933"  title="강의실습실"  >강의실습실</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/info/administration.do" id="pc-gnb-menu-1934"  title="행정안내"  >행정안내</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+	
+		
+		<li>
+			<a href="#1957">신입생 학과 안내</a>
+			
+			
+			<ul class="depth_02">
+				
+				
+					<li>
+						<a href="/ai/freshman/faq.do" id="pc-gnb-menu-1958"  title="주요 질의 및 답변"  >주요 질의 및 답변</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/freshman/qna.do" id="pc-gnb-menu-1959"  title="학과관련 문의"  >학과관련 문의</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/freshman/publicity.do" id="pc-gnb-menu-1960"  title="홍보자료실"  >홍보자료실</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+	
+		
+		<li>
+			<a href="#1935">학사정보</a>
+			
+			
+			<ul class="depth_02">
+				
+				
+					<li>
+						<a href="/ai/academic/curriculum.do" id="pc-gnb-menu-1936"  title="개설교과목현황"  >개설교과목현황</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/academic/major01.do" id="pc-gnb-menu-1937"  title="전공교과소개"  >전공교과소개</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/academic/archive.do" id="pc-gnb-menu-1938"  title="학사자료실"  >학사자료실</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+	
+		
+		<li>
+			<a href="#1939">진로ㆍ취업</a>
+			
+			
+			<ul class="depth_02">
+				
+				
+					<li>
+						<a href="/ai/career/prospect.do" id="pc-gnb-menu-1940"  title="인공지능 발전 및 취업전망"  >인공지능 발전 및 취업전망</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/career/roadmap.do" id="pc-gnb-menu-1951"  title="커리어로드맵"  >커리어로드맵</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/career/jobnotice.do" id="pc-gnb-menu-1941"  title="채용공고"  >채용공고</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+	
+		
+		<li>
+			<a href="#1942">입학정보</a>
+			
+			
+			<ul class="depth_02">
+				
+				
+					<li>
+						<a href="https://iphak.jj.ac.kr/iphak/index.do" id="pc-gnb-menu-1943"  title="새창열림"  target="_blank" >입학정보</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="https://iphak.jj.ac.kr/iphak/early/online.do" id="pc-gnb-menu-1944"  title="새창열림"  target="_blank" >입학관련문의</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+	
+		
+		<li>
+			<a href="#1945">학과활동</a>
+			
+			
+			<ul class="depth_02">
+				
+				
+					<li>
+						<a href="/ai/community/notice.do" id="pc-gnb-menu-1946"  title="공지사항"  >공지사항</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/community/notice-ai.do" id="pc-gnb-menu-1947"  title="AI혁신융합대학사업"  >AI혁신융합대학사업</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/community/gallery.do" id="pc-gnb-menu-1948"  title="학과소식"  >학과소식</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/community/ai.do" id="pc-gnb-menu-1952"  title="AI 관련 최신동향 및 공모전"  >AI 관련 최신동향 및 공모전</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/community/seminar.do" id="pc-gnb-menu-1961"  title="대학원 세미나"  >대학원 세미나</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+	
+</ul>
+  </div><a class="popup-btn btn-sitemap" href="#a" title="전체메뉴 보기"><span class="hide">전체메뉴 보기</span><img src="/_res/jj/ai/img/common/hamburger02.png" alt="Hamburger"><img src="/_res/jj/ai/img/common/hamburger02-on.png" alt="Hamburger"></a>
+  <div class="navigation"><a href="#a" class="hamburger"></a>
+    <div class="m-gnb">
+      <div class="m-gnb-top">
+        <ul class="util-box">
+          <li><a href="/ai/" title="홈 바로가기">Home</a></li>
+          <li><a class="logout-btn" href="/cms/login/logOut.do" title="로그아웃">로그아웃</a></li>
+        </ul>
+      </div>
+      
+        
+        
+      
+<ul class="dep1">
+	
+		
+		<li>
+			<a href="/ai/info/greeting.do" id="mobile-menu-1930"  title="학과안내"  >학과안내</a>
+			
+			
+			<ul class="dep2">
+			
+				
+				
+					<li>
+						<a href="/ai/info/greeting.do" id="mobile-menu-1931"  title="인사말"  >인사말</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/info/intro.do" id="mobile-menu-1932"  title="학과소개"  >학과소개</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/info/faculty.do" id="mobile-menu-1993"  title="교수진소개"  >교수진소개</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/info/classroom.do" id="mobile-menu-1933"  title="강의실습실"  >강의실습실</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/info/administration.do" id="mobile-menu-1934"  title="행정안내"  >행정안내</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+   	
+		
+		<li>
+			<a href="/ai/freshman/faq.do" id="mobile-menu-1957"  title="신입생 학과 안내"  >신입생 학과 안내</a>
+			
+			
+			<ul class="dep2">
+			
+				
+				
+					<li>
+						<a href="/ai/freshman/faq.do" id="mobile-menu-1958"  title="주요 질의 및 답변"  >주요 질의 및 답변</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/freshman/qna.do" id="mobile-menu-1959"  title="학과관련 문의"  >학과관련 문의</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/freshman/publicity.do" id="mobile-menu-1960"  title="홍보자료실"  >홍보자료실</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+   	
+		
+		<li>
+			<a href="/ai/academic/curriculum.do" id="mobile-menu-1935"  title="학사정보"  >학사정보</a>
+			
+			
+			<ul class="dep2">
+			
+				
+				
+					<li>
+						<a href="/ai/academic/curriculum.do" id="mobile-menu-1936"  title="개설교과목현황"  >개설교과목현황</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/academic/major01.do" id="mobile-menu-1937"  title="전공교과소개"  >전공교과소개</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/academic/archive.do" id="mobile-menu-1938"  title="학사자료실"  >학사자료실</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+   	
+		
+		<li>
+			<a href="/ai/career/prospect.do" id="mobile-menu-1939"  title="진로ㆍ취업"  >진로ㆍ취업</a>
+			
+			
+			<ul class="dep2">
+			
+				
+				
+					<li>
+						<a href="/ai/career/prospect.do" id="mobile-menu-1940"  title="인공지능 발전 및 취업전망"  >인공지능 발전 및 취업전망</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/career/roadmap.do" id="mobile-menu-1951"  title="커리어로드맵"  >커리어로드맵</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/career/jobnotice.do" id="mobile-menu-1941"  title="채용공고"  >채용공고</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+   	
+		
+		<li>
+			<a href="#mobile-menu-1942" id="mobile-menu-1942"  title="입학정보"  >입학정보</a>
+			
+			
+			<ul class="dep2">
+			
+				
+				
+					<li>
+						<a href="https://iphak.jj.ac.kr/iphak/index.do" id="mobile-menu-1943"  title="새창열림"  target="_blank" >입학정보</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="https://iphak.jj.ac.kr/iphak/early/online.do" id="mobile-menu-1944"  title="새창열림"  target="_blank" >입학관련문의</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+   	
+		
+		<li>
+			<a href="/ai/community/notice.do" id="mobile-menu-1945"  title="학과활동"  >학과활동</a>
+			
+			
+			<ul class="dep2">
+			
+				
+				
+					<li>
+						<a href="/ai/community/notice.do" id="mobile-menu-1946"  title="공지사항"  >공지사항</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/community/notice-ai.do" id="mobile-menu-1947"  title="AI혁신융합대학사업"  >AI혁신융합대학사업</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/community/gallery.do" id="mobile-menu-1948"  title="학과소식"  >학과소식</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/community/ai.do" id="mobile-menu-1952"  title="AI 관련 최신동향 및 공모전"  >AI 관련 최신동향 및 공모전</a>
+						
+						
+							
+					</li>
+				
+					<li>
+						<a href="/ai/community/seminar.do" id="mobile-menu-1961"  title="대학원 세미나"  >대학원 세미나</a>
+						
+						
+							
+					</li>
+				
+			</ul>
+			
+		</li>
+   	
+</ul>
+      <div class="m-gnb-bottom">
+        <ul>
+          <li><a href="#a">개인정보 처리방침</a></li>
+          <li><a href="#a">이메일무단수집거부</a></li>
+        </ul>
+      </div><a href="#a" class="hamburger-close"></a></div>
+  </div>
+</div>
+<div class="gnb-bg-menu">
+</div>
+<div class="sitemap-wrap">
+  <div class="overlay">
+  </div>
+  <div class="sitemap-box">
+    <div class="util-box-inner">
+      <ul class="util-box">
+        <li><a href="/ai/" title="홈 바로가기">Home</a></li>
+        
+          
+        
+
+
+	<li>
+		<a class="login-btn" href="/ai/etc/login.do" title="로그인 바로가기">로그인</a>
+	</li>	
+	
+						
+
+      </ul>
+    </div>
+    <div class="sitemap-depth-box">
+      
+        
+        
+      
+<ul class="sitemap-depth01">      		<li> 			<a href="/ai/info/greeting.do" id="sitemap-menu-1930"  >학과안내</a> 			<div> 				<ul class="sitemap-depth02"> 				 				<li> 					<a href="/ai/info/greeting.do" id="sitemap-menu-1931"  >인사말</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/info/intro.do" id="sitemap-menu-1932"  >학과소개</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/info/faculty.do" id="sitemap-menu-1993"  >교수진소개</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/info/classroom.do" id="sitemap-menu-1933"  >강의실습실</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/info/administration.do" id="sitemap-menu-1934"  >행정안내</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 			</ul> 			</div> 		</li>    	 		<li> 			<a href="/ai/freshman/faq.do" id="sitemap-menu-1957"  >신입생 학과 안내</a> 			<div> 				<ul class="sitemap-depth02"> 				 				<li> 					<a href="/ai/freshman/faq.do" id="sitemap-menu-1958"  >주요 질의 및 답변</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/freshman/qna.do" id="sitemap-menu-1959"  >학과관련 문의</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/freshman/publicity.do" id="sitemap-menu-1960"  >홍보자료실</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 			</ul> 			</div> 		</li>    	 		<li> 			<a href="/ai/academic/curriculum.do" id="sitemap-menu-1935"  >학사정보</a> 			<div> 				<ul class="sitemap-depth02"> 				 				<li> 					<a href="/ai/academic/curriculum.do" id="sitemap-menu-1936"  >개설교과목현황</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/academic/major01.do" id="sitemap-menu-1937"  >전공교과소개</a> 					<ul class="sitemap-depth03"> 						 							<li> 								<a href="/ai/academic/major01.do" id="sitemap-menu-1953"  >1학년</a> 							</li> 						 							<li> 								<a href="/ai/academic/major02.do" id="sitemap-menu-1954"  >2학년</a> 							</li> 						 							<li> 								<a href="/ai/academic/major03.do" id="sitemap-menu-1955"  >3학년</a> 							</li> 						 							<li> 								<a href="/ai/academic/major04.do" id="sitemap-menu-1956"  >4학년</a> 							</li> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/academic/archive.do" id="sitemap-menu-1938"  >학사자료실</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 			</ul> 			</div> 		</li>    	 		<li> 			<a href="/ai/career/prospect.do" id="sitemap-menu-1939"  >진로ㆍ취업</a> 			<div> 				<ul class="sitemap-depth02"> 				 				<li> 					<a href="/ai/career/prospect.do" id="sitemap-menu-1940"  >인공지능 발전 및 취업전망</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/career/roadmap.do" id="sitemap-menu-1951"  >커리어로드맵</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/career/jobnotice.do" id="sitemap-menu-1941"  >채용공고</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 			</ul> 			</div> 		</li>    	 		<li> 			<a href="#sitemap-menu-1942" id="sitemap-menu-1942"  >입학정보</a> 			<div> 				<ul class="sitemap-depth02"> 				 				<li> 					<a href="https://iphak.jj.ac.kr/iphak/index.do" id="sitemap-menu-1943"  target="_blank" >입학정보</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="https://iphak.jj.ac.kr/iphak/early/online.do" id="sitemap-menu-1944"  target="_blank" >입학관련문의</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 			</ul> 			</div> 		</li>    	 		<li> 			<a href="/ai/community/notice.do" id="sitemap-menu-1945"  >학과활동</a> 			<div> 				<ul class="sitemap-depth02"> 				 				<li> 					<a href="/ai/community/notice.do" id="sitemap-menu-1946"  >공지사항</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/community/notice-ai.do" id="sitemap-menu-1947"  >AI혁신융합대학사업</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/community/gallery.do" id="sitemap-menu-1948"  >학과소식</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/community/ai.do" id="sitemap-menu-1952"  >AI 관련 최신동향 및 공모전</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 				<li> 					<a href="/ai/community/seminar.do" id="sitemap-menu-1961"  >대학원 세미나</a> 					<ul class="sitemap-depth03"> 						 					</ul> 				</li> 				 			</ul> 			</div> 		</li>    	 </ul><a class="btn-sitemap-close" href="#a" title="닫기 사이트맵"><span class="hide">사이트맵</span></a><a class="btn-sitemap-close type02" href="#a" title="닫기 사이트맵"><span class="hide">사이트맵</span></a></div>
+  </div>
+</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="main-visual-wrap">
+			<div class="main-visual-box" data-cms-content="/ai/_content/main-visual">
+				
+					
+				
+<p>
+</p>
+<div>
+  
+    
+  
+
+	<div class="main-visual-content">
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				
+				<div class="swiper-slide">
+					<div class="main-visual-item">
+						<div class="main-visual-left"><a class="main-visual-link" href="" target="_self" title="해외교육연수, 장학금, 개인 노트북/사물함 등 가장 풍부하고 다양한 혜택 제공">
+							<img src="/_res/jj/ai/img/main/main_visual11.png" alt="전주대학교 인공지능학과"></a></div>
+						<div class="main-visual-right">
+							
+								<h4>해외교육연수, 장학금, 개인 노트북/사물함 등 가장 풍부하고 다양한 혜택 제공</h4>
+							
+							
+								<div class="main-visual-desc">
+									<p><span>전주대학교 인공지능학과</span></p>
+								</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="main-visual-item">
+						<div class="main-visual-left"><a class="main-visual-link" href="" target="_self" title="인공지능을 가장 체계적이고 재미있고 쉽게 배울 수 있는 곳!">
+							<img src="/_res/jj/ai/img/main/main-visual10.png" alt="전주대학교 인공지능학과"></a></div>
+						<div class="main-visual-right">
+							
+								<h4>인공지능을 가장 체계적이고 재미있고 쉽게 배울 수 있는 곳!</h4>
+							
+							
+								<div class="main-visual-desc">
+									<p><span>전주대학교 인공지능학과</span></p>
+								</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="main-visual-item">
+						<div class="main-visual-left"><a class="main-visual-link" href="" target="_self" title="교육부 지정 첨단학과로서 창의적이고 재미있는 취업 중심의 교육 프로그램 운영">
+							<img src="/_res/jj/ai/img/main/main-visual08.png" alt="전주대학교 인공지능학과"></a></div>
+						<div class="main-visual-right">
+							
+								<h4>교육부 지정 첨단학과로서 창의적이고 재미있는 취업 중심의 교육 프로그램 운영</h4>
+							
+							
+								<div class="main-visual-desc">
+									<p><span>전주대학교 인공지능학과</span></p>
+								</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="main-visual-item">
+						<div class="main-visual-left"><a class="main-visual-link" href="" target="_self" title="교육부 지정 첨단학과로서 창의적이고 재미있는 취업 중심의 교육 프로그램 운영">
+							<img src="/_res/jj/ai/img/main/main-visual07.png" alt="전주대학교 인공지능학과"></a></div>
+						<div class="main-visual-right">
+							
+								<h4>교육부 지정 첨단학과로서 창의적이고 재미있는 취업 중심의 교육 프로그램 운영</h4>
+							
+							
+								<div class="main-visual-desc">
+									<p><span>전주대학교 인공지능학과</span></p>
+								</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="main-visual-item">
+						<div class="main-visual-left"><a class="main-visual-link" href="" target="_self" title="해외교육연수, 장학금, 개인 노트북/사물함 등 가장 풍부하고 다양한 혜택 제공">
+							<img src="/_res/jj/ai/img/main/main-visual06.png" alt="전주대학교 인공지능학과"></a></div>
+						<div class="main-visual-right">
+							
+								<h4>해외교육연수, 장학금, 개인 노트북/사물함 등 가장 풍부하고 다양한 혜택 제공</h4>
+							
+							
+								<div class="main-visual-desc">
+									<p><span>전주대학교 인공지능학과</span></p>
+								</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="main-visual-item">
+						<div class="main-visual-left"><a class="main-visual-link" href="" target="_self" title="학생들을 케어하는데 사랑과 정성을 다하는 교수진">
+							<img src="/_res/jj/ai/img/main/main-visual04.png" alt="전주대학교 인공지능학과"></a></div>
+						<div class="main-visual-right">
+							
+								<h4>학생들을 케어하는데 사랑과 정성을 다하는 교수진</h4>
+							
+							
+								<div class="main-visual-desc">
+									<p><span>전주대학교 인공지능학과</span></p>
+								</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="main-visual-item">
+						<div class="main-visual-left"><a class="main-visual-link" href="" target="_self" title="인공지능 관련 다양한 전문경력을 보유한 최고의 교수진">
+							<img src="/_res/jj/ai/img/main/main-visual03.png" alt="전주대학교 인공지능학과"></a></div>
+						<div class="main-visual-right">
+							
+								<h4>인공지능 관련 다양한 전문경력을 보유한 최고의 교수진</h4>
+							
+							
+								<div class="main-visual-desc">
+									<p><span>전주대학교 인공지능학과</span></p>
+								</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="main-visual-item">
+						<div class="main-visual-left"><a class="main-visual-link" href="" target="_self" title="AI를 체계적으로 배울 수 있는 전문 교육과정과 최적의 교육환경 구성">
+							<img src="/_res/jj/ai/img/main/main-visual02.png" alt="전주대학교 인공지능학과"></a></div>
+						<div class="main-visual-right">
+							
+								<h4>AI를 체계적으로 배울 수 있는 전문 교육과정과 최적의 교육환경 구성</h4>
+							
+							
+								<div class="main-visual-desc">
+									<p><span>전주대학교 인공지능학과</span></p>
+								</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="main-visual-item">
+						<div class="main-visual-left"><a class="main-visual-link" href="" target="_self" title="국가급 AI 인재양성을 위한 교육부 주관 『디지털 혁신공유대학사업』으로 선정된 전북권 유일 대학(학과)">
+							<img src="/_res/jj/ai/img/main/main-visual01.png" alt="전주대학교 인공지능학과"></a></div>
+						<div class="main-visual-right">
+							
+								<h4>국가급 AI 인재양성을 위한 교육부 주관 『디지털 혁신공유대학사업』으로 선정된 전북권 유일 대학(학과)</h4>
+							
+							
+								<div class="main-visual-desc">
+									<p><span>전주대학교 인공지능학과</span></p>
+								</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="swiper-pagination">
+			</div>
+		</div>
+		<div class="swiper-button-box">
+			<div class="swiper-button-next" title="next"></div>
+			<div class="swiper-button-prev" title="prev"></div>
+		</div>
+	</div>
+
+
+
+</div>
+<p>
+</p>
+			</div>
+		</div>
+		<div class="main-content-wrap01">
+			<div class="main-content-box01" id="cms-content">
+	
+		
+			
+		
+<div class="main-mini-wrap main-top">
+	<div class="main-mini-box main-mini-box01">
+		<div class="main-title">
+			<a href="/ai/community/notice.do">
+				<h3>공지사항</h3>
+			</a>
+		</div>
+
+		
+			
+			
+			
+			
+			
+			
+			
+		
+
+
+<ul class="mini-board-content">
+	
+		<li>
+			
+			
+			
+			
+			<a href="/ai/community/notice.do?mode=view&amp;articleNo=50571" title="2025학년도 학사일정(안내) 게시글 바로가기">
+				
+				2025학년도 학사일정(안내)
+			</a>
+			
+			
+			<p class="board-right">
+				2024-12-02
+			</p>
+		</li>
+	
+		<li>
+			
+			
+			
+			
+			<a href="/ai/community/notice.do?mode=view&amp;articleNo=50570" title="2024-2학기 수강바구니 기간 안내 게시글 바로가기">
+				
+				2024-2학기 수강바구니 기간 안내
+			</a>
+			
+			
+			<p class="board-right">
+				2024-07-17
+			</p>
+		</li>
+	
+		<li>
+			
+			
+			
+			
+			<a href="/ai/community/notice.do?mode=view&amp;articleNo=50569" title="2024학년도 신입생 오리엔테이션 안내 게시글 바로가기">
+				
+				2024학년도 신입생 오리엔테이션 안내
+			</a>
+			
+			
+			<p class="board-right">
+				2024-02-27
+			</p>
+		</li>
+	
+		<li>
+			
+			
+			
+			
+			<a href="/ai/community/notice.do?mode=view&amp;articleNo=50568" title="2024학년도 1학기 재학생 수강신청 기간 안내 게시글 바로가기">
+				
+				2024학년도 1학기 재학생 수강신청 기간 안내
+			</a>
+			
+			
+			<p class="board-right">
+				2024-02-06
+			</p>
+		</li>
+	
+		<li>
+			
+			
+			
+			
+			<a href="/ai/community/notice.do?mode=view&amp;articleNo=50567" title="2024학년도 1학기 수강바구니 안내 게시글 바로가기">
+				
+				2024학년도 1학기 수강바구니 안내
+			</a>
+			
+			
+			<p class="board-right">
+				2024-01-23
+			</p>
+		</li>
+	
+
+	
+
+</ul>
+		<a class="btn-more" href="/ai/community/notice.do" title="더보기">
+			<img src="/_res/jj/ai/img/common/ico-plus.png" alt="더보기">
+		</a>
+	</div>
+	<div class="main-mini-box main-mini-box02">
+		<div class="main-title"><a href="/ai/community/notice-ai.do" target="_blank">
+			<h3>AI혁신융합대학사업</h3></a></div>
+		
+			
+			
+			
+			
+			
+			
+			
+		
+
+
+<ul class="mini-board-content">
+	
+		<li>
+			
+			
+			
+			
+			<a href="/ai/community/notice-ai.do?mode=view&amp;articleNo=50636" title="[2024 독일 THU 서류 선발 결과안내] 인공지능혁신융합대학사업단 게시글 바로가기">
+				
+				[2024 독일 THU 서류 선발 결과안내] 인공지능혁신융합대학사업단
+			</a>
+			
+			
+			<p class="board-right">
+				2024-10-18
+			</p>
+		</li>
+	
+		<li>
+			
+			
+			
+			
+			<a href="/ai/community/notice-ai.do?mode=view&amp;articleNo=50635" title="[2024학년도 AICOSS-THU 글로벌 학생 프로그램 선발안내] 게시글 바로가기">
+				
+				[2024학년도 AICOSS-THU 글로벌 학생 프로그램 선발안내]
+			</a>
+			
+			
+			<p class="board-right">
+				2024-09-25
+			</p>
+		</li>
+	
+		<li>
+			
+			
+			
+			
+			<a href="/ai/community/notice-ai.do?mode=view&amp;articleNo=50634" title="전주대 인공지능혁신융합대학사업단,  AI 성과 우수 장학금 수여식 진행 게시글 바로가기">
+				
+				전주대 인공지능혁신융합대학사업단,  AI 성과 우수 장학금 수여식 진행
+			</a>
+			
+			
+			<p class="board-right">
+				2024-08-22
+			</p>
+		</li>
+	
+		<li>
+			
+			
+			
+			
+			<a href="/ai/community/notice-ai.do?mode=view&amp;articleNo=50633" title="AI 컨소시엄 대표 우수성과 수여[지산학매거진_직업계고 교원 미래역량 강화를 위한 AI 직무연수] 게시글 바로가기">
+				
+				AI 컨소시엄 대표 우수성과 수여[지산학매거진_직업계고 교원 미래역량 강화를 위한 AI 직무연수]
+			</a>
+			
+			
+			<p class="board-right">
+				2024-07-10
+			</p>
+		</li>
+	
+		<li>
+			
+			
+			
+			
+			<a href="/ai/community/notice-ai.do?mode=view&amp;articleNo=50632" title="Find your Course, COSS 혁신융합대학사업, AI, 인공지능컨소시엄을 소개합니다. 게시글 바로가기">
+				
+				Find your Course, COSS 혁신융합대학사업, AI, 인공지능컨소시엄을 소개합니다.
+			</a>
+			
+			
+			<p class="board-right">
+				2024-05-31
+			</p>
+		</li>
+	
+
+	
+
+</ul>
+		<a class="btn-more" href="/ai/community/notice-ai.do" title="더보기"><img src="/_res/jj/ai/img/common/ico-plus.png" alt="더보기"></a></div>
+</div>
+<div class="main-mini-wrap main-bot">
+	<div class="mini-slide-content">
+		<div class="mini-slide-left">
+			<h3>학과소식</h3>
+			<p class="slide-des">Photo Gallery</p>
+			<div class="btn-more"><a href="/ai/community/gallery.do" title="more">more <span><img src="/_res/jj/ai/img/common/ico-arrow-right.png" alt="more"></span></a></div>
+		</div>
+		
+			
+			 
+			 
+			 
+			 
+			 
+			 
+		
+<div class="mini-slide-right">
+	<div class="swiper mini-slide-main">
+		<div class="swiper-wrapper">
+			
+				
+				
+				
+				
+
+				
+
+				
+
+					
+						
+							
+							
+							
+						
+					
+				
+
+				
+				
+
+				<div class="swiper-slide mini-slide-box">
+					<a href="/ai/community/gallery.do?mode=view&amp;articleNo=50480" title="첨단 분야 경진대회 &#039;2024년 CO-SHOW&#039; 한국연구재단 이사장상 수상 게시글 바로가기">
+						<div class="slide-img"><img src="/app/board/attach/image/thumb_17632_1733102525000.do" alt="첨단 분야 경진대회 &#039;2024년 CO-SHOW&#039; 한국연구재단 이사장상 수상"></div></a>
+					<div class="slide-txt"><a href="/ai/community/gallery.do?mode=view&amp;articleNo=50480" title="첨단 분야 경진대회 &#039;2024년 CO-SHOW&#039; 한국연구재단 이사장상 수상 게시글 바로가기">
+						<h4 class="slide-title">첨단 분야 경진대회 &#039;2024년 CO-SHOW&#039; 한국연구재단 이사장상 수상</h4>
+						<p class="slide-title-sub">2024-12-02</p></a></div>
+				</div>
+
+			
+				
+				
+				
+				
+
+				
+
+				
+
+					
+						
+							
+							
+							
+						
+					
+				
+
+				
+				
+
+				<div class="swiper-slide mini-slide-box">
+					<a href="/ai/community/gallery.do?mode=view&amp;articleNo=50479" title="2024 빅데이터 분석 경진대회 수상 게시글 바로가기">
+						<div class="slide-img"><img src="/app/board/attach/image/thumb_17631_1730876508000.do" alt="2024 빅데이터 분석 경진대회 수상"></div></a>
+					<div class="slide-txt"><a href="/ai/community/gallery.do?mode=view&amp;articleNo=50479" title="2024 빅데이터 분석 경진대회 수상 게시글 바로가기">
+						<h4 class="slide-title">2024 빅데이터 분석 경진대회 수상</h4>
+						<p class="slide-title-sub">2024-11-06</p></a></div>
+				</div>
+
+			
+				
+				
+				
+				
+
+				
+
+				
+
+					
+						
+							
+							
+							
+						
+					
+				
+
+				
+				
+
+				<div class="swiper-slide mini-slide-box">
+					<a href="/ai/community/gallery.do?mode=view&amp;articleNo=50478" title="2024학년도 모악산 등산 게시글 바로가기">
+						<div class="slide-img"><img src="/app/board/attach/image/thumb_17630_1728547879000.do" alt="2024학년도 모악산 등산"></div></a>
+					<div class="slide-txt"><a href="/ai/community/gallery.do?mode=view&amp;articleNo=50478" title="2024학년도 모악산 등산 게시글 바로가기">
+						<h4 class="slide-title">2024학년도 모악산 등산</h4>
+						<p class="slide-title-sub">2024-10-10</p></a></div>
+				</div>
+
+			
+				
+				
+				
+				
+
+				
+
+				
+
+					
+						
+							
+							
+							
+						
+					
+				
+
+				
+				
+
+				<div class="swiper-slide mini-slide-box">
+					<a href="/ai/community/gallery.do?mode=view&amp;articleNo=50477" title="2024학년도 인공지능혁신융합대학사업단 성과 우수 장학금 수여식 게시글 바로가기">
+						<div class="slide-img"><img src="/app/board/attach/image/thumb_17629_1724915695000.do" alt="2024학년도 인공지능혁신융합대학사업단 성과 우수 장학금 수여식"></div></a>
+					<div class="slide-txt"><a href="/ai/community/gallery.do?mode=view&amp;articleNo=50477" title="2024학년도 인공지능혁신융합대학사업단 성과 우수 장학금 수여식 게시글 바로가기">
+						<h4 class="slide-title">2024학년도 인공지능혁신융합대학사업단 성과 우수 장학금 수여식</h4>
+						<p class="slide-title-sub">2024-08-29</p></a></div>
+				</div>
+
+			
+				
+				
+				
+				
+
+				
+
+				
+
+					
+						
+							
+							
+							
+						
+					
+				
+
+				
+				
+
+				<div class="swiper-slide mini-slide-box">
+					<a href="/ai/community/gallery.do?mode=view&amp;articleNo=50476" title="고창 영선고-전주대, ‘인공지능분야 인재양성’ 업무협약 게시글 바로가기">
+						<div class="slide-img"><img src="/app/board/attach/image/thumb_17628_1724114447000.do" alt="고창 영선고-전주대, ‘인공지능분야 인재양성’ 업무협약"></div></a>
+					<div class="slide-txt"><a href="/ai/community/gallery.do?mode=view&amp;articleNo=50476" title="고창 영선고-전주대, ‘인공지능분야 인재양성’ 업무협약 게시글 바로가기">
+						<h4 class="slide-title">고창 영선고-전주대, ‘인공지능분야 인재양성’ 업무협약</h4>
+						<p class="slide-title-sub">2024-08-20</p></a></div>
+				</div>
+
+			
+
+			
+		</div>
+		<div class="swiper-scrollbar-01">
+		</div>
+		<div class="slide-arrow">
+			<div class="swiper-button-prev2"><img src="/_res/jj/history/img/common/ico-gallery-left.png" alt="icon prev"></div>
+			<div class="swiper-pagination-unique">
+			</div>
+			<div class="swiper-button-next2"><img src="/_res/jj/history/img/common/ico-gallery-right.png" alt="icon next"></div>
+		</div>
+	</div>
+</div>
+	
+	</div>
+</div>
+	
+	
+	
+	
+</div>
+		</div>
+		<div class="main-content-wrap02">
+			<div class="main-content-box02 cms-sub-content" data-cms-sub-content="BDdudkTyGduE">
+					
+<div class="wrap-image">
+	<div class="heading-txt">
+		<h3>전주대학교 인공지능학과</h3>
+		<p>창의적 융합 엔지니어 양성 Since 1988</p>
+	</div>
+	<ul>
+		<li><a href="/ai/info/intro.do" title="학과소개 예약">
+			<div class="images"><img src="/_res/jj/ai/img/main/img-category-01.png" alt="image 학과소개"></div>
+			<div class="content">
+				<div class="inner">
+					<div class="icon"><img src="/_res/jj/ai/img/common/ico-items-01.png" alt="icon"></div>
+					<ul>
+						<li>학과소개</li>
+					</ul>
+				</div>
+			</div></a></li>
+		<li><a href="/ai/info/faculty.do" title="교수진소개 예약">
+			<div class="images"><img src="/_res/jj/ai/img/main/img-category-02.png" alt="image 교수진소개"></div>
+			<div class="content">
+				<div class="inner">
+					<div class="icon"><img src="/_res/jj/ai/img/common/ico-items-02.png" alt="icon"></div>
+					<ul>
+						<li>교수진소개</li>
+					</ul>
+				</div>
+			</div></a></li>
+		<li><a href="/ai/academic/tab-1.do" title="전공교과소개 예약">
+			<div class="images"><img src="/_res/jj/ai/img/main/img-category-03.png" alt="image 전공교과소개"></div>
+			<div class="content">
+				<div class="inner">
+					<div class="icon"><img src="/_res/jj/ai/img/common/ico-items-03.png" alt="icon"></div>
+					<ul>
+						<li>전공교과소개</li>
+					</ul>
+				</div>
+			</div></a></li>
+		<li><a href="/ai/freshman/faq.do" title="주요 질의 및 답변 예약">
+			<div class="images"><img src="/_res/jj/ai/img/main/img-category-03.png" alt="image 주요 질의 및 답변"></div>
+			<div class="content">
+				<div class="inner">
+					<div class="icon"><img src="/_res/jj/ai/img/common/ico-items-03.png" alt="icon"></div>
+					<ul>
+						<li>주요 질의 및 답변</li>
+					</ul>
+				</div>
+			</div></a></li>
+	</ul>
+</div>
+
+			</div>
+		</div>
+		<div class="main-content-wrap03">
+			<div class="main-content-box03 cms-sub-content" data-cms-sub-content="xfrqBgXyAfid">
+					
+<div class="main-mini-content">
+	<div class="wrap-sns">
+
+	
+
+<div class="box-sns-left">
+	<h3>전주대SNS</h3>
+	<p>JJU Social NetworkS</p>
+	<div class="tag-group">
+		<div>
+			
+			
+			<span><a href="#" target="_blank" title="#AI혁신융합대학사업 바로가기">#AI혁신융합대학사업</a></span>
+		
+			
+			
+			<span><a href="#" target="_blank" title="#인공지능학과 바로가기">#인공지능학과</a></span>
+		
+			
+			
+			<span><a href="#" target="_blank" title="#주요사업 바로가기">#주요사업</a></span>
+		
+			
+			
+			<span><a href="#" target="_blank" title="#홍보 바로가기">#홍보</a></span>
+		
+			
+			
+			<span><a href="#" target="_blank" title="#다양한활동 바로가기">#다양한활동</a></span>
+		
+			
+		</div>
+	</div>
+	<div class="icon-group">
+	
+    
+        
+         <a href="https://www.instagram.com/jju_ai" target="_blank" title="instagram" class="instagram"><img src="/_res/jj/temp04/img/common/ico-instagram.png" alt="icon instagram" width="32" height="32"></a>
+			
+				 <a href="https://www.instagram.com/jj_aicoss" target="_blank" title="instagram" class="instagram"><img src="/_res/jj/temp04/img/common/ico-instagram.png" alt="icon instagram" width="32" height="32"></a>
+			
+        
+        
+		
+		
+    
+
+	
+    
+        
+        
+          <a href="https://www.facebook.com/people/JJ-AI/pfbid0cCUJSFfJapEz9MLJBYmAJx1CZwhS9y61vb412Ua4gsVVwg2qM8ZxiTXfFcp2ZQ9Al/?mibextid=ZbWKwL" target="_blank" title="facebook" class="facebook"><img src="/_res/jj/temp04/img/common/ico-facebook.png" alt="icon facebook" width="32" height="32"></a>
+			
+        
+		
+		
+    
+
+	
+    
+        
+        
+		
+		
+          <a href="https://blog.naver.com/jj_ai" target="_blank" title="blog" class="blog"><img src="/_res/jj/temp04/img/common/ico-blog.png" alt="icon blog" width="32" height="32"></a>
+			
+        
+    
+
+	
+    
+        
+        
+		
+			<a href="https://www.youtube.com/channel/UCo0tMvi3RXluhX2AHHcmUcg" target="_blank" title="youtube" class="youtube"><img src="/_res/jj/temp04/img/common/ico-youtube.png" alt="icon youtube" width="32" height="32"></a>
+			
+				<a href="https://www.youtube.com/channel/UCSbbkPNHAks3U0UYSwP-65Q" target="_blank" title="youtube" class="youtube"><img src="/_res/jj/temp04/img/common/ico-youtube.png" alt="icon instagram" width="32" height="32"></a>
+			
+        
+		
+    
+
+	
+		</div>
+</div>
+
+
+		
+		<div class="swiper carousel-sns">
+			<div class="swiper-wrapper">
+				
+					
+				
+
+	
+		<div class="swiper-slide">
+			<div class="sns-slider">
+				<a href="" target="_blank" title=" 새창열림">
+						
+					
+						
+						
+						
+							
+						
+					
+					<div class="icon icon-1"><img src="/_res/jj/temp04/img/common/ico-.png" alt="icon " width="32" height="32">
+					<p></p>
+					</div>
+					<div class="box-slider">
+						<div class="image"><img src="" alt=""></div>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</a>
+			</div>
+		</div>
+	
+
+
+			</div>
+			<div class="swiper-scrollbar-02">
+			</div>
+		</div>
+	</div>
+</div>
+
+			</div>
+		</div>
+		<div class="main-content-wrap04">
+			<div class="main-content-box04 cms-sub-content" data-cms-sub-content="HsllGROHDuuu">
+					
+
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="top-footer-wrap">
+			<div class="top-footer-box" data-cms-content="/ai/_content/footer-top">
+				
+					
+				
+<div class="footer-util-box">
+	<ul>
+		<li><a class="active" href="#a" target="_blank" title="개인정보 처리방침">개인정보처리방침</a></li>
+		<li><a href="#a" target="_blank" title="이메일무단수집거부">이메일무단수집거부</a></li>
+		<li><a href="#a" target="_blank" title="영상정보처리기기 운영 · 관리방침">영상정보처리기기운영 &middot; 관리방침</a></li>
+		<li>
+			<div class="footer-related-box">
+				<div class="related-box-wrap"><a class="related-site-title" href="#a" title="교내 주요 서비스">교내 주요 서비스</a>
+					<ul class="related-site">
+						<li><a class="item" href="#a" target="_blank" title="바로가기">전주대학교</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+			</div>
+		</div>
+		<div class="bottom-footer-wrap">
+			<div class="bottom-footer-box" data-cms-content="/ai/_content/footer-bottom">
+				
+					
+				
+<div class="footer-content">
+	<div class="footer-inner-box">
+		<div class="footer-logo"><img src="/_res/jj/ai/img/common/logo-w.png" alt="전주대학교"></div>
+		<div class="footer-info-box">
+			<div class="info-box">
+				<div class="info01">홈페이지 관리 담당: 소프트웨어융합대학 행정지원실</div>
+				<div class="info02">(55069) 전북특별자치도 전주시 완산구 천잠로 303 전주대학교공학2관 202호 소프트웨어융합대학 행정지원실<br><span class="sp-01">TEL: <a href="tel:063-220-2040" title="전화걸기">&nbsp;063-220-2040</a></span></div>
+				<div class="info03">Copyrights (C)2020 JEONJU University. ALL RIGHTS RESERVED.</div>
+			</div>
+		</div>
+		<div class="footer-related-box">
+			<div class="sns-box">
+				<ul>
+					<li class="in"><a href="https://www.instagram.com/jju_ai" target="_blank" title="Instagram"><span class="hide">Instagram</span></a></li>
+					<li class="yt"><a href="https://www.youtube.com/channel/UCo0tMvi3RXluhX2AHHcmUcg" target="_blank" title="Youtube"><span class="hide">Youtube</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+
+</body>
+</html>
+			

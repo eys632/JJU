@@ -1,0 +1,12 @@
+Passenger ID: PassengerId
+Survival (1: Survived, 0: Died): Survived
+Passenger Class: Pclass
+Name: Name
+Sex: Sex
+Age: Age
+Number of Siblings/Spouses Aboard: SibSp
+Number of Parents/Children Aboard: Parch
+Ticket Number: Ticket
+Fare: Fare
+Cabin: Cabin
+Port of Embarkation: Embarked

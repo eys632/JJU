@@ -1,0 +1,40 @@
+
+<!doctype html>
+<!--(if target build)>
+    <html ng-app="angular" manifest="{{manifest}}.manifest">
+<!(endif)-->
+<!--(if target local)> -->
+<html lang="ko">
+<!--<!(endif)-->
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQKJ9JE3BK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PQKJ9JE3BK');
+    </script>
+    <title>전주대학교 도서관</title>
+    <meta charset="utf-8">
+    <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./assets/css/ui.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css?sv=2024.9.19.10">
+    <link rel="icon" href="./assets/images/jj/favicon.ico" type="image/x-icon">
+
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fb4c7dadec790daffaa64e2aacf06a03"></script> -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ef0573dc49cdc287dfc5d751f8cd3578"></script>
+</head>
+
+<body data-ng-controller="GlobalController">
+<div data-ui-view class="ikc-pyxis-wrap"></div>
+
+<script src="require.js"></script>
+
+<script src="main.js?v=2024.9.19.10"></script>
+
+</body>
+
+</html>

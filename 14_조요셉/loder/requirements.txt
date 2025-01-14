@@ -1,0 +1,9 @@
+langchain_core
+RecursiveCharacterTextSplitter
+langchain_openai
+langchain_community
+unsturctured
+datetime
+seaborn
+matplotlib
+tqdm

@@ -5,6 +5,7 @@ from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import PromptTemplate
 from pydantic import BaseModel, Field
 from langchain_core.messages import AIMessageChunk
+import json
 
 # 환경 변수 로드
 load_dotenv()
@@ -44,12 +45,12 @@ def stream_response(response, return_output=False):
 
 # Pydantic 데이터 모델 정의
 class EmailSummary(BaseModel):
-    person: str = Field(description="메일을 보낸 사람")
-    email: str = Field(description="메일을 보낸 사람의 이메일 주소")
-    subject: str = Field(description="메일 제목")
-    summary: str = Field(description="메일 본문을 요약한 텍스트")
-    Is_Spam: str = Field(description="Is the email or not, 만약 스팸이면 '스팸', 아니면 'no spam'이라고 입력해.")
-    date: str = Field(description="메일 본문에 언급된 미팅 날짜와 시간")
+    From : str = Field(description="메일을 보낸 사람의 이름")
+    Sender_email: str = Field(description="메일을 보낸 사람의 이메일 주소")
+    Deliver_email: str = Field(description="메일을 받은 사람의 이메일 주소")
+    Subject: str = Field(description="메일 제목")
+    content: str = Field(description="메일의 내용")
+    Is_spam: str = Field(description="스팸 여부 ('스팸' 또는 'no spam')")
 
 # PydanticOutputParser 생성
 parser = PydanticOutputParser(pydantic_object=EmailSummary)
@@ -91,35 +92,42 @@ response = chain.invoke(
 # 결과 출력
 print("\n[요약 결과]")
 print(response)
-print("\n")
 
-# print("\n[person]")
-# print(response.person)
+# 회신 프롬프트 템플릿 정의
+reply_prompt = PromptTemplate.from_template(
+    """
+    You are a helpful assistant. Please write a reply email in KOREAN based on the following summarized email content.
 
-# print("\n[email]")
-# print(response.email)
+    SUMMARY:
+    {summary}
 
-# 결과를 MD 파일로 저장하는 코드
+    Please ensure the tone of the email is polite and professional.
+    """
+)
 
-# MD 파일 저장 경로와 이름 설정
-output_dir = os.path.dirname(r"10_여명구\03_OutputParser\E-MAIL.txt")
-output_path = os.path.join(output_dir, "REPLY.md")
+# 요약 내용 포함하여 프롬프트 생성
+reply_chain = reply_prompt | llm
 
-# MD 파일로 저장
-md_content = f"""
-# 이메일 요약 결과
+# 체인 실행 및 회신 이메일 생성
+reply_email = reply_chain.invoke(
+    {
+        "summary": response
+    }
+)
 
-## 보낸 사람
-- **이름**: {response.person}
-- **이메일**: {response.email}
+# 회신 이메일을 JSON 형식에 맞게 매핑
+reply_email_content = {
+    "To": response.Deliver_email if hasattr(response, 'Deliver_email') else "",
+    "From": response.Sender_email if hasattr(response, 'Sender_email') else "",
+    "Subject": f"RE: {response.Subject}" if hasattr(response, 'Subject') else "",
+    "Body": reply_email.content if hasattr(reply_email, 'content') else str(reply_email)
+}
 
-## 이메일 정보
-- **제목**: {response.subject}
-- **요약**: {response.summary}
-- **스팸 여부**: {response.Is_Spam}
-- **날짜**: {response.date}
-"""
+# 같은 폴더 내에 JSON 파일로 저장
+output_path = r"10_여명구\03_OutputParser\Reply_structured.json"
+with open(output_path, 'w', encoding='utf-8') as json_file:
+    json.dump(reply_email_content, json_file, ensure_ascii=False, indent=4)
 
-# 파일 생성 및 저장
-with open(output_path, "w", encoding="utf-8") as md_file:
-    md_file.write(md_content)
+# 회신 이메일 출력
+print("\n[회신 이메일]")
+print(reply_email_content)

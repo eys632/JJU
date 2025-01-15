@@ -1,0 +1,7 @@
+langchain
+langchain-core
+langchain-openai
+openai
+pydantic
+python-dotenv
+unittest2

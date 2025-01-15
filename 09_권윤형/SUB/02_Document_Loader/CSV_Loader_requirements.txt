@@ -1,0 +1,2 @@
+unstructured
+langchain_community

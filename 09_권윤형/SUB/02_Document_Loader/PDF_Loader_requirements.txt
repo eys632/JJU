@@ -1,0 +1,5 @@
+langchain_community
+pypdf
+pymupdf
+PyPDFium2
+pdfminer.six

@@ -1,0 +1,690 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>이력서</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="16d4ec43-dd19-80ef-bf13-e2fd0417dcb7" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📋</span></div><h1 class="page-title">이력서</h1><p class="page-description"></p></header><div class="page-body"><div id="16d4ec43-dd19-811e-865e-eb9208b63c43" class="column-list"><div id="16d4ec43-dd19-8172-acbc-f4991d56b65d" style="width:52.941176470588246%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="16d4ec43-dd19-81ee-bab9-fc0b49cdf89f"><div style="font-size:1.5em"><span class="icon">👋</span></div><div style="width:100%">React 프론트엔드 개발, Go 백엔드 개발 등에 숙련된 <strong>10년 차 소프트웨어 엔지니어</strong>입니다. 현재 <strong>서울</strong>에 있습니다.</div></figure><p id="16d4ec43-dd19-812b-8e7c-ce483adc856e" class="">
+</p></div><div id="16d4ec43-dd19-81a5-9cfd-df2a0427bc6d" style="width:47.05882352941177%" class="column"><h3 id="16d4ec43-dd19-8100-aa6b-c3ab92e7c7f0" class="">연락처</h3><p id="16d4ec43-dd19-8181-909f-cd639b8b6cfd" class=""><a href="mailto:adalovelace@mail.com">📧 adalovelace@mail.com</a></p><p id="16d4ec43-dd19-812d-bc59-d0c297ed70bf" class=""><a href="http://twitter.com/notionhq">🐦 twitter.com/adalovelace</a></p><p id="16d4ec43-dd19-8187-809c-e2348275c4e8" class=""><a href="https://www.linkedin.com/company/notionhq/mycompany/">🔗 linkedin.com/in/adalovelace</a></p><p id="16d4ec43-dd19-81a8-a2da-eada4fe3e1e0" class=""><a href="https://github.com/makenotion">👾 github.com/adalovelace</a></p></div></div><h1 id="16d4ec43-dd19-81d2-bf2e-cf17fb6c3f4f" class="">경력</h1><h3 id="16d4ec43-dd19-817a-8f80-d67e07444c57" class="">소프트웨어 엔지니어<strong> II</strong></h3><p id="16d4ec43-dd19-81d4-be59-fb41305fe3f2" class="block-color-gray"><strong>K사</strong><em>, 서울시 강남구 – (2019년 12월 - 현재)</em></p><ul id="16d4ec43-dd19-81eb-8a38-c4b7f5bdf9b3" class="bulleted-list"><li style="list-style-type:disc">통합과 개발자 툴을 담당하는 팀의 풀스택 엔지니어로 K 플랫폼의 개발자 경험을 정의하고 개선하는 일을 담당합니다.</li></ul><ul id="16d4ec43-dd19-8199-b75b-ec3bfad9eb6e" class="bulleted-list"><li style="list-style-type:disc">초기에는 프론트엔드에 중점을 두고 React, Redux, Styled Components, Jest 등을 사용해 OAuth 구현, 개인 토큰 및 Webhook을 위한 프론트엔드 재구축을 주도했습니다.</li></ul><ul id="16d4ec43-dd19-81d7-8fa1-d268794e2ac8" class="bulleted-list"><li style="list-style-type:disc">PostgreSQL과 Node.js(Express/Hapi) 및 GoLang으로 구축된 백엔드 웹훅 및 통합 개발에 참여했습니다.</li></ul><ul id="16d4ec43-dd19-8104-93d1-ce9f5271ec27" class="bulleted-list"><li style="list-style-type:disc">팀에 합류한 초급 개발자 코치로서 페어 프로그래밍과 몹 프로그래밍 세션을 진행하고, 시니어 엔지니어와 함께 로드맵 및 기능 우선순위를 정의했습니다.</li></ul><h3 id="16d4ec43-dd19-813b-958f-e00308229794" class="">QA 자동화 엔지니어</h3><p id="16d4ec43-dd19-816e-9a40-c890ffefe34a" class="block-color-gray"><strong>J사</strong><em>, 서울시 강남구  – (2014년 5월 - 2019년 10월)</em></p><ul id="16d4ec43-dd19-8180-b1e2-c747e36b79b4" class="bulleted-list"><li style="list-style-type:disc">Node.js, Mocha, Chai와 Behat 및 PHP를 사용해 회사의 핵심 API 및 결제 API를 위한 자동 인수/계약 테스트를 구축했습니다. API 설계 및 기본 로직의 일관성을 유지하기 위해 새로운 기능 개발을 검토하고 검증했습니다.</li></ul><ul id="16d4ec43-dd19-81cc-a6fc-f9b869c2522a" class="bulleted-list"><li style="list-style-type:disc">기술 분야에서의 다양성과 여성(Diversity and Women in Tech) 이니셔티브에 적극적으로 참여하면서 정기적인 전사 미팅과 다양한 제안을 추진했습니다. 직장 동료의 강연 제안서 작성을 도왔습니다.</li></ul><h3 id="16d4ec43-dd19-817d-a7fd-d53722eedff6" class="">소프트웨어 테스터</h3><p id="16d4ec43-dd19-81d7-b3c3-d358cbda4235" class="block-color-gray"><strong>C사</strong><em>, 대전광역시 유성구 – (2012년 8월 - 2014년 4월)</em></p><ul id="16d4ec43-dd19-817a-b1c7-e0ef66935ec3" class="bulleted-list"><li style="list-style-type:disc">선적 컨테이너 터미널 및 물류 관리 웹 앱의 기능 테스트를 계획하고 실행했습니다.</li></ul><ul id="16d4ec43-dd19-81a5-8770-e831983e3f96" class="bulleted-list"><li style="list-style-type:disc">새로운 클라이언트 요구 사항을 평가하고, 사용 사례(use case)를 정의했으며, 로컬 테스트 환경을 유지보수했습니다.</li></ul><h3 id="16d4ec43-dd19-8144-acf2-d10df89e44aa" class=""><strong>QA 분석가</strong></h3><p id="16d4ec43-dd19-81a5-ad38-e464d27a6637" class="block-color-gray"><strong>B사</strong><em>, 서울시 강남구 – (2011년 4월 - 2012년 6월)</em></p><ul id="16d4ec43-dd19-81a7-8b22-ecd32517640a" class="bulleted-list"><li style="list-style-type:disc">광고대행사 B에서 다양하고 복잡한 프로젝트의 QA를 혼자 수행했습니다. 여러 완성차 고객사의 웹사이트 내 툴과 애플리케이션의 카피, 사용자 흐름 및 기능을 검증하고 탐색적 테스트를 수행했습니다.</li></ul><ul id="16d4ec43-dd19-81d2-945b-c1536433ba59" class="bulleted-list"><li style="list-style-type:disc">PM 및 개발자 팀과 원격으로 커뮤니케이션하고, 견적 및 우선순위 지정을 담당했습니다.</li></ul><p id="16d4ec43-dd19-8101-8810-c70add7f7185" class="">
+</p><hr id="16d4ec43-dd19-8150-bee3-ea4b87bce923"/><h1 id="16d4ec43-dd19-8172-b7bd-c0f055c70389" class="">기술</h1><h3 id="16d4ec43-dd19-81f1-bb54-c9ee8dc4e1de" class="">Javascript</h3><p id="16d4ec43-dd19-8105-b95e-e8fc15ac1566" class="">저의 주력 언어 입니다. 6년 이상 React와 Redux를 사용해 프론트엔드 개발, Node, Express, Hapi.js로 백엔드 API 개발, Mocha와 Jest로 자동화 테스트도 진행했습니다.</p><h3 id="16d4ec43-dd19-816a-bc60-eb9ea05d323a" class="">Golang</h3><p id="16d4ec43-dd19-8151-a715-c23157bd0875" class="">최근에 배우기 시작했고 어렵지만 재미있었습니다. 아직 능숙하지는 않지만 직접 몇몇 기능을 만들어보고 픽스를 적용했습니다.</p><h3 id="16d4ec43-dd19-816e-98a6-e6df1c2653db" class="">기술 문서 작성</h3><p id="16d4ec43-dd19-8145-b051-f7048b0babc5" class="">기술적인 주제에 대해 글 쓰는 것을 좋아하고 잘 합니다. 간단한 용어로 설명해 사람들이 쉽게 이해하도록 하는 것에 보람을 느낍니다.</p><p id="16d4ec43-dd19-818c-bb14-e0e563ebd423" class="">
+</p><hr id="16d4ec43-dd19-8102-b4f9-f2af7c6c83d2"/><h1 id="16d4ec43-dd19-8183-873c-ff5debd06e31" class="">언어</h1><h3 id="16d4ec43-dd19-816d-a100-de7887ab3a26" class="">한국어 🇰🇷</h3><p id="16d4ec43-dd19-81dd-b7e5-eaf2d09f4ea6" class="">원어민</p><h3 id="16d4ec43-dd19-818e-8baf-e65fbd680002" class="">영어 🇺🇸</h3><p id="16d4ec43-dd19-8159-beaf-fca1b310f78c" class="">상급 - TOEIC 940</p><p id="16d4ec43-dd19-8138-8798-e2b2bba085e4" class="">
+</p><hr id="16d4ec43-dd19-81ef-b331-d2eb00e1d55a"/><h1 id="16d4ec43-dd19-8186-a403-da94ca8e7dd1" class="">기사와 강연</h1><ul id="16d4ec43-dd19-81e1-bc5a-cf50a8797ae0" class="bulleted-list"><li style="list-style-type:disc"><a href="https://dev.to/anabella/dancing-with-oauth-emp">OAuth와 춤을: 단계별 가이드</a></li></ul><ul id="16d4ec43-dd19-8193-a10b-f5a32673b808" class="bulleted-list"><li style="list-style-type:disc"><a href="https://dev.to/anabella/a-peep-beneath-the-hood-of-passportjs-oauth-flow-eb5">PassportJS의 OAuth 흐름 들여다보기</a></li></ul><ul id="16d4ec43-dd19-81ff-9cf1-c9911dc6dd33" class="bulleted-list"><li style="list-style-type:disc"><a href="https://dev.to/anabella/why-do-great-developers-love-writing-tests-1o6j">왜 훌륭한 개발자는 필기 시험을 좋아할까?</a></li></ul><ul id="16d4ec43-dd19-8197-aa35-c58f21bd93b6" class="bulleted-list"><li style="list-style-type:disc"><a href="https://dev.to/anabella/a-junior-a-mid-and-a-senior-dev-walk-into-a-bar-414f">초급, 중급, 시니어 개발자가 바에 들어가는데...</a></li></ul><ul id="16d4ec43-dd19-81cd-8b42-f67abf70b7a8" class="bulleted-list"><li style="list-style-type:disc"><a href="https://dev.to/typeform/the-self-confidence-toolbox-for-job-interviews-4k3j">면접을 위한 자신감 도구 상자</a></li></ul><ul id="16d4ec43-dd19-8146-95b9-e29888d9c943" class="bulleted-list"><li style="list-style-type:disc"><a href="https://dev.to/anabella/understanding-the-different-pairings-of-css-position-flavours-5855">CSS 포지션 버전의 다양한 페어링 이해하기</a></li></ul><ul id="16d4ec43-dd19-81ac-9c70-f4a75b0f8eaf" class="bulleted-list"><li style="list-style-type:disc"><a href="https://dev.to/anabella/figuring-out-css-floats-with-sushi-recipes-2c5o">두 가지 초밥 조리법으로 CSS 플로팅 파악하기</a></li></ul><p id="16d4ec43-dd19-810c-a19d-d991b9f4ae80" class="">🗣 <strong>강연: </strong><a href="https://www.youtube.com/watch?v=ec2NBIoaUCM&amp;t=1s">OAuth Dance 배우기</a> (APIdays Paris Dec 2018)</p><p id="16d4ec43-dd19-811c-a84c-e96683c04517" class="">
+</p><hr id="16d4ec43-dd19-8170-a49f-e8c13b6588d1"/><h1 id="16d4ec43-dd19-8196-afa6-dd10ea9d395c" class="">학력</h1><h2 id="16d4ec43-dd19-81bb-b6f1-dd9952c915a6" class=""><strong>컴퓨터 공학 학사</strong></h2><p id="16d4ec43-dd19-8134-a67d-d596645371d8" class="block-color-gray">2017년 졸업</p><p id="16d4ec43-dd19-813f-8e49-f90e635414e7" class="">ㅇㅇ대학교 - 서울특별시</p><p id="16d4ec43-dd19-8165-84db-d9c28ea02420" class="">
+</p><hr id="16d4ec43-dd19-8132-ab42-e3f41bc5f45f"/><h1 id="16d4ec43-dd19-8198-b60e-fb0cb3779012" class="">연락처</h1><p id="16d4ec43-dd19-8138-8079-d4b4db06dd76" class=""><a href="mailto:adalovelace@mail.com">📧 adalovelace@mail.com</a></p><p id="16d4ec43-dd19-814d-ae4e-eabc3848f4b4" class=""><a href="http://twitter.com/notionhq">🐦 twitter.com/adalovelace</a></p><p id="16d4ec43-dd19-8172-b98c-f255799f70a6" class=""><a href="https://www.linkedin.com/company/notionhq/mycompany/">🔗 linkedin.com/in/adalovelace</a></p><p id="16d4ec43-dd19-8171-94d2-d242ffe4aedf" class=""><a href="https://github.com/makenotion">👾 github.com/adalovelace</a></p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

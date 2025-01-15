@@ -1,0 +1,50 @@
+from langchain_text_splitters import MarkdownHeaderTextSplitter
+
+# 파일 경로 지정
+file_path = "C:\Users\Administrator\Desktop\NIE 겨울 특강\JJU\20241231\이력서.md"
+
+# 파일 읽기
+with open(file_path, "r", encoding="utf-8") as file:
+    markdown_document = file.read()
+
+    headers_to_split_on = [  # 문서를 분할할 헤더 레벨과 해당 레벨의 이름을 정의합니다.
+    (
+        "#",
+        "Header 1",
+    ),  # 헤더 레벨 1은 '#'로 표시되며, 'Header 1'이라는 이름을 가집니다.
+    (
+        "##",
+        "Header 2",
+    ),  # 헤더 레벨 2는 '##'로 표시되며, 'Header 2'라는 이름을 가집니다.
+    (
+        "###",
+        "Header 3",
+    ),  # 헤더 레벨 3은 '###'로 표시되며, 'Header 3'이라는 이름을 가집니다.
+]
+
+# 마크다운 헤더를 기준으로 텍스트를 분할하는 MarkdownHeaderTextSplitter 객체를 생성합니다.
+markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
+
+
+
+# markdown_document를 헤더를 기준으로 분할하여 md_header_splits에 저장합니다.
+md_header_splits = markdown_splitter.split_text(markdown_document)
+
+# 분할된 결과를 출력합니다.
+for header in md_header_splits:
+    print(f"{header.page_content}")
+    print(f"{header.metadata}", end="\n=====================\n")
+
+  arkdown_splitter = MarkdownHeaderTextSplitter(
+      # 분할할 헤더를 지정합니다.
+      headers_to_split_on=headers_to_split_on,
+      # 헤더를 제거하지 않도록 설정합니다.
+      strip_headers=True,
+  )
+  # 마크다운 문서를 헤더를 기준으로 분할합니다.
+  md_header_splits = markdown_splitter.split_text(markdown_document)
+  # 분할된 결과를 출력합니다.
+  for header in md_header_splits:
+      print(f"{header.page_content}")
+      print(f"{header.metadata}", end="\n=====================\n")
+      

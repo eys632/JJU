@@ -1,0 +1,4 @@
+langchain-core==0.3.29
+langchain-openai==0.3.0
+langchain-teddynote==0.3.41
+python-dotenv==1.0.1

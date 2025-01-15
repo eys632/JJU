@@ -1,0 +1,5 @@
+praisonaiagents
+duckduckgo_search
+
+langchain_openai
+langchain_core

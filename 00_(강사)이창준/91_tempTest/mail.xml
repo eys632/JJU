@@ -1,0 +1,232 @@
+Delivered-To: yeowoon72@inhatc.ac.kr
+Received: by 2002:a05:7301:3809:b0:14b:9969:5bf8 with SMTP id jy9csp1525723dyb;
+        Thu, 9 Jan 2025 20:07:06 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IHhyYNAApbK+OgCp1L9tbTSwpK2DjWkW3VRbtS6rqCKC3TyAoj273iVojOQn8vslPGqE/yS
+X-Received: by 2002:a05:6a21:1506:b0:1e2:5cf:c8d6 with SMTP id adf61e73a8af0-1e88d2d5ebfmr16162047637.36.1736482026690;
+        Thu, 09 Jan 2025 20:07:06 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1736482026; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Lqh1CKEX8gvudTTlQAh+XLJynByZWdYMoXNawsMJbudYd9IcftL5ByiT8bCYjGyIlJ
+         VpvAGvC3fuUYHzqWwHUvQlyOHgYHD7UHp2LnrzM9p9FqegylN+oOLlLrkr4BevUIkMEY
+         URsKfTabWZAYFLPEAlHsIQWmhL/xs6oIE3hzt6H0+vXo0wNHFD9uKiQPNLUdxVgG9Wy/
+         C9tZ3TgBO6buj8poRKZG+Y0l/L+s3giyEVmmK/5nIBedKBu4MrHaDEAomTqwl6Ld1V4D
+         Z3WzrpxQ3ze4dj1PN6tKOaHnTz/5IkDDilDBPVaFFZsD+mTJo2/qGURPCOFz9gG4m++z
+         ZEQw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=content-transfer-encoding:message-id:mime-version:precedence
+         :feedback-id:list-unsubscribe:date:subject:reply-to:to:from
+         :dkim-signature;
+        bh=TT5zWhr6NgtA7TdLkI3wJtpW3JjnVmaq8PQUs4Bb9sY=;
+        fh=OPVgWRPZhPtw6cOHCl3Fsm9Ek7S+niAGe8jn98XpOYE=;
+        b=Q7FrSYb2Ysb0+VFihRvR6cKdn0NHear4EIullgEGKKTkXYLicQ7NpDD4VOwTqD85Ag
+         Dqp7cXTnyGgBs47SkTe4S6FyMkOZhbuQMMVXe9bNmFOubDlPlZwxLnokDFdEt7NXMrQz
+         b1bjIGI2Gd/tmVnNQnszPs5bMf6mE/wk/jtbH6Wn2FXsJGGen+PcClarb6PstmEfgpgo
+         w74DFi0MD4jNAAYQVk7ae+Yqm8MtmC52gyI5qxzfGzkDSFxz8cuepNLvAarT3bBBdhGo
+         fa1ivqGa31yhg5mdIQVirDOG4JPcuowEeFjVHgJJplutWSfdOCLLN6K9JtYwRCRre7gn
+         Iz9Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@postman.co.kr header.s=sender header.b=e2neNAVE;
+       spf=pass (google.com: domain of return_postman0110130101@return.postman.co.kr designates 119.207.76.47 as permitted sender) smtp.mailfrom=return_postman0110130101@return.postman.co.kr
+Return-Path: <return_postman0110130101@return.postman.co.kr>
+Received: from send47.postman.co.kr (send47.postman.co.kr. [119.207.76.47])
+        by mx.google.com with SMTP id 41be03b00d2f7-a319b06b47esi3302564a12.189.2025.01.09.20.07.00
+        for <yeowoon72@inhatc.ac.kr>;
+        Thu, 09 Jan 2025 20:07:06 -0800 (PST)
+Received-SPF: pass (google.com: domain of return_postman0110130101@return.postman.co.kr designates 119.207.76.47 as permitted sender) client-ip=119.207.76.47;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@postman.co.kr header.s=sender header.b=e2neNAVE;
+       spf=pass (google.com: domain of return_postman0110130101@return.postman.co.kr designates 119.207.76.47 as permitted sender) smtp.mailfrom=return_postman0110130101@return.postman.co.kr
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1736482010;
+	s=sender; d=postman.co.kr;
+	h=From:To:Reply-to:Subject:Date:List-Unsubscribe:Feedback-Id:Precedence:MIME-Version:Content-Type:Content-Transfer-Encoding;
+	bh=TT5zWhr6NgtA7TdLkI3wJtpW3JjnVmaq8PQUs4Bb9sY=;
+	b=e2neNAVEiHjqMiKMXyif/VsATkvOxfpZ7tM63zrWRr7s2GW0HoHXgx8uRkQxxX49
+	D+2Lf8j6BhIYD0U9DJC7qmQgDSqfeYL8Z4imagHXL07HT329tHEDXSDcF7G6X1zEdXU
+	M4JOCjKff7a/+FyEGSrifImXX8IrO0u4X3d/KYbc=
+From: "=?euc-kr?B?SUlCQw==?=" <iibc@iibc.kr>
+To: "=?euc-kr?B?sO2wtLTU?=" <yeowoon72@inhatc.ac.kr>
+Reply-to: <iibc@iibc.kr>
+Subject: =?euc-kr?B?osKh3yBbSUlCQ10gx9Gxub+ssbjA5w==?= =?euc-kr?B?tNwgte7A5yC/tbmus+25rsH2IElKSUI=?= =?euc-kr?B?QyAyv/nIoyAgLyAgSUpBU0M=?= =?euc-kr?B?IDO/+cijICCz7bmuuPDB/SAvIEpJ?= =?euc-kr?B?SUJDIL7nvcQguq+w5iCw+MH2ICAg?= =?euc-kr?B?osKh3w==?=
+Date: Fri, 10 Jan 2025 13:06:50 +0900
+X-WORKER_ID: <single.default_Worker_0>
+X-MAIL_ID: <UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg==>
+X-MEMBER_ID: <TV9JRD0xNTA4MjU1MjE0NA==>
+X-SEND_TYPE: <U1RZUEU9TUFTUw==>
+X-LIST_TABLE: <TElTVF9UQUJMRT1FQkFEMDE2MA==>
+List-Unsubscribe: <mailto:postman@fbl.humuson.com?subject=iwitiwit^^20250110100016651792^^15082552144>, <https://mkt.tason.com/open/postman_unsubscription.jsp?user_id=iwitiwit&customer_id=15082552144&post_id=20250110100016651792>
+Feedback-Id: iwitiwit:20250110100016651792:15082552144:postman
+Precedence: bulk
+X-Mailer: eMsSMTP Ver6.5( PLUTO-build 0322 )
+MIME-Version: 1.0
+Message-ID: <202501101306507865@send47.postman.co.kr>
+Content-Type: text/html; 	charset=euc-kr
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang=3D"ko-KR">
+<head>
+<meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible" />
+<meta charset=3D"euc-kr" />
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1" name=3D"viewport" />
+<meta content=3D"telephone=3Dno,email=3Dno,address=3Dno" name=3D"format-detection" />
+<title>2015 =B0=A1=C0=BB - 010</title>
+<style data-premailer=3D"ignore" type=3D"text/css">@media only screen and (min-width: 1px) {
+[class=3D"postman_width"] {
+display: block;
+float: none !important;
+max-width: 100% !important;
+}
+[class=3D"postman_width"] img {
+display: block;
+min-width: 100%;
+max-width: 100% !important;
+}
+}
+@media only screen and (max-width: 480px) {
+[class=3D"postman_width"] {
+width: auto !important;
+}
+}
+@media only screen and (min-width: 481px) {
+[class=3D"postman_width"] {
+display: table-cell !important;
+width: auto !important;
+}
+}
+</style>
+</head>
+<body class=3D"iac_email" marginheight=3D"0" marginleft=3D"0" margintop=3D"0" marginwidth=3D"0" style=3D"margin: 0px;">
+<div style=3D"text-align: center;"><br />
+<span style=3D"font-family:arial,helvetica,sans-serif;"><strong style=3D"font-family: arial, helvetica, sans-serif; font-size: 20px; text-align: center;"><span style=3D"color:#000000;">&quot;=C7=D1=B1=B9=BF=AC=B1=B8=C0=E7=B4=DC =BF=B5=B9=AE =B5=EE=C0=E7=C1=F6</span><span style=3D"color:#0000FF;">&nbsp;</span></strong></span><strong><span style=3D"font-size:20px;"><span style=3D"font-family:arial,helvetica,sans-serif;"><span style=3D"color:#0000FF;">IJIBC 2=BF=F9=C8=A3 </span>=B3=ED=B9=AE=B8=F0=C1=FD&quot;</span></span></strong><br />
+<span style=3D"font-size:14px;"><span style=3D"font-family:arial,helvetica,sans-serif;"><strong style=3D"font-family: arial, helvetica, sans-serif; font-size: 20px; color: rgb(0, 0, 255); text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong></span></span></div>
+
+<div><span style=3D"font-size:14px;"><span style=3D"font-family:arial,helvetica,sans-serif;">=BE=C8=B3=E7=C7=CF=BC=BC=BF=E4.</span></span></div>
+<span style=3D"font-size:14px;"><span style=3D"font-family:arial,helvetica,sans-serif;">(=BB=E7)=C7=D1=B1=B9=C0=CE=C5=CD=B3=DD=B9=E6=BC=DB=C5=EB=BD=C5=C7=D0=C8=B8=C0=D4=B4=CF=B4=D9.<br />
+<br />
+<span style=3D"color:#000000;">=C7=D0=C8=B8=BF=A1=BC=AD=B4=C2 <strong>25=B3=E2=B5=B5 2=BF=F9=C8=A3&nbsp;=A1=DF=C7=D1=B1=B9=BF=AC=B1=B8=C0=E7=B4=DC =BF=B5=B9=AE=B5=EE=C0=E7=C1=F6=C0=CE </strong></span></span><span style=3D"color:#000000;"><strong>&lt;International Journal of Internet,Broadcasting and Communication(IJIBC) &lt;=C1=A6 17=B1=C7 =C1=A6 1=C8=A3</strong></span><span style=3D"font-family:arial,helvetica,sans-serif;"><span style=3D"color:#000000;"><strong>&gt;=A1=DF&nbsp;</strong>=B8=A6 =B9=DF=B0=A3=C7=D2 =BF=B9=C1=A4=C0=D4=B4=CF=B4=D9.</span><br />
+<br />
+<span style=3D"color:#000000;"><strong>*=C7=D0=BC=FA=C1=F6=B8=ED:&nbsp;<strong style=3D"color: rgb(0, 0, 205); font-family: verdana, geneva, sans-serif;">&nbsp;</strong></strong></span></span><span style=3D"letter-spacing: 0pt; font-weight: bold; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=3D"font-family: malgun;"><span style=3D"color:#000000;">In</span>ternational Journal of Internet,Broadcasting and Communication(IJIBC)</span></span></span><br />
+<br />
+<span style=3D"font-size: 14px;"><span style=3D"font-family: arial, helvetica, sans-serif;"><span style=3D"color:#000000;"><strong>*=B3=ED=B9=AE=BA=D0=BE=DF:&nbsp;</strong></span><br />
+<span style=3D"letter-spacing: 0pt; font-weight: bold; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">A. Internet&nbsp;</span><br />
+<span style=3D"letter-spacing: 0pt; font-weight: bold; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">B. Broadcasting</span><br />
+<span style=3D"letter-spacing: 0pt; font-weight: bold; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">C. Communication</span><br />
+<span style=3D"letter-spacing: 0pt; font-weight: bold; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">D. Convergence of Internet, Broadcasting and Communication</span><br />
+<span style=3D"letter-spacing: 0pt; font-weight: bold; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">E. Device and Module</span><br />
+<span style=3D"letter-spacing: 0pt; font-weight: bold; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">F. IT Marketing and Policy</span><br />
+<span style=3D"letter-spacing: 0pt; font-weight: bold; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">G. NMS(New Media Service)</span><br />
+<span style=3D"letter-spacing: 0pt; font-weight: bold; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">H. Other IT related Technology</span><br />
+<span style=3D"color:#000000;"><strong>(=C0=DA=BC=BC=C7=D1 SCOPE=C0=BA =C7=CF=B4=DC Call for paper =B3=BB Topics =C2=FC=B0=ED)</strong></span><br />
+<br />
+<strong><span style=3D"color: rgb(0, 0, 205);">*=B3=ED=B9=AE =C5=F5=B0=ED =B0=D4=BD=C3=C6=C7 =B8=B5=C5=A9:&nbsp;<a href=3D"https://trk-mkt.tason.com/CheckNew.html?TV9JRD0xNTA4MjU1MjE0NA=3D=3D&U1RZUEU9TUFTUw=3D=3D&RU1BSUxfSUQ9eWVvd29vbjcyQGluaGF0Yy5hYy5rcg=3D=3D&TElTVF9UQUJMRT1FQkFEMDE2MA=3D=3D&UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg=3D=3D&VEM9MjAyNTAxMjQ=3D&S0lORD1D&Q0lEPTAwMQ=3D=3D&URL=3Dhttp://http://www.ijasc.org/pop/ijasc/sub02_04.php">&nbsp;</a></span></strong></span><a href=3D"https://trk-mkt.tason.com/CheckNew.html?TV9JRD0xNTA4MjU1MjE0NA=3D=3D&U1RZUEU9TUFTUw=3D=3D&RU1BSUxfSUQ9eWVvd29vbjcyQGluaGF0Yy5hYy5rcg=3D=3D&TElTVF9UQUJMRT1FQkFEMDE2MA=3D=3D&UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg=3D=3D&VEM9MjAyNTAxMjQ=3D&S0lORD1D&Q0lEPTAwMg=3D=3D&URL=3Dhttp://www.ijibc.org/pop/ijibc/sub02_04.php"><u><span style=3D"letter-spacing: 0pt; font-weight: bold; background: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 205);"><span style=3D"font-family: malgun;">http://www.ijibc.org/pop/ijibc/sub02_04.php</span></span=
+></span></u></a><br />
+<span style=3D"color:#000000;"><span style=3D"font-family: arial, helvetica, sans-serif;"><strong><span style=3D"background-color:#FFFF00;">*=C0=CF=B9=DD =B3=ED=B9=AE=B8=B6=B0=A8=C0=CF:&nbsp;<s>2024=B3=E2 12=BF=F9 31=C0=CF (=C8=AD) =C0=DA=C1=A4=B1=EE=C1=F6&nbsp;</s> </span></strong></span></span><span style=3D"color:#FF0000;"><span style=3D"font-family: arial, helvetica, sans-serif;"><strong><span style=3D"background-color:#FFFF00;">-&gt; 2025=B3=E2 1=BF=F9 10=C0=CF (=B1=DD)</span></strong></span></span></span><br />
+<span style=3D"color:#000000;"><strong style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;"><span style=3D"background-color:#FFFF00;">*</span></strong></span><span style=3D"color:#FF0000;"><strong style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;"><span style=3D"background-color:#FFFF00;">=B1=E4=B1=DE</span></strong></span><span style=3D"color:#000000;"><strong style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;"><span style=3D"background-color:#FFFF00;"> =B3=ED=B9=AE=B8=B6=B0=A8=C0=CF:&nbsp;<s>2025=B3=E2 1=BF=F9 15=C0=CF (=BC=F6) =C0=DA=C1=A4=B1=EE=C1=F6 </s>-&gt;&nbsp;</span></strong></span><span style=3D"color:#FF0000;"><strong style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;"><span style=3D"background-color: rgb(255, 255, 0);">2025=B3=E2 1=BF=F9 25=C0=CF (=C5=E4)</span></strong></span><br />
+<span style=3D"font-size: 14px;"><span style=3D"font-family: arial, helvetica, sans-serif;">*=B3=ED=B9=AE=BE=E7=BD=C4: =C3=B7=BA=CE=C6=C4=C0=CF =B4=D9=BF=EE=B7=CE=B5=E5 (=C7=FC=BD=C4=BF=A1 =B8=C2=C3=DF=BE=EE =C5=F5=B0=ED =BA=CE=C5=B9=B5=E5=B8=B3=B4=CF=B4=D9.)</span></span><br />
+<span style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;"><strong>*&nbsp;</strong>=BA=B0=BC=E2=BA=BB 10=BA=CE=B7=CE =C0=CE=BC=E2=B5=CB=B4=CF=B4=D9.&nbsp;</span><br />
+<br />
+<span style=3D"font-size:14px;"><span style=3D"font-family:arial,helvetica,sans-serif;">=B0=A8=BB=E7=C7=D5=B4=CF=B4=D9.</span></span><br />
+&nbsp;
+<hr />
+<div style=3D"text-align: center;"><br />
+<span style=3D"text-align: center; font-family: arial, helvetica, sans-serif;"><strong style=3D"font-size: 20px;">&quot;=C7=D1=B1=B9=BF=AC=B1=B8=C0=E7=B4=DC =BF=B5=B9=AE =B5=EE=C0=E7=C1=F6</strong></span><strong style=3D"text-align: center;"><span style=3D"font-size: 20px;">&nbsp;<span style=3D"font-family: arial, helvetica, sans-serif;"><span style=3D"color:#0000FF;">IJASC 3=BF=F9=C8=A3</span>&nbsp;=B3=ED=B9=AE=B8=F0=C1=FD&quot;</span></span></strong><br />
+&nbsp;
+<div style=3D"text-align: left;"><span style=3D"font-size: 14px;"><span style=3D"font-family: arial, helvetica, sans-serif;">=BE=C8=B3=E7=C7=CF=BC=BC=BF=E4.</span></span></div>
+
+<div style=3D"text-align: left;"><span style=3D"font-size:14px;"><span style=3D"font-family:arial,helvetica,sans-serif;">(=BB=E7)=C7=D1=B1=B9=C0=CE=C5=CD=B3=DD=B9=E6=BC=DB=C5=EB=BD=C5=C7=D0=C8=B8=C0=D4=B4=CF=B4=D9.<br />
+<br />
+<span style=3D"color:#000000;">=C7=D0=C8=B8=BF=A1=BC=AD=B4=C2&nbsp;<strong>25=B3=E2=B5=B5 3=BF=F9=C8=A3&nbsp;=A1=DF=C7=D1=B1=B9=BF=AC=B1=B8=C0=E7=B4=DC =BF=B5=B9=AE=B5=EE=C0=E7=C1=F6=C0=CE</strong><span style=3D"display: none;">&nbsp;</span><strong>&nbsp;</strong><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">&lt;The International Journal of Advanced Smart Convergence (IJASC)&nbsp;</span><span style=3D"font-weight:bold;background:#ffffff;">=C1=A6</span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">14</span><span style=3D"font-weight:bold;background:#ffffff;">=B1=C7 =C1=A61</span><span style=3D"font-weight:bold;background:#ffffff;">=C8=A3</span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">&gt;</span><strong>=A1=DF&nbsp;</strong>=B8=A6 =B9=DF=B0=A3=C7=D2 =BF=B9=C1=A4=C0=D4=B4=CF=B4=D9.</span><br />
+<br />
+<span style=3D"color:#000000;"><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">*</span><span style=3D"font-weight:bold;background:#ffffff;">=C7=D0=BC=FA=C1=F6=B8=ED</span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">:&nbsp;</span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">&nbsp;The International Journal of Advanced Smart Convergence (IJASC)</span><br />
+<br />
+<span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">*</span><span style=3D"font-weight:bold;background:#ffffff;">=B3=ED=B9=AE=BA=D0=BE=DF</span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">:&nbsp;</span><br />
+<span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">1. Telecommunication Information Technology (TIT)</span><br />
+<span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">2. Human-Machine Interaction Technology (HIT)</span><br />
+<span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">3. Nano Information Technology (NIT)</span><br />
+<span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">4. Culture Information Technology (CIT)</span><br />
+<span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">5. Bio and medical Information Technology (BIT)</span><br />
+<span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">6. Environmental Information Technology (EIT)</span><br />
+<span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">(</span><span style=3D"font-weight:bold;background:#ffffff;">=C0=DA=BC=BC=C7=D1 </span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">SCOPE</span><span style=3D"font-weight:bold;background:#ffffff;">=C0=BA =C7=CF=B4=DC </span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">Call for paper </span><span style=3D"font-weight:bold;background:#ffffff;">=B3=BB </span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">Topics </span><span style=3D"font-weight:bold;background:#ffffff;">=C2=FC=B0=ED</span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;">)</span></span><br />
+<br />
+<span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"color:#0000cd;">*</span></span><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"color:#0000cd;">=B3=ED=B9=AE =C5=F5=B0=ED =B0=D4=BD=C3=C6=C7 =B8=B5=C5=A9</span></span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"color:#0000cd;">:&nbsp;</span></span>&nbsp; <a href=3D"https://trk-mkt.tason.com/CheckNew.html?TV9JRD0xNTA4MjU1MjE0NA=3D=3D&U1RZUEU9TUFTUw=3D=3D&RU1BSUxfSUQ9eWVvd29vbjcyQGluaGF0Yy5hYy5rcg=3D=3D&TElTVF9UQUJMRT1FQkFEMDE2MA=3D=3D&UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg=3D=3D&VEM9MjAyNTAxMjQ=3D&S0lORD1D&Q0lEPTAwMw=3D=3D&URL=3Dhttp://http//www.ijasc.org/pop/ijasc/sub02_04.php"><u><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"color:#0000ff;">http://www.ijasc.org/pop/ijasc/sub02_04.php</span></span></u></a><br />
+<strong><span style=3D"color:#000000;"><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">*</span></span><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">=C0=CF=B9=DD =B3=ED=B9=AE=B8=B6=B0=A8=C0=CF</span></span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">:&nbsp;2025</span></span><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">=B3=E2 1</span></span><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">=BF=F9 31</span></span><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">=C0=CF </span></span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">(=B1=DD</span></span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span =
+style=3D"background-color:#FFFF00;">) </span></span><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">=C0=DA=C1=A4=B1=EE=C1=F6</span></span><br />
+<span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">*</span></span></span><span style=3D"color:#FF0000;"><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">=B1=E4=B1=DE</span></span></span><span style=3D"color:#000000;"><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;"> =B3=ED=B9=AE=B8=B6=B0=A8=C0=CF</span></span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">:&nbsp;2025</span></span><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">=B3=E2 2</span></span><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">=BF=F9 </span></span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">15</span></span><span style=3D"font-weight:bold;background:#ffffff;"><s=
+pan style=3D"background-color:#FFFF00;">=C0=CF </span></span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">(=C5=E4</span></span><span style=3D"letter-spacing:0pt;font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">) </span></span><span style=3D"font-weight:bold;background:#ffffff;"><span style=3D"background-color:#FFFF00;">=C0=DA=C1=A4=B1=EE=C1=F6</span></span></span></strong><br />
+<span style=3D"letter-spacing:0pt;background:#ffffff;">*</span><span style=3D"background:#ffffff;">=B3=ED=B9=AE=BE=E7=BD=C4</span>: <span style=3D"background:#ffffff;">=C3=B7=BA=CE=C6=C4=C0=CF =B4=D9=BF=EE=B7=CE=B5=E5 </span><span style=3D"letter-spacing:0pt;background:#ffffff;">(</span><span style=3D"background:#ffffff;">=C7=FC=BD=C4=BF=A1 =B8=C2=C3=DF=BE=EE =C5=F5=B0=ED =BA=CE=C5=B9=B5=E5=B8=B3=B4=CF=B4=D9</span><span style=3D"letter-spacing:0pt;background:#ffffff;">.)</span></span></span><br />
+<strong style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;">*&nbsp;</strong><span style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;">=BA=B0=BC=E2=BA=BB 10=BA=CE=B7=CE =C0=CE=BC=E2=B5=CB=B4=CF=B4=D9.&nbsp;</span><br />
+<br />
+<span style=3D"font-size: 14px;"><span style=3D"font-family: arial, helvetica, sans-serif;">=B0=A8=BB=E7=C7=D5=B4=CF=B4=D9.</span></span><br />
+&nbsp;</div>
+</div>
+
+<hr /><span style=3D"color:#000000;"><span style=3D"font-size:14px;"><span style=3D"font-family:arial,helvetica,sans-serif;"><strong>**=C2=FC=B0=ED=BB=E7=C7=D7**<br />
+1.=BF=DC=B1=B9=BC=D2=BC=D3=C0=FA=C0=DA=B0=A1 =C6=F7=C7=D4=B5=C8 =B3=ED=B9=AE=C0=CF =B0=E6=BF=EC, =B0=D4=C0=E7=B7=E1=C0=C7 20% =C7=D2=C0=CE =C0=FB=BF=EB=B5=CB=B4=CF=B4=D9.<br />
+2.=B9=F8=BF=AA=BC=AD=BA=F1=BD=BA=B5=B5 =C1=A6=B0=F8=C7=D5=B4=CF=B4=D9. (=C0=AF=B7=E1)<br />
+3.=BF=B5=BE=EE=B3=ED=B9=AE=BF=A1 =B4=EB=C7=D1 =BF=F8=BE=EE=B9=CE Review =C7=CA=BF=E4=C7=D5=B4=CF=B4=D9.<br />
+4.=C7=D1=B1=B9=C0=CE=C5=CD=B3=DD=B9=E6=BC=DB=C5=EB=BD=C5=C7=D0=C8=B8, =B1=B9=C1=A6=B9=AE=C8=AD=B1=E2=BC=FA=C1=F8=C8=EF=BF=F8=BF=A1=BC=AD =C1=D6=B0=FC=C7=CF=B4=C2 =B1=B9=C1=A6=C7=D0=BC=FA=B4=EB=C8=B8(IJCC, IICCC, ISAAC)=BF=A1 =C2=FC=B0=A1=C7=D1 =B3=ED=B9=AE=B5=E9=C0=BA =B9=AB=B7=E1 =B0=D4=C0=E7 =B0=A1=B4=C9=C7=D5=B4=CF=B4=D9.<br />
+(*=C5=F5=B0=ED =BD=C3 =C2=FC=B0=A1=C7=CF=BC=CC=B4=F8 =B1=B9=C1=A6=C7=D0=BC=FA=B4=EB=C8=B8=B8=ED=C0=BB =B3=ED=B9=AE =BB=F3=B4=DC =B8=D3=B8=AE=B8=BB=BF=A1 =C7=A5=B1=E2=BF=E4=B8=C1, *=BF=B9=BD=C3: IJCC 2025)<br />
+&nbsp; - =BF=B5=B9=AE=C7=D0=BC=FA=C1=F6: =B0=D4=C0=E7=B7=E1 =B9=AB=B7=E1 =C0=FB=BF=EB<br />
+&nbsp; - =B1=B9=B9=AE=C7=D0=BC=FA=C1=F6: =B0=D4=C0=E7=B7=E1 50% =C7=D2=C0=CE =C0=FB=BF=EB</strong><br />
+<br />
+=A1=D8<strong style=3D"color: rgb(255, 0, 255); font-family: arial, helvetica, sans-serif; font-size: 16px;">Scopus =C0=FA=B3=CE =C0=CE=B5=A6=BD=CC=C0=BB =C0=A7=C7=D8 =BF=DC=B1=B9=BC=D2=BC=D3 =C0=FA=C0=DA =C5=F5=B0=ED=B8=A6 =BA=CE=C5=B9=B5=E5=B8=B3=B4=CF=B4=D9.</strong></span></span><br />
+<br />
+<span style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;"><strong><strong style=3D"font-size: 16px;">*</strong>=B0=D4=C0=E7 =B0=FA=C1=A4 =BE=C8=B3=BB&nbsp;</strong></span><br style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;" />
+<span style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;">1. =BD=C9=BB=E7=B0=E1=B0=FA =C0=CC=B8=DE=C0=CF =B9=DF=BC=DB:&nbsp;=C7=D0=BC=FA=C1=F6 =B9=DF=B0=A3 =C1=F7=C0=FC=BF=F9=C0=C7 =B8=BB=B0=E6</span><br style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;" />
+<span style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;">2. =B0=D4=C0=E7=B7=E1 =B0=F8=B9=AE =C0=CC=B8=DE=C0=CF =B9=DF=BC=DB:&nbsp;=C7=D0=BC=FA=C1=F6 =B9=DF=B0=A3=BF=F9=C0=C7 =C1=DF=BC=F8=B0=E6</span><br style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;" />
+<span style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;">3. =C0=FA=B3=CE =C0=A5=BB=E7=C0=CC=C6=AE =B9=D7 KCI =B3=ED=B9=AE =BE=F7=B7=CE=B5=E5: =B9=DF=B0=A3=C0=CF=B7=CE=BA=CE=C5=CD =C0=CF=C1=D6=C0=CF=C0=CC=B3=BB =B5=EE=B7=CF</span><br style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;" />
+<span style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;">4. =B9=DF=B0=A3=BF=F9 =C0=CD=BF=F9 =C3=CA=C1=DF=BC=F8=B0=E6 =BA=B0=BC=E2=BA=BB =B9=E8=BC=DB =BF=B9=C1=A4</span><br style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;" />
+<span style=3D"font-family: arial, helvetica, sans-serif; font-size: 16px;"><strong>(=B4=DC, =C0=CF=C1=A4=BF=A1 =B5=FB=B6=F3 =BE=E0=B0=A3=C0=C7 =BA=AF=B5=BF=C0=CC =C0=D6=C0=BB =BC=F6 =C0=D6=C0=BD)</strong></span></span><br />
+&nbsp;
+<hr /><span style=3D"font-size:16px;"><strong style=3D"font-family: arial, helvetica, sans-serif;"><span style=3D"color: rgb(0, 0, 255);"><span style=3D"letter-spacing: 0pt;"><span style=3D"background-color: rgb(255, 255, 0);">&nbsp;* 25=B3=E2 2=BF=F9=C8=A3=BA=CE=C5=CD =B1=B9=B9=AE=C1=F6(JIIBC) =BE=E7=BD=C4 =BA=AF=B0=E6=B5=C7=BF=C0=B4=CF, =B9=DD=B5=E5=BD=C3 =BB=F5=B7=CE=BF=EE =B3=ED=B9=AE =BE=E7=BD=C4=C0=B8=B7=CE =C5=F5=B0=ED =BA=CE=C5=B9=B5=E5=B8=B3=B4=CF=B4=D9.</span></span></span></strong></span><br />
+<span style=3D"font-size:14px;"><span style=3D"font-family:arial,helvetica,sans-serif;"><span style=3D"background-color: rgb(255, 255, 255);">- =B1=E2=C1=B8 2=B4=DC=BF=A1=BC=AD 1=B4=DC=C0=B8=B7=CE =BA=AF=B0=E6=B5=CB=B4=CF=B4=D9.&nbsp;</span><br />
+- =B0=F8=C1=F6=BB=E7=C7=D7 =B8=B5=C5=A9:&nbsp;http://www.iibc.kr/bbs/board.php?bo_table=3Dnotice&amp;wr_id=3D310</span></span>
+
+<hr />&nbsp;
+<p><img alt=3D"" border=3D"0" src=3D"https://userimg-mkt.tason.com/20241231/iwitiwit_285984ce1b2620f22e0ca2a5c650cd20.JPG" /><br />
+<br />
+<img alt=3D"" border=3D"0" src=3D"https://userimg-mkt.tason.com/20241210/iwitiwit_ec59f4e103730940c390b8218c27cf5d.JPG" /></p>
+
+<p>&nbsp;</p>
+
+<div align=3D"center"><table width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#FFFFFF">
+<tr><td><img src=3D"https://img-mkt.tason.com/postman2011/img_user/box_mailsend_stop.gif"></td></tr>
+<tr><td><tr><td bgcolor=3D"ffffff" style=3D"border-left:1px solid #A6A6A6;border-right:1px solid #A6A6A6">
+<table width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#FFFFFF"><tr>
+<td style=3D"padding: 5 10 5 10;" align=3D"left" colspan=3D"2">
+<font size=3D"2" color=3D"#4C4C4C">* =C7=D8=B4=E7 =C3=B7=BA=CE=C6=C4=C0=CF=C0=BA 2025=B3=E2 01=BF=F9 24=C0=CF =B1=EE=C1=F6 =B4=D9=BF=EE=B7=CE=B5=E5 =B0=A1=B4=C9=C7=D5=B4=CF=B4=D9.</font><br/>
+<font size=3D"2" color=3D"#4C4C4C">&nbsp;&nbsp; ( Following attached files can be downloaded until <b>24.Jan.2025</b> )</font>
+</td></tr><tr><td width=3D"20%" height=3D"30" bgcolor=3D"F4F4F2" style=3D"padding: 5 0 5 10;">
+<img src=3D"https://img-mkt.tason.com/postman2011/img_user/tit_mail_file.gif" align=3D"absmiddle"></td>
+<td width=3D"80%" align=3D"left" bgcolor=3D"#FAFAFA"><a target=3D"popup" style=3D"color:black;" href=3D"https://trk-mkt.tason.com/CheckNew.html?TV9JRD0xNTA4MjU1MjE0NA=3D=3D&U1RZUEU9TUFTUw=3D=3D&RU1BSUxfSUQ9eWVvd29vbjcyQGluaGF0Yy5hYy5rcg=3D=3D&TElTVF9UQUJMRT1FQkFEMDE2MA=3D=3D&UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg=3D=3D&VEM9MjAyNTAxMjQ=3D&S0lORD1D&Q0lEPTAwNA=3D=3D&URL=3Dhttps://mkt.tason.com/open/download.jsp?key=3D9aeae1f2220a4b34da16871844c8a9bb&id=3Diwitiwit"><img src=3Dhttps://img-mkt.tason.com/postman2011/send/pdf.gif border=3D0 />2025.02 IJIBC Call for papers.pdf</a><br><a target=3D"popup" style=3D"color:black;" href=3D"https://trk-mkt.tason.com/CheckNew.html?TV9JRD0xNTA4MjU1MjE0NA=3D=3D&U1RZUEU9TUFTUw=3D=3D&RU1BSUxfSUQ9eWVvd29vbjcyQGluaGF0Yy5hYy5rcg=3D=3D&TElTVF9UQUJMRT1FQkFEMDE2MA=3D=3D&UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg=3D=3D&VEM9MjAyNTAxMjQ=3D&S0lORD1D&Q0lEPTAwNQ=3D=3D&URL=3Dhttps://mkt.tason.com/open/download.jsp?key=3D94f74596d4e0af6b4c107cccf096dbfd&id=3Diwitiwit"><img src=3Dhttps://img-mkt.t=
+ason.com/postman2011/send/etc.gif border=3D0 />IJIBC_PaperFormat_2025=B3=E2 2=BF=F9=C8=A3 .docx</a><br><a target=3D"popup" style=3D"color:black;" href=3D"https://trk-mkt.tason.com/CheckNew.html?TV9JRD0xNTA4MjU1MjE0NA=3D=3D&U1RZUEU9TUFTUw=3D=3D&RU1BSUxfSUQ9eWVvd29vbjcyQGluaGF0Yy5hYy5rcg=3D=3D&TElTVF9UQUJMRT1FQkFEMDE2MA=3D=3D&UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg=3D=3D&VEM9MjAyNTAxMjQ=3D&S0lORD1D&Q0lEPTAwNg=3D=3D&URL=3Dhttps://mkt.tason.com/open/download.jsp?key=3Dcbeaab7b76a29535ad6810cbbe4ee4fc&id=3Diwitiwit"><img src=3Dhttps://img-mkt.tason.com/postman2011/send/pdf.gif border=3D0 />IJASC 3=BF=F9=C8=A3 =C8=AB=BA=B8=C8=AD=C0=CF.pdf</a><br><a target=3D"popup" style=3D"color:black;" href=3D"https://trk-mkt.tason.com/CheckNew.html?TV9JRD0xNTA4MjU1MjE0NA=3D=3D&U1RZUEU9TUFTUw=3D=3D&RU1BSUxfSUQ9eWVvd29vbjcyQGluaGF0Yy5hYy5rcg=3D=3D&TElTVF9UQUJMRT1FQkFEMDE2MA=3D=3D&UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg=3D=3D&VEM9MjAyNTAxMjQ=3D&S0lORD1D&Q0lEPTAwNw=3D=3D&URL=3Dhttps://mkt.tason.com/open/download.jsp?key=3D602dccc5ecc=
+3c5553b075fe19fc2f9d7&id=3Diwitiwit"><img src=3Dhttps://img-mkt.tason.com/postman2011/send/etc.gif border=3D0 />IJASC_PaperFormat_2025.3(NEW).docx</a><br></td></tr></table></td></tr><tr><td><img src=3D"https://img-mkt.tason.com/postman2011/img_user/box_mailsend_sbottom.gif"></td></tr></table></div>
+<div class=3D"erase_tag_element" align=3D"center">
+<table width=3D"600" align=3D"center" style=3D"font-size:12px; line-height:140%; border:1px solid #cccccc;">
+<tr align=3D"center">
+<td style=3D"font-color:#4C4C4C; font-size: 12px; font-family:'=B5=B8=BF=F2','helvetica';">-=B8=DE=C0=CF =BC=F6=BD=C5=C0=BB =BF=F8=C7=CF=C1=F6 =BE=CA=C0=B8=BD=C3=B8=E9 =BF=A9=B1=E2 [=BC=F6=BD=C5=B0=C5=BA=CE]=B8=A6 =B4=AD=B7=AF =C1=D6=BD=CA=BD=C3=BF=C0
+</td>
+</tr>
+<tr><td bgcolor=3D"#DADADA" height=3D"1"></td></tr>
+<tr>
+<td align=3D"center" style=3D"color:#666666;">
+<p>=B8=DE=C0=CF =BC=F6=BD=C5=C0=BB =BF=F8=C7=CF=C1=F6 =BE=CA=C0=B8=BD=C3=B8=E9, =BF=A9=B1=E2 [<a href=3D"https://trk-mkt.tason.com/CheckNew.html?TV9JRD0xNTA4MjU1MjE0NA=3D=3D&U1RZUEU9TUFTUw=3D=3D&RU1BSUxfSUQ9eWVvd29vbjcyQGluaGF0Yy5hYy5rcg=3D=3D&TElTVF9UQUJMRT1FQkFEMDE2MA=3D=3D&UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg=3D=3D&VEM9MjAyNTAxMjQ=3D&S0lORD1D&Q0lEPTAwOA=3D=3D&URL=3Dhttps://mkt.tason.com/open/unsubscription.jsp?user_id=3Diwitiwit&amp;customer_id=3D15082552144&amp;reject_script=3DK&amp;post_id=3D20250110100016651792" target=3D"_blank" style=3D"text-decoration:none;"><span style=3D"color:#ff6600; font-weight:bold">=BC=F6=BD=C5=B0=C5=BA=CE</span></a>]=B8=A6 =B4=AD=B7=AF =C1=D6=BD=CA=BD=C3=BF=C0.<br />To unsubscribe <a href=3D"https://trk-mkt.tason.com/CheckNew.html?TV9JRD0xNTA4MjU1MjE0NA=3D=3D&U1RZUEU9TUFTUw=3D=3D&RU1BSUxfSUQ9eWVvd29vbjcyQGluaGF0Yy5hYy5rcg=3D=3D&TElTVF9UQUJMRT1FQkFEMDE2MA=3D=3D&UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg=3D=3D&VEM9MjAyNTAxMjQ=3D&S0lORD1D&Q0lEPTAwOQ=3D=3D&URL=3Dhttps://mkt.tason.=
+com/open/unsubscription.jsp?user_id=3Diwitiwit&amp;customer_id=3D15082552144&amp;reject_script=3DE&amp;post_id=3D20250110100016651792" target=3D"_blank" style=3D"text-decoration:none;"><span style=3D"color:#666666; font-weight:bold;">click here</span></a>.</p>
+</td>
+</tr>
+<tr><td bgcolor=3D"#DADADA" height=3D"1"></td></tr>
+<tr align=3D"center">
+<td style=3D"font-size: 11px; font-family:'=B5=B8=BF=F2','helvetica'; font-color:#4C4C4C;">*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+<br />The Institute of Internet, Broadcasting and Communication
+<br />Rm.610 Dongbu Sunvile, #99-6, Garak-Dong, Songpa-Gu, Seoul, 138-169, Korea
+<br />TEL : +82-2-407-7718,
+<br />FAX : +82-2-407-7716
+<br />E-mail : iibc@iibc.kr
+<br />*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+<br />
+</td>
+</tr>
+</table>
+</div><img src=3D"https://trk-mkt.tason.com/CheckNew.html?TV9JRD0xNTA4MjU1MjE0NA=3D=3D&U1RZUEU9TUFTUw=3D=3D&RU1BSUxfSUQ9eWVvd29vbjcyQGluaGF0Yy5hYy5rcg=3D=3D&TElTVF9UQUJMRT1FQkFEMDE2MA=3D=3D&UE9TVF9JRD0yMDI1MDExMDEwMDAxNjY1MTc5Mg=3D=3D&VEM9MjAyNTAxMjQ=3D&S0lORD1P" width=3D1 height=3D0></body>
+</html>

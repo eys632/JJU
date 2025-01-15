@@ -3,11 +3,11 @@ from langchain_core.prompts.few_shot import FewShotPromptTemplate
 from langchain_core.prompts import PromptTemplate
 # from langchain_core.output_parsers import StrOutputParser
 
-os.environ['OPENAI_API_KEY'] = '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'
-os.environ['LANGCHAIN_API_KEY'] = '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'
-os.environ['LANGCHAIN_TRACING_V2'] = 'true'
-os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
-os.environ['LANGCHAIN_PROJECT'] = '02'
+os.environ['OPENAI_API_KEY'] = ''
+os.environ['LANGCHAIN_API_KEY'] = ''
+os.environ['LANGCHAIN_TRACING_V2'] = ''
+os.environ['LANGCHAIN_ENDPOINT'] = ''
+os.environ['LANGCHAIN_PROJECT'] = ''
 
 examples = [
     {

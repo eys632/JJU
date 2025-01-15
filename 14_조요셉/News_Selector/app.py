@@ -33,8 +33,7 @@ if prompt := st.chat_input("검색할 주제를 입력하세요:"):
     st.chat_message("assistant").write(f"'{search_topic}'에 대한 뉴스를 검색합니다...")
 
     research_agent = Agent(
-        instructions=f"You're a research agent to search recent news about {search_topic}. "
-                        f"Find the 10 most recent news articles and summarize them. Answer in Korean",
+        instructions=f"You're a research agent to search recent news about {search_topic}. Find the 10 most recent news articles and summarize them. Answer in Korean",
         tools=[Tools.internet_search],
     )
 

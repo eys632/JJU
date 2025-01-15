@@ -9,8 +9,8 @@ Original file is located at
 
 import os
 
-os.environ["OPENAI_API_KEY"] = "PgiMtNt9GvfIrd7XGmvwnGFkCouYoTeNx6fwidRkFh63wQf-jMa8payEdpeQIMc5Un0aBI4sEzT3BlbkFJKxEywp1498ByVF7ufO-HY8WolT5WBgjtmq3Oelr7VLUmg23s_esjxEjQ3_GcsGoBhw5vGhdz8A"
-os.environ["LANGCHAIN_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
+os.environ["LANGCHAIN_API_KEY"] = ""
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
 os.environ["LANGCHAIN_PROJECT"] = "01-03-2"

@@ -1,7 +1,8 @@
 import os
-from dotenv import load_dotenv
 import mimetypes
 import openai
+from dotenv import load_dotenv
+import asyncio
 
 # 1. .env 파일 로드
 load_dotenv()
@@ -31,27 +32,38 @@ def get_splitters():
     ]
 
 # 5. OpenAI API 활용 함수 (최신 API 사용)
-def evaluate_splits(api_key, loader, splitter, data):
-    openai.api_key = api_key
-    prompt = f"Loader: {loader}\nSplitter: {splitter}\nData: {data}"
-    
-    response = openai.ChatCompletion.create(
-        model="gpt-4",  # 최신 GPT-4 모델
-        messages=[
-            {"role": "system", "content": "You are an assistant evaluating document splits."},
-            {"role": "user", "content": prompt}
-        ],
-        max_tokens=100
-    )
-    return response
+async def evaluate_splits(api_key, loader, splitter, data):
+    try:
+        openai.api_key = api_key
+        prompt = f"Loader: {loader}\nSplitter: {splitter}\nData: {data}"
+        
+        response = await openai.ChatCompletion.acreate(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": "You are an assistant evaluating document splits."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=100
+        )
+        return response
+    except Exception as e:
+        print(f"Error evaluating {loader} with {splitter}: {e}")
+        return None
 
 # 6. 메인 함수
-def main():
+async def main():
     file_path = input("파일 경로를 입력하세요: ")
     file_type = detect_file_type(file_path)
+    if not file_type:
+        print("Error: 파일 형식을 감지할 수 없습니다.")
+        return
+    
     loaders = select_loader(file_type)
-    splitters = get_splitters()
+    if not loaders:
+        print(f"Error: {file_type}에 대한 적절한 로더가 없습니다.")
+        return
 
+    splitters = get_splitters()
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         print("Error: 환경 변수 OPENAI_API_KEY가 설정되지 않았습니다.")
@@ -61,15 +73,23 @@ def main():
     for loader in loaders:
         for splitter in splitters:
             data = f"Simulated data using {loader}"
-            result = evaluate_splits(api_key, loader, splitter, data)
-            results.append({
-                "loader": loader,
-                "splitter": splitter,
-                "result": result
-            })
+            result = await evaluate_splits(api_key, loader, splitter, data)
+            if result:
+                results.append({
+                    "loader": loader,
+                    "splitter": splitter,
+                    "result": result
+                })
     
-    best_combination = max(results, key=lambda x: x['result']['choices'][0]['message']['content'])
-    print(f"최적 조합: {best_combination}")
+    if results:
+        best_combination = max(
+            results, 
+            key=lambda x: x['result']['choices'][0]['message']['content']
+        )
+        print(f"최적 조합: {best_combination}")
+    else:
+        print("No results to evaluate.")
 
+# 실행
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

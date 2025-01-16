@@ -1,0 +1,241 @@
+Delivered-To: brightmgu@gmail.com
+Received: by 2002:a2e:874f:0:b0:305:ffed:4119 with SMTP id q15csp202930ljj;
+        Fri, 10 Jan 2025 08:53:25 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IG2Y4dHRlnN781myHZWhTQG/sqklkgUP1g/sAvrqqJaDLGyAOFXweq+i0L+UQlObNCWkd11
+X-Received: by 2002:a05:6830:2643:b0:71d:4196:d92e with SMTP id 46e09a7af769-721e2e61f8dmr6025263a34.18.1736528005331;
+        Fri, 10 Jan 2025 08:53:25 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1736528005; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Jl9uVKxbc4UT198GPo1MvXVYXnIkHvanYX898uMyQ/FFEPaX9jOUFBSTm1cJnv7FKB
+         XdeboS0LGmfMYvigUktVQyFVpu0ekxly0g7qH3n08Cj8VN5f7pHyKGpmVEv/jH8/mU+v
+         CZIA5Oy72FSexydp2TX+n1BYg/4MJeWnmOO8QO/NWAgANg1AFio8VDUldiwX+3VR5ktP
+         7KbgOOjIfP1vJeiaL9z3L8iA3D3ykojx1CnZKNlXVajDSE51DzcmNY3diFRQ79RQwirW
+         5DgdK24TCSAtL1bxWgZeg2dA4Wg54QlvaWa8l/TFPmBpRpzmqshqSNbkeSlT0SLI3PFH
+         zhag==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=content-transfer-encoding:message-id:to:from:subject:mime-version
+         :date:sender:dkim-signature:dkim-signature;
+        bh=04ixSRklXrknilv5hsJ+8YTVCl6CKdAN0cll+ZY9gRw=;
+        fh=P2qLdpqhdxPHvJrm5HoLSEmSmH7SKn5HGjGZeoAXkbE=;
+        b=AQe5WeDG6xxf/umhG0DIJ3b3jJyZW/EE+JR22OGE1SvLMnvld+kk04O3kPkxo8ca5c
+         bHcmfFnp6GxH2OxZqlbd3P6oau2xWHebj5mqBqEWaaNpU+COys7uw1Z+Dt3msL8t5l4Y
+         aXWO3/alreb7KhTQa6z2pZzT+XQlWXwq39HBaPALrTqFgEhdD07Zl0l7Pc34K7xXMHNr
+         Ad3KCbtGfthbKys2+Dv6igVUk9si2w5OqpyiFuLOmIsxEOwQIdpqSmbT5zw6F7df16is
+         vmIV/RyQzXCRJ20Wx74lkBmFn+scsPhFOF0MIDbK7p5ReyRnoWObhJlWNcxb/u7X1Oym
+         anlQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mail.notion.so header.s=pic header.b=cZb8Xyy1;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=n7DwStcT;
+       spf=pass (google.com: domain of bounce+a79ae8.074921-brightmgu=gmail.com@mail.notion.so designates 166.78.71.1 as permitted sender) smtp.mailfrom="bounce+a79ae8.074921-brightmgu=gmail.com@mail.notion.so";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=mail.notion.so
+Return-Path: <bounce+a79ae8.074921-brightmgu=gmail.com@mail.notion.so>
+Received: from m71-1.mailgun.net (m71-1.mailgun.net. [166.78.71.1])
+        by mx.google.com with UTF8SMTPS id 46e09a7af769-7232c5d7d2dsi640590a34.127.2025.01.10.08.53.25
+        for <brightmgu@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 10 Jan 2025 08:53:25 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce+a79ae8.074921-brightmgu=gmail.com@mail.notion.so designates 166.78.71.1 as permitted sender) client-ip=166.78.71.1;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mail.notion.so header.s=pic header.b=cZb8Xyy1;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=n7DwStcT;
+       spf=pass (google.com: domain of bounce+a79ae8.074921-brightmgu=gmail.com@mail.notion.so designates 166.78.71.1 as permitted sender) smtp.mailfrom="bounce+a79ae8.074921-brightmgu=gmail.com@mail.notion.so";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=mail.notion.so
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.notion.so; q=dns/txt; s=pic; t=1736528004; x=1736535204;
+ h=Content-Transfer-Encoding: Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=04ixSRklXrknilv5hsJ+8YTVCl6CKdAN0cll+ZY9gRw=;
+ b=cZb8Xyy1b7HjCl9Vi4LI2/lDaxwn6fBnwx1dX/2PAtd0tBV5Ko4C8ZGhL5yQo9i9PuDGqQvSAezw1SRZo8MxA8rls+aGjh3XlMQ8wekjBtxx0UIP2+YvOvuIyafKIGm6f0eHiMDYcT/ANIMKY8GZunu3hob9lR+RrqshKEUlVnsttsaK81uLddGrSaBp+zJy3xe9WeacZZ85kyxMyz1ITJWe6GfDwlXIrvCS9qfOK2VD971jjXUXEmAdLbZRTmjZZ/wfxFy6YbwHqtcGisgyufE8bTJ+UAQfVKZ8SNUW0AyMJmJyGORdbjLyCTFEFjnycu6sje+XANymVOvI/0su2w==
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1736528004; x=1736535204;
+ h=Content-Transfer-Encoding: Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=04ixSRklXrknilv5hsJ+8YTVCl6CKdAN0cll+ZY9gRw=;
+ b=n7DwStcT5Xn6+xUmh2ILBAqxakPsurkNwPvLy3nblLR/Cd6O4C4wu0v6+6LJaqd4KiHrf8+ETvLGYYpzgd8BlBFRg5iY3ful3fee8j23NBoZsfPSuqM4WjFbvrm9AoWfkyu2sWcA+4v9djh2IV4vtOUlr7UAbOY3BRw6yziR7Dw=
+X-Feedback-Id: notify@mail.notion.so:email_type=newDeviceLoginEmail:66b151edc046d1ce483450e3:mailgun
+X-Mailgun-Sending-Ip: 166.78.71.1
+X-Mailgun-Sending-Ip-Pool-Name: 
+X-Mailgun-Sending-Ip-Pool: 
+X-Mailgun-Sid: WyIwNmQ3ZiIsImJyaWdodG1ndUBnbWFpbC5jb20iLCIwNzQ5MjEiXQ==
+Received: by dfb4b82a58fd with HTTP id 678150847af833f6b822f4cf; Fri, 10 Jan 2025
+ 16:53:24 GMT
+Sender: notify@mail.notion.so
+Date: Fri, 10 Jan 2025 16:53:24 +0000
+Mime-Version: 1.0
+Subject: =?UTF-8?b?7IOIIOq4sOq4sOuhnCDqs4TsoJXsl5Ag66Gc6re47J247ZaI7Iq164uI64uk?=
+ =?UTF-8?b?Lg==?=
+From: Notion Team <notify@mail.notion.so>
+To: brightmgu@gmail.com
+X-Mailgun-Tag: email_type=newDeviceLoginEmail
+X-Mailgun-Track-Opens: true
+X-Mailgun-Dkim: true
+X-Mailgun-Track-Clicks: true
+X-Mailgun-Suppressions-Bypass: true
+X-Mailgun-Variables: {"email_uuid": "{}", "metadata": "{}"}
+Message-Id: <20250110165324.22fca7f2d2c64f79@mail.notion.so>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+      <html
+       =20
+        dir=3D"ltr"
+        xmlns=3D"http://www.w3.org/1999/xhtml"
+        xmlns:v=3D"urn:schemas-microsoft-com:vml"
+        xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+        <head>
+          <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dutf-8" />
+          <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+          <meta name=3D"viewport" content=3D"width=3Ddevice-width"/>
+
+          <title> </title>
+
+          <style type=3D"text/css">
+            .notion-email,td{font-family:-apple-system,BlinkMacSystemFont,S=
+egoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,=
+sans-serif;-webkit-font-smoothing:subpixel-antialiased}.notion-email{text-a=
+lign:left;line-height:1.5;max-width:600px;padding-top:32px;padding-left:64p=
+x;padding-right:64px}@media only screen and (max-device-width:480px){.notio=
+n-email{padding-top:0;padding-left:16px;padding-right:16px}}.notion-email-b=
+utton-hover{transition:background 140ms ease-in}.notion-email-button-hover:=
+hover{background:rgba(58,56,52,.08)}
+
+            #__bodyTable__ {
+              margin: 0;
+              padding: 0;
+              width: 100% !important;
+            }
+          </style>
+
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+              </o:OfficeDocumentSettings>
+            </xml>
+          <![endif]-->
+        </head>
+        <body bgcolor=3D"#FFFFFF" width=3D"100%" style=3D"-webkit-font-smoo=
+thing: antialiased; width:100% !important; background:#FFFFFF;-webkit-text-=
+size-adjust:none; margin:0; padding:0; min-width:100%; direction: ltr;">
+          <table bgcolor=3D"#FFFFFF" id=3D"__bodyTable__" width=3D"100%" st=
+yle=3D"-webkit-font-smoothing: antialiased; width:100% !important; backgrou=
+nd:#FFFFFF;-webkit-text-size-adjust:none; margin:0; padding:0; min-width:10=
+0%">
+            <tr>
+              <td align=3D"center">
+                <span style=3D"display: none !important; color: #FFFFFF; ma=
+rgin:0; padding:0; font-size:1px; line-height:1px;"> </span>
+                <div class=3D"notion-email"><div style=3D"width:400px;max-w=
+idth:400px;border-bottom:1px solid rgba(55,53,47,0.1);padding-bottom:38px;c=
+olor:#333333"><div style=3D"margin-top:24px;font-size:26px;line-height:32px=
+"><b>=EC=83=88 =EA=B8=B0=EA=B8=B0=EC=9D=98 =EC=B5=9C=EA=B7=BC =EB=A1=9C=EA=
+=B7=B8=EC=9D=B8 =EA=B2=80=ED=86=A0</b></div><div style=3D"font-size:17px;li=
+ne-height:22px;font-weight:400;padding-top:16px"><p style=3D"margin-top:1px=
+;margin-bottom:1px">=EC=B5=9C=EA=B7=BC=EC=97=90 Notion =EA=B3=84=EC=A0=95=
+=EC=9C=BC=EB=A1=9C =EB=A1=9C=EA=B7=B8=EC=9D=B8=EB=90=9C =EC=A0=81=EC=9D=B4 =
+=EC=9E=88=EC=8A=B5=EB=8B=88=EB=8B=A4.</p><p style=3D"margin-top:1px;margin-=
+bottom:1px">=EC=9E=90=EC=84=B8=ED=95=9C =EB=82=B4=EC=9A=A9=EC=9D=84 =ED=99=
+=95=EC=9D=B8=ED=95=B4 =EC=A3=BC=EC=84=B8=EC=9A=94.</p><table style=3D"margi=
+n-top:27px;width:100%;border:1px solid rgba(227, 226, 224, 0.5);border-radi=
+us:12px;border-collapse:separate;background-color:rgba(248, 248, 247, 1)"><=
+tr><td style=3D"border-bottom:1px solid rgba(227, 226, 224, 0.5);padding-le=
+ft:8px;vertical-align:middle;text-align:center"><img height=3D"16" width=3D=
+"16" class=3D"new-device-login-email-icon" src=3D"http://www.notion.so/imag=
+es/icons/at.efc632d7.png"/></td><td style=3D"border-bottom:1px solid rgba(2=
+27, 226, 224, 0.5);padding:12px 10px"><div style=3D"font-size:14px"><b>=EA=
+=B3=84=EC=A0=95</b></div><div style=3D"font-weight:400;font-size:14px;line-=
+height:15px;text-decoration:none" id=3D"NewDeviceLoginEmail.deviceDetails.d=
+eviceDetailValue.Account">brightmgu@gmail.com</div></td></tr><tr><td style=
+=3D"border-bottom:1px solid rgba(227, 226, 224, 0.5);padding-left:8px;verti=
+cal-align:middle;text-align:center"><img height=3D"16" width=3D"16" class=
+=3D"new-device-login-email-icon" src=3D"http://www.notion.so/images/icons/k=
+ey.e5863bcb.png"/></td><td style=3D"border-bottom:1px solid rgba(227, 226, =
+224, 0.5);padding:12px 10px"><div style=3D"font-size:14px"><b>=EB=A1=9C=EA=
+=B7=B8=EC=9D=B8 =EB=B0=A9=EB=B2=95</b></div><div style=3D"font-weight:400;f=
+ont-size:14px;line-height:15px;text-decoration:none" id=3D"NewDeviceLoginEm=
+ail.deviceDetails.deviceDetailValue.Login method">Google =EA=B3=84=EC=A0=95=
+=EC=9C=BC=EB=A1=9C =EB=A1=9C=EA=B7=B8=EC=9D=B8</div></td></tr><tr><td style=
+=3D"border-bottom:1px solid rgba(227, 226, 224, 0.5);padding-left:8px;verti=
+cal-align:middle;text-align:center"><img height=3D"16" width=3D"16" class=
+=3D"new-device-login-email-icon" src=3D"http://www.notion.so/images/icons/l=
+ocation-arrow.2a6b8799.png"/></td><td style=3D"border-bottom:1px solid rgba=
+(227, 226, 224, 0.5);padding:12px 10px"><div style=3D"font-size:14px"><b>IP=
+=EC=99=80 =EB=8C=80=EB=9E=B5=EC=A0=81=EC=9D=B8 =EC=9C=84=EC=B9=98</b></div>=
+<div style=3D"font-weight:400;font-size:14px;line-height:15px;text-decorati=
+on:none" id=3D"NewDeviceLoginEmail.deviceDetails.deviceDetailValue.IP &amp;=
+ approximate location">106.101.131.61 - Seoul, KR-11, Korea, Republic of</d=
+iv></td></tr><tr><td style=3D"border-bottom:1px solid rgba(227, 226, 224, 0=
+=2E5);padding-left:8px;vertical-align:=
+middle;text-align:center"><img height=
+=3D"16" width=3D"16" class=3D"new-device-login-email-icon" src=3D"http://ww=
+w.notion.so/images/icons/laptop.52144617.png"/></td><td style=3D"border-bot=
+tom:1px solid rgba(227, 226, 224, 0.5);padding:12px 10px"><div style=3D"fon=
+t-size:14px"><b>=EA=B8=B0=EA=B8=B0 =EC=9C=A0=ED=98=95</b></div><div style=
+=3D"font-weight:400;font-size:14px;line-height:15px;text-decoration:none" i=
+d=3D"NewDeviceLoginEmail.deviceDetails.deviceDetailValue.Device type">Windo=
+ws</div></td></tr><tr><td style=3D"border-bottom:1px solid rgba(227, 226, 2=
+24, 0.5);padding-left:8px;vertical-align:middle;text-align:center"><img hei=
+ght=3D"16" width=3D"16" class=3D"new-device-login-email-icon" src=3D"http:/=
+/www.notion.so/images/icons/basic-clock.632b1b6e.png"/></td><td style=3D"bo=
+rder-bottom:1px solid rgba(227, 226, 224, 0.5);padding:12px 10px"><div styl=
+e=3D"font-size:14px"><b>=EC=8B=9C=EA=B0=84</b></div><div style=3D"font-weig=
+ht:400;font-size:14px;line-height:15px;text-decoration:none" id=3D"NewDevic=
+eLoginEmail.deviceDetails.deviceDetailValue.Time">2025. 01. 11. =EC=98=A4=
+=EC=A0=84 01:53:23 =EB=8C=80=ED=95=9C=EB=AF=BC=EA=B5=AD =EC=8B=9C=EA=B0=84<=
+/div></td></tr><tr><td style=3D"padding-left:8px;vertical-align:middle;text=
+-align:center"><img height=3D"16" width=3D"16" class=3D"new-device-login-em=
+ail-icon" src=3D"http://www.notion.so/images/icons/globe-2.483430ea.png"/><=
+/td><td style=3D"padding:12px 10px"><div style=3D"font-size:14px"><b>=EC=95=
+=A0=ED=94=8C=EB=A6=AC=EC=BC=80=EC=9D=B4=EC=85=98</b></div><div style=3D"fon=
+t-weight:400;font-size:14px;line-height:15px;text-decoration:none" id=3D"Ne=
+wDeviceLoginEmail.deviceDetails.deviceDetailValue.Application">=EC=9B=B9=EC=
+=9A=A9 Notion</div></td></tr></table><br/>=EB=B3=B8=EC=9D=B8=EC=9D=B4 =EC=
+=95=84=EB=8B=8C =EA=B2=BD=EC=9A=B0, <b>=EC=A7=80=EA=B8=88 =EB=B9=84=EB=B0=
+=80=EB=B2=88=ED=98=B8=EB=A5=BC =EC=9E=AC=EC=84=A4=EC=A0=95</b>=ED=95=98=EC=
+=97=AC =EA=B3=84=EC=A0=95=EC=9D=84 =EB=B3=B4=ED=98=B8=ED=95=98=EA=B3=A0 &qu=
+ot;=EC=84=A4=EC=A0=95&quot;=EC=9D=98 &quot;=EB=82=B4 =EA=B3=84=EC=A0=95&quo=
+t; =ED=83=AD=EC=97=90=EC=84=9C =EB=8B=A4=EB=8B=A8=EA=B3=84 =EC=9D=B8=EC=A6=
+=9D=EC=9D=84 =EC=84=A4=EC=A0=95=ED=95=98=EC=84=B8=EC=9A=94.<br/><br/>=EB=98=
+=90=ED=95=9C =EC=A7=88=EB=AC=B8=EC=9D=B4=EB=82=98 =EC=9A=B0=EB=A0=A4 =EC=82=
+=AC=ED=95=AD=EC=9D=B4 =EC=9E=88=EC=9C=BC=EB=A9=B4 <a href=3D"mailto:team@ma=
+kenotion.com" style=3D"text-decoration:none">team@makenotion.com</a> =EC=9D=
+=B4=EB=A9=94=EC=9D=BC=EB=A1=9C =EB=AC=B8=EC=9D=98=ED=95=B4 =EC=A3=BC=EC=84=
+=B8=EC=9A=94.</div><div style=3D"margin-top:30px"><table style=3D"width:100=
+%;border-collapse:collapse"><tbody><tr><td style=3D"text-align:center;verti=
+cal-align:top"><a style=3D"background-color:#2383E2;border-radius:4px;color=
+:#fff;text-decoration:none;padding:12px 60px;text-align:center;border:1px s=
+olid #308bbf;display:inline-block;width:280px" href=3D"https://mg.mail.noti=
+on.so/c/eJxEz81qhDAUxfGnSZZycxO9mUUWLdZV36HEfGhAjTjXkb59mZYy6z_8OCc6IHNDJZN=
+TpLsWLYCRafVl-TrPEp2gd0G9nF20HVlQNkKwRIQjGIohd6PWOVujZXEI2IJSoLpWo2kQc_CUMW=
+LoTKabMPB0m61yqVtzr3JxM_N-F_pN4CBwuK7rVYUe2B9TYqH7_ai5LEmuiX307P9nHW48yjTzO=
+p3CwPTLh7pKdn8X-HtPQvdbuvr0KCF91qlsH88kHw5_AgAA___1O05W"><b class=3D"contex=
+tual-invite-email-cta">=EB=82=B4 =EA=B3=84=EC=A0=95=EC=9C=BC=EB=A1=9C =EC=
+=9D=B4=EB=8F=99</b></a></td></tr></tbody></table></div></div><div style=3D"=
+font-size:12px;margin-top:26px;margin-bottom:42px;color:#888;text-align:lef=
+t"><div style=3D"display:flex;margin-bottom:16px"><img height=3D"40" width=
+=3D"40" class=3D"notion-email-logo" src=3D"https://www.notion.so/images/log=
+o-for-slack-integration.png" style=3D"display:block;margin-bottom:8px"/><di=
+v style=3D"padding-left:16px"><div style=3D"font-style:normal;font-weight:5=
+90;font-size:14px;line-height:18px;letter-spacing:-0.154px;color:black">Not=
+ion</div><div style=3D"font-style:normal;font-weight:400;font-size:12px;lin=
+e-height:15px;color:#ACABA9;padding-top:3px">=EB=AC=B8=EC=84=9C, =ED=94=84=
+=EB=A1=9C=EC=A0=9D=ED=8A=B8, =EC=9C=84=ED=82=A4=EB=A5=BC =EC=9C=84=ED=95=9C=
+<br/>=EC=BB=A4=EB=84=A5=ED=8B=B0=EB=93=9C =EC=9B=8C=ED=81=AC=EC=8A=A4=ED=8E=
+=98=EC=9D=B4=EC=8A=A4 <a href=3D"https://mg.mail.notion.so/c/eJxEj0GOhCAQRU=
+9TLA0UCLpgMRPH1dzB0FIqiYJR1MztJ3an09t6yX-vvOVG1SgYWWGkLrHiXDFaXJi74wjegvkG0=
+7DJVkZJXdWEHOvKVVqLEsvB85ocKeofLFjkWHIhuNClRFUgDr0zA3rstRpMDYrfu0VMOaRY7InN=
+dsp53UF-AbaA7XVdH3qfZBtBNq-cSFfn6Qw9dXMaQwTUHziklGkD1Ou5g2w4Wyg777J7P7DZxxb=
+GKS_jAYqPz5A-LSzb10D-WwlkE-lqno7fW_FzI3Za_A8AAP__nQ1cIg" style=3D"color:inh=
+erit">Notion.so</a></div></div></div></div></div>
+              </td>
+            </tr>
+          </table>
+        <img width=3D"1" height=3D"1" alt=3D"" src=3D"https://mg.mail.notio=
+n.so/o/eJw0jkFOxDAMRU-TLCvbdZpm4Q0qO-6AksbpRKINGtJB3B4VNOv_9d7LAp4DoVVBP06O=
+ZgC2usf68X6eNYvxL8Yv9iaQXaA0YUgJGIMvMQLneS6lKLox2SoE5AARcHIj8UBU1ugLZVonLj4=
+Yhos7HK3Xdgxfze7aY449Pi13Sfe63fq-nYZh-3uvbbdd_ov6z6eacTn0e9FHXfWtbfV4vSb7EP=
+oNAAD___4WPhM"></body>
+      </html>
+   =20

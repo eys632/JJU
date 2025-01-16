@@ -1,0 +1,10 @@
+{
+    "NotUseOutputParser": "- **Sender:** John (Senior Executive Director at Bike Corporation)\n- **Recipient:** Kim (Teddy International)\n- **Subject:** \"ZENESIS\" bike distribution cooperation and meeting schedule proposal\n- **Key Points:**\n  - John is interested in the new bicycle model \"ZENESIS\" from Teddy International.\n  - Bike Corporation seeks a detailed brochure on the ZENESIS model, focusing on technical specifications, battery performance, and design aspects.\n  - John proposes a meeting to discuss collaboration possibilities.\n  - Suggested meeting date and time: Next Tuesday, January 15th, at 10:00 AM.\n  - Proposed meeting location: Kim's office.",
+    "WithParserResult": {
+        "person": "John",
+        "email": "John@bikecorporation.me",
+        "subject": "“ZENESIS” bike distribution cooperation and meeting schedule proposal",
+        "summary": "John, Senior Executive Director at Bike Corporation, is interested in the ZENESIS bicycle model and requests a detailed brochure with technical specifications, battery performance, and design aspects. He proposes a meeting to discuss collaboration possibilities on Tuesday, January 15th, at 10:00 AM at Kim's office.",
+        "date": "January 15th"
+    }
+}

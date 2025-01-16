@@ -1,0 +1,58 @@
+{
+	"ImageInfo": {
+		"video-category": "pig",
+		"videoid": 17,
+		"chamber-number": 1,
+		"pig-classification": "growing-pig",
+		"pig-number": 21,
+		"breathing-type": "inspiratory",
+		"date": "230804",
+		"time": "1359",
+		"timestamp": "01001"
+	},
+	"annotations": {
+		"keypoint-top": [
+			[
+				682,
+				616
+			],
+			[
+				1071,
+				383
+			]
+		],
+		"pointcount": 2,
+		"distance": 453.442
+	},
+	"TextInfo": {
+		"chamber-number": 1,
+		"pig-number": 21,
+		"weight": 45.12,
+		"pig-classification": "growing-pig",
+		"measure-date": "230804",
+		"measure-time": "1359"
+	},
+	"SensorData": {
+		"T": 24.7,
+		"RH": 25.0,
+		"CO2": 1013.4,
+		"NH3": 8.3
+	},
+	"breath-rate": 63,
+	"TemperatureData": {
+		"rectal-temperature": 37.2,
+		"back-temperature": 32.8,
+		"neck-temperature": 34.3,
+		"head-temperature": 33.1
+	},
+	"FeedingAndManagementData": {
+		"ventilation-rate": 1.65,
+		"feedstuff_volume": 1.276,
+		"watersupply": 23.6
+	},
+	"pig-manure": 1049.19,
+	"sensibleHeat": 69.79,
+	"sensibleHeat(kW)": 68.97,
+	"latentHeat": 108.2,
+	"latentHeat(kW)": 47.47
+}

@@ -1,0 +1,21 @@
+questions:
+  - id: 1
+    question: "Search-o1 프레임워크의 주요 목표는 무엇입니까?"
+  - id: 2
+    question: "에이전트적 검색 증강 생성(RAG) 메커니즘은 어떻게 작동하나요?"
+  - id: 3
+    question: "Reason-in-Documents 모듈의 중요성은 무엇입니까?"
+  - id: 4
+    question: "Search-o1은 검색된 문서에서 중복된 정보를 어떻게 처리합니까?"
+  - id: 5
+    question: "Search-o1은 성능 면에서 직접 추론 모델과 어떻게 비교됩니까?"
+  - id: 6
+    question: "오픈 도메인 QA 작업에서 Search-o1을 평가하는 데 어떤 데이터 세트가 사용되었습니까?"
+  - id: 7
+    question: "Top-k 문서 검색 설정은 Search-o1의 성능에 어떤 영향을 미칩니까?"
+  - id: 8
+    question: "Search-o1은 검색된 문서를 추론 체인에 직접 통합하는 데 있어 어떤 과제를 해결합니까?"
+  - id: 9
+    question: "Search-o1의 멀티홉 QA 벤치마크 성능은 어떤 의미를 갖습니까?"
+  - id: 10
+    question: "이 프레임워크는 신뢰할 수 있는 지능형 시스템 개발에 어떻게 기여하나요?"

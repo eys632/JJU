@@ -1,0 +1,6 @@
+langchain
+openai
+python-dotenv
+PyMuPDF
+pypdfium2
+pdfminer.six

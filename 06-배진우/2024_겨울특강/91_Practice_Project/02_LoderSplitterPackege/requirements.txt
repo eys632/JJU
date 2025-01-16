@@ -1,4 +1,0 @@
-langchain-community
-unstructured 
-openpyxl
-langchain-teddynote

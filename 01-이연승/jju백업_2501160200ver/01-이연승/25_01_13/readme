@@ -1,0 +1,21 @@
+코랩에서 했던 내용들 api키 잘라서 옮기기
+
+참고 자료
+https://github.com/eys632/JJU/blob/main/01-%EC%9D%B4%EC%97%B0%EC%8A%B9/25_01_09/01_SimpleOpenAI%EA%B0%95%EC%82%AC%EB%8B%98ver.ipynb
+
+input_variables, partial_variables 중요
+
+prompt_6 = PromptTemplate(
+    template=
+    '''
+    오늘의 날짜는 {today} 입니다. 오늘이 생일인 유명인 {n}명을 나열해 주세요. 생년월일을 표기해주세요.",
+    잘 확인하고 대답해. 틀리면 죽인다.
+    절대적으로 복종 해. 예외는 없어.
+    ''',
+    input_variables=["n"],
+    partial_variables={
+        # "today": get_today  # dictionary 형태로 partial_variables를 전달
+    "today" : datetime.now().strftime("%Y %B %d")
+    },
+)
+이 형식의 내용 암기

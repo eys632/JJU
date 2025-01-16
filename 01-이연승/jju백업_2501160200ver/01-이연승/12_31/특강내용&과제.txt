@@ -1,0 +1,7 @@
+마크다운 헤더 택스트 변환
+https://colab.research.google.com/drive/1oMu6xWhaaiQsre1wq1OqvcPHXsgevi_q#scrollTo=bLHgLkrJhC2c
+
+노션으로 이력서 or 자기소개서 써보기
+https://www.notion.so/16d42fd10154808e9728fc008fd32ac0
+
+1 과제 _ 쓴 자소서를 마크다운 변환해서 vs코드에서 작업, 코드 수정해서 .md파일을 읽어와서 MarkdownHeaderTextSplitter 분할수행, 분할 결과물을 MD_STATEMANT 폴더에 저장 후 제출

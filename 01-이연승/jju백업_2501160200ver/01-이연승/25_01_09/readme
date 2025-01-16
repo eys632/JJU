@@ -1,0 +1,10 @@
+langsmith 키, 기타 값들 받는 주소 
+https://www.langchain.com/pricing-langsmith
+들어가서 Developer칸의 sign up - Tracing projects에서 새로 만들거나 기존에 있는거 활용해서 하면 됨
+근데 나는 기존에 있는 프로젝트의 api, 기타 값들을 못찾겠음.
+
+에러 해결하기
+
+langsmith에서 api사용해서 대화한것들 기록 확인할 수 있는데 여기에 프롬프트템플릿이 있어야 하는데 나는 없음
+
+오늘 한 내용 잘 이해 안됨

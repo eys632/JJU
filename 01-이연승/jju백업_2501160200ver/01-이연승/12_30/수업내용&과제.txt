@@ -1,0 +1,14 @@
+https://wikidocs.net/234002 이 페이지를 따라서 수업
+
+https://colab.research.google.com/drive/13Y-fDBc8l92A3ZSf8ZMbs3WeDeHk_H0N#scrollTo=sxUm_D3oL_B-
+코랩 링크
+
+gpt를 코드로 구현해봄
+https://colab.research.google.com/drive/19B1Te6d1llwS5gmfNQN56shXkOgUWyNe#scrollTo=USr6SciXEnhW
+코랩 링크
+
+분할하는거 (못따라갔음)
+https://colab.research.google.com/drive/1jAZvzM9O_QERzL4Ha9WL8geqeDN_JLg4#scrollTo=h7gLzCXRVxdE
+
+다양한 언어의 코드들 분할하는거 (못따라갔음) 과제 제출함 241230_4_이연승
+https://colab.research.google.com/drive/1WaB0IveV-jhGCdjES_-RkdipodG6glKr#scrollTo=Bqi1BKTIacsR

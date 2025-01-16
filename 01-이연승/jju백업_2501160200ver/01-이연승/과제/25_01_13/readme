@@ -1,0 +1,9 @@
+과제/25_01_13
+├── main.py            # 프로그램 실행 메인 파일
+├── prompt_loader.py   # YAML 파일 로드 및 Prompt 생성 모듈
+├── openai_utils.py    # OpenAI API 호출 관련 모듈
+├── result_writer.py   # 결과 파일 저장 모듈
+├── .gitignore         # env 업로드 방지
+├── example.yaml       # Prompt 데이터 YAML 파일
+├── requriements.txt   # 다른 환경에서 버전 일치화하는 파일
+└── output.txt         # 실행 결과를 저장하는 파일

@@ -1,0 +1,98 @@
+questions:
+- id: 1
+  question: What is the main contribution of the Search-o1 framework as described
+    in the paper?
+- id: 2
+  question: How does the Reason-in-Documents module refine retrieved knowledge?
+- id: 3
+  question: What are the key differences between agentic RAG and standard RAG?
+- id: 4
+  question: Explain how the Search-o1 framework addresses knowledge insufficiency.
+- id: 5
+  question: What types of reasoning tasks were used to evaluate Search-o1?
+- id: 6
+  question: What challenges do LRMs face in long-step reasoning processes?
+- id: 7
+  question: How does the agentic RAG mechanism decide when to retrieve external knowledge?
+- id: 8
+  question: What role does the Reason-in-Documents module play in preserving reasoning
+    coherence?
+- id: 9
+  question: Describe the experimental setup used to evaluate Search-o1.
+- id: 10
+  question: What metrics were used to measure the performance of Search-o1 in the
+    experiments?
+- id: 11
+  question: How does Search-o1 perform on GPQA tasks compared to other models?
+- id: 12
+  question: What is the importance of maintaining a coherent reasoning chain in Search-o1?
+- id: 13
+  question: How does Search-o1 integrate external documents into its reasoning process?
+- id: 14
+  question: What improvements does Search-o1 offer over traditional retrieval-augmented
+    methods?
+- id: 15
+  question: Explain the concept of 'overthinking' in LRMs and how Search-o1 mitigates
+    it.
+- id: 16
+  question: What types of datasets were used to validate Search-o1's capabilities?
+- id: 17
+  question: Describe the agentic search workflow in the Search-o1 framework.
+- id: 18
+  question: What are the limitations of direct reasoning without retrieval, as discussed
+    in the paper?
+- id: 19
+  question: How does the Search-o1 framework handle redundant information in retrieved
+    documents?
+- id: 20
+  question: What are the implications of the findings on multi-hop QA tasks for Search-o1?
+- id: 21
+  question: What role does external knowledge play in enhancing the reasoning chain
+    of LRMs?
+- id: 22
+  question: How does the Search-o1 framework improve trustworthiness in complex reasoning
+    tasks?
+- id: 23
+  question: What are the primary domains tested in the Search-o1 experiments?
+- id: 24
+  question: How does the framework address the issue of catastrophic forgetting in
+    LRMs?
+- id: 25
+  question: What are the main steps in the Search-o1 inference process?
+- id: 26
+  question: How does Search-o1 compare to human experts on GPQA tasks?
+- id: 27
+  question: What is the role of the Reason-in-Documents instruction in the Search-o1
+    pipeline?
+- id: 28
+  question: How does the batch inference mechanism improve Search-o1's efficiency?
+- id: 29
+  question: What are the specific retrieval functions used in the Search-o1 framework?
+- id: 30
+  question: How does the framework ensure that irrelevant information does not disrupt
+    reasoning?
+- id: 31
+  question: What is the significance of scaling the number of retrieved documents
+    in Search-o1?
+- id: 32
+  question: Explain the challenges in integrating retrieved knowledge into reasoning
+    chains.
+- id: 33
+  question: How does the Search-o1 framework address long-document understanding in
+    LRMs?
+- id: 34
+  question: What are the benefits of iterative knowledge refinement in the Reason-in-Documents
+    module?
+- id: 35
+  question: Describe the main reasoning patterns compared in the paper's experiments.
+- id: 36
+  question: How does the Search-o1 framework handle ambiguous or uncertain queries?
+- id: 37
+  question: What are the primary components of the agentic RAG mechanism?
+- id: 38
+  question: How does Search-o1 improve performance on coding benchmarks like LiveCodeBench?
+- id: 39
+  question: What types of mathematical reasoning tasks were used to evaluate Search-o1?
+- id: 40
+  question: What insights were gained from the performance of Search-o1 on physics-related
+    tasks?

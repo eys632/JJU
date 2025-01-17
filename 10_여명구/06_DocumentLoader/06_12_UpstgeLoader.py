@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4bfc78dda3c025a2a8419034bcdfb001c0766dea
 import os
 
 os.environ["OPENAI_API_KEY"] = ""
@@ -10,6 +15,10 @@ os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
 os.environ["LANGCHAIN_PROJECT"] = "test_JJU_YEOMYEONGGU"
 
 
+<<<<<<< HEAD
+>>>>>>> 4bfc78dda3c025a2a8419034bcdfb001c0766dea
+=======
+>>>>>>> 4bfc78dda3c025a2a8419034bcdfb001c0766dea
 # pip install -q langchain_upstage
 from langchain_upstage import UpstageLayoutAnalysisLoader
 

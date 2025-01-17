@@ -1,0 +1,10 @@
+langchain_community
+pypdf
+pymupdf
+pypdfium2
+pdfminer.six
+pdfplumber
+langchain_teddynote
+unstructured
+networkx
+openpyxl

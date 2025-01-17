@@ -1,0 +1,6 @@
+input_variables:
+  - genre
+  - age_group
+input_type: {}
+partial_variables: {}
+template: "{age_group} 독자를 위한 {genre} 장르의 책을 추천해 줄래?. 추천 잘해주면 100달러 줄게"

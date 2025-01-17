@@ -1,5 +1,5 @@
 import os
-import nest_asyncio
+# import nest_asyncio
 from dotenv import load_dotenv
 from llama_parse import LlamaParse
 from llama_index.core import SimpleDirectoryReader
@@ -38,7 +38,7 @@ os.environ["LANGCHAIN_ENDPOINT"] = LANGCHAIN_ENDPOINT
 os.environ["LANGCHAIN_PROJECT"] = LANGCHAIN_PROJECT
 
 # 5. nest_asyncio 적용
-nest_asyncio.apply()
+# nest_asyncio.apply()
 
 # 6. 비교할 PDF 파일 경로 설정 (사용 환경에 맞춰 수정)
 file_path = "C:/Users/koll2/OneDrive/문서/GitHub/JJU3/06-배진우/2024_겨울특강/과제/data/TransUNet.pdf"

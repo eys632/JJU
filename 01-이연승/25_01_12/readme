@@ -1,0 +1,18 @@
+windows를 초기화 할 때 편리한 팁 - 이미지로 복구하기
+(windows11 기준)
+windows를 초기화해서 초기 세팅을 하고 그 상태를 이미지라는 형식의 데이터로 저장한다.
+이렇게 하면 나중에 초기화할 필요 없이 저장한 이미지를 활용하여 그 상태로 되돌릴 수 있다.
+
+지금부터 그 과정을 소개하고자 한다.
+
+준비물 - NTFS 형식의 120GB 이상(권장) 저장장치 
+
+초기화 후 세팅한 것들 
+
+설치파일
+크롬, 카카오톡, vs코드, git, python, githib desktop, iptime nas_setup, Treesize Free, Everything, chrome 원격 데스크톱, jju_wifisetup.exe
+
+설정
+wifi, 배경화면, 전원&배터리 사용시 화면 절전시간, 클렘쉘모드
+
+25_01_12ver - 저장장치 없어서 이미지 저장 못함

@@ -20,15 +20,17 @@ sentence5 = "I like to eat apples."
 
 sentences = [sentence1, sentence2, sentence3, sentence4, sentence5]
 
-# 번역기 초기화
+# Google Translator를 초기화
+# source='ko'는 번역할 원본 언어를 한국어로 설정
+# target='en'은 번역할 대상 언어를 영어로 설정
 translator = GoogleTranslator(source='ko', target='en')
 
-# 한글 문장을 영어로 번역
+# 한글 문장을 영어로 번역하거나, 영어 문장은 그대로 유지
 translated_sentences = [
-    translator.translate(sentence)
-    if not sentence.isascii()
-    else sentence
-    for sentence in sentences
+    translator.translate(sentence)  # 한글 문장은 영어로 번역
+    if not sentence.isascii()      # 문장이 ASCII 문자가 아닐 때 (한글일 때)
+    else sentence                  # 문장이 ASCII 문자일 경우 (영어일 경우) 그대로 사용
+    for sentence in sentences      # sentences 리스트의 모든 문장을 순회하며 처리
 ]
 
 # 번역된 문장으로 임베딩 생성

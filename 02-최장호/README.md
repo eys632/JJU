@@ -43,3 +43,5 @@
 ### 250116(목)
 - [CommaSeparatedListOutputParser](https://github.com/Jangorithm/LangChain/tree/main/CommaSeparatedListOutputParser)
 - [UnstructedOutputParser](https://github.com/Jangorithm/LangChain/tree/main/UnstructedOutputParser)
+- [JsonOutputParser](https://github.com/Jangorithm/LangChain/tree/main/JsonOutputParser)
+- [PandasDataFrameOutputParser](https://github.com/Jangorithm/LangChain/tree/main/PandasDataFrameOutputParser)

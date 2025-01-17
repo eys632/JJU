@@ -1,0 +1,69 @@
+Header: ContactInterestsLanguages
+Element: {'Header 1': 'Jangho CHOI'}
+=========================
+Header: 📞 +44 7871263013
+Element: {'Header 1': 'Jangho CHOI', 'Header 2': 'Contact'}
+=========================
+Header: ✉️ maya@zinenwine.com
+Element: {'Header 1': 'Jangho CHOI', 'Header 2': 'Contact'}
+=========================
+Header: 📍 Medellin, Colombia
+Element: {'Header 1': 'Jangho CHOI', 'Header 2': 'Contact'}
+=========================
+Header: 🌐 www.zinenwine.com
+Element: {'Header 1': 'Jangho CHOI', 'Header 2': 'Contact'}
+=========================
+Header: 🏂 Snowboarding
+Element: {'Header 1': 'Jangho CHOI', 'Header 2': 'Interests'}
+=========================
+Header: 🥾 Hiking
+Element: {'Header 1': 'Jangho CHOI', 'Header 2': 'Interests'}
+=========================
+Header: 🧶 Knitting
+Element: {'Header 1': 'Jangho CHOI', 'Header 2': 'Interests'}
+=========================
+Header: 🇬🇧 English
+Element: {'Header 1': 'Jangho CHOI', 'Header 2': 'Languages'}
+=========================
+Header: 🇵🇹 Portugese
+Element: {'Header 1': 'Jangho CHOI', 'Header 2': 'Languages'}
+=========================
+Header: Work HistoryEducationProjectsSkills
+Element: {'Header 1': 'Jangho CHOI'}
+=========================
+Header: Recent graduate in Interaction Design with hands-on experience from at Zapier and various side-projects. Skilled in Figma, prototyping, and website building using various tools. I've designed as well as developed more than 10 websites and apps end to end. I'm passionate about crafting seamless user experiences and with emphasis in motion design.
+Element: {'Header 1': 'Jangho CHOI'}
+=========================
+Header: UI Design Internship
+Element: {'Header 1': 'Work History'}
+=========================
+Header: June - September 2022
+Element: {'Header 1': 'Work History'}
+=========================
+Header: Contributed to the design and improvement of user interfaces. Assisted in creating wireframes, prototypes, and user flows, while collaborating with cross-functional teams. Gained hands-on experience in user research and usability testing, enhancing skills in creating intuitive and engaging user experiences.
+Element: {'Header 1': 'Work History'}
+=========================
+Header: Junior Barista
+Element: {'Header 1': 'Work History'}
+=========================
+Header: May - September 2020
+Element: {'Header 1': 'Work History'}
+=========================
+Header: Handled customer orders, prepared coffee drinks, and maintained a clean environment. Gained knowledge of coffee beans and brewing methods, enhancing customer service skills in a fast-paced setting.
+Element: {'Header 1': 'Work History'}
+=========================
+Header: BA Interaction Design
+Element: {'Header 1': 'Education'}
+=========================
+Header: September 2021 - September 2024
+Element: {'Header 1': 'Education'}
+=========================
+Header: Completed coursework in Human-Computer Interaction, Visual Communication, Prototyping, and Usability Testing. Led a capstone project to design a mobile app for local farmers' markets, focusing on improving user navigation and engagement. Additionally, developed an interactive prototype for an educational game as part of a team project, showcasing skills in wireframing, user research, and iterative design processes. Passionate about creating seamless and enjoyable user experiences.
+Element: {'Header 1': 'Education'}
+=========================
+Header: ProjectsNameDateDescriptionTagsPersonal Website /SK@May 1, 2024 → May 22, 2024Designed a custom modern website for Sara Krissin, a local textile artist. Developed it using Webflow and added animations using Rive.Design AssetsBees Together Landing Page@August 1, 2023 → March 1, 2024Designed and built a modern, user-friendly UI for a non-profit website dedicated to beekeeping. The design emphasizes clarity and accessibility, with intuitive navigation and engaging visuals to support the organization's mission and educate visitors.Design AssetsNon-ProfitUI DesignWebsite DevKnitties eComm Website@May 1, 2022 → August 1, 2022Designed a modern, user-friendly UI for an e-commerce website specializing in selling handknit beanies. The design features a minimalist aesthetic, intuitive navigation, and visually appealing product displays to enhance the shopping experience and drive sales.UI DesignWebsite Dev
+Element: {'Header 1': 'Projects'}
+=========================
+Header: SkillsSkillTypeSkill LevelPhotoshopDesign Tool90%FigmaDesign Tool80%FramerWebsite Builder60%NotionProject Management60%WebflowWebsite Builder40%RiveAnimation30%CSS + Basic JSFront End10%
+Element: {'Header 1': 'Skills'}
+=========================

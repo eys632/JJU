@@ -1,11 +1,12 @@
-import os
-# from langchain.chat_models import ChatOpenAI
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
-from langchain_teddynote.messages import stream_response # 스트리밍 출력
+import os
+from dotenv import load_dotenv
 
-# OpenAI API 키 설정
-os.environ['OPENAI_API_KEY'] = ''
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
 # 템플릿 정의
 template = "{country1}과 {country2}의 수도는 각각 어디인가요?"
 
@@ -18,9 +19,10 @@ prompt = PromptTemplate(
 
 # OpenAI 모델 초기화
 model = ChatOpenAI(
-    model="gpt-3.5-turbo",
+    model="gpt-4o",
     max_tokens=2048,
     temperature=0.1,
+    api_key=OPENAI_API_KEY,
 )
 
 # 프롬프트 채우기 (country1만 동적으로 설정)

@@ -1,0 +1,3 @@
+_type: "prompt"
+template: "{environment}문제에 대해 해결방안이야"
+input_variables: ["environment"]

@@ -1,0 +1,7 @@
+api키를 이용해서 openai를 사용하는 방법을 직접 구현해보았다.
+
+1. 키 불러오기, 확인
+https://colab.research.google.com/drive/1kYQNfe8xICr8jJHfkqzW8CrujwnDSQam#scrollTo=60wRbZpHSe_l
+
+2. 키를 이용해서 프롬프트 정의하고 질문, 답변 얻기
+https://colab.research.google.com/drive/16XuVZhWeW5VbxvPL-tyiNiQmVyZTw8V9#scrollTo=_j7mSPOCLjAW

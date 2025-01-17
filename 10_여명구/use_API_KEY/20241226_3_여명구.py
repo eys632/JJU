@@ -1,7 +1,10 @@
 import os
+from dotenv import load_dotenv
 
-# API 키 가져오기
-os.environ['OPENAI_API_KEY'] = ''
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
 from langchain_teddynote.messages import stream_response
 from langchain_core.prompts import PromptTemplate
 
@@ -25,9 +28,10 @@ from langchain_openai import ChatOpenAI
 
 # OpenAI 모델 초기화
 model = ChatOpenAI(
-    model='gpt-3.5-turbo',
+    model='gpt-4o',
     max_tokens=2048,
     temperature=0.1,
+    api_key=OPENAI_API_KEY,
 )
 
 chain = prompt | model

@@ -1,0 +1,28 @@
+import os
+
+os.environ["OPENAI_API_KEY"] = ""
+os.environ["LANGCHAIN_API_KEY"] = ""
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
+os.environ["LANGCHAIN_PROJECT"] = "01-03-4"
+
+from langchain_core.parser import CommaSeparatedListOutputParser
+from langchain_core.prompts import PromptTemplate
+from langchain_openai import ChatOpneAI 
+
+output_parser = CommaSeparatedListOutputParser()
+
+format_instruction = outpuut_parser.get_format_instructions()
+
+prompt = PromptTemplate(
+    template = "[subject]에 맞는 5가지를 나열해. \n[format_instruction]",
+    input = [subject],
+    partial = {"format_instruction" : format_instruction}
+)
+
+model = ChatOpenAI(temperature = 0)
+
+chain = prompt | model | output
+
+response = chain.invoke({"subjcet : "한국인이 좋아하는 아이스크림 5가지"})
+print(response)

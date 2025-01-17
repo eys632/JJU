@@ -1,0 +1,696 @@
+Delivered-To: namhyun415@gmail.com
+Received: by 2002:a05:7022:68a4:b0:92:ab2f:4696 with SMTP id cm36csp1432140dlb;
+        Thu, 9 Jan 2025 11:29:54 -0800 (PST)
+X-Received: by 2002:a17:90b:54cb:b0:2ee:b666:d14a with SMTP id 98e67ed59e1d1-2f548ec8a90mr12821520a91.17.1736450994126;
+        Thu, 09 Jan 2025 11:29:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1736450994; cv=none;
+        d=google.com; s=arc-20240605;
+        b=WPuSstg7KokWq5ONraukD3zuWNnVqam5D9eGkDbeuKVFkUjBl7gYuqdzn2E3DkAjsM
+         T3wNGUyJ9+A+580QEtFvIVyXcwalYbWLQ2qkl12Sk1wxIKDsUzmcBJAKNOWjDTX0kzqA
+         xGijDdFWZKlUSYsQN6pyGwvGOYK389y038nu42NfrF1SsQmDLZiXWGJNkEJKMVptfGec
+         eZ05SMdZQyrtd5G9MZHe/owhxXX2SuwSRiHq3OeBohdMN3GgfAVhpXoKV4vkisFMSVaH
+         02Y0cQ88Z5iuorUwOs/UWaBwif3YSsPvDQ87MQ2zSfcezuASOr9h9nECRXelaYI6zsZd
+         qDCA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:from:subject:message-id:list-id:feedback-id:precedence
+         :list-unsubscribe:reply-to:date:mime-version:dkim-signature;
+        bh=OjzKljGdrxuRuTOTrb5+CKo1QxOOYdn58nb330OG4Tw=;
+        fh=uBB/mLz2ZrcyeBacCTDCPUYzYw+WVVbEToTV1Ke7Ahc=;
+        b=DYS+SBreV8r7LWcFCt7i9Dbsk+mhQ+4foaiG8RAYN07tQhBqgw+QPTBGITdFzJ9jd/
+         MYVIDDh3DDj74RMyDkS+J7yrf51U6mGyGL95CvdaN1Sr4aWKdmdGkAuLTEH+xCBAW+1d
+         CevWMPX11nq+HxDkRgK1oaT9DNGUbwHxoZSNvJQjEs6zqL9mwa9PfijYUDjYXMHjzVGn
+         aQ3muGP3AbiAjMkrC0F9loMVTeROnKWTClzMbTeJbvhh6afLfcGSIj0Y6v0S2LZUuuL7
+         c5AILg/wLH7wyZ6LgLufr4WuNqwOSiOhgWJhavcYaXyBTBjR+t8zBvtS62KuKKBBX0jj
+         WCEg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kaggle.com header.s=20230601 header.b=BJfHsPMs;
+       spf=pass (google.com: domain of 3ssoazwckcjwlmpcnjwiyeejc.amklykfwsl2z3ekygj.amk@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3sSOAZwcKCjwlmpcnjwiYeejc.amklYkfwsl2z3ekYgj.amk@scoutcamp.bounces.google.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=kaggle.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <3sSOAZwcKCjwlmpcnjwiYeejc.amklYkfwsl2z3ekYgj.amk@scoutcamp.bounces.google.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id 98e67ed59e1d1-2f5588fb2b2sor1502957a91.7.2025.01.09.11.29.53
+        for <namhyun415@gmail.com>
+        (Google Transport Security);
+        Thu, 09 Jan 2025 11:29:54 -0800 (PST)
+Received-SPF: pass (google.com: domain of 3ssoazwckcjwlmpcnjwiyeejc.amklykfwsl2z3ekygj.amk@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kaggle.com header.s=20230601 header.b=BJfHsPMs;
+       spf=pass (google.com: domain of 3ssoazwckcjwlmpcnjwiyeejc.amklykfwsl2z3ekygj.amk@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3sSOAZwcKCjwlmpcnjwiYeejc.amklYkfwsl2z3ekYgj.amk@scoutcamp.bounces.google.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=kaggle.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=kaggle.com; s=20230601; t=1736450993; x=1737055793; dara=google.com;
+        h=to:from:subject:message-id:list-id:feedback-id:precedence
+         :list-unsubscribe:reply-to:date:mime-version:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=OjzKljGdrxuRuTOTrb5+CKo1QxOOYdn58nb330OG4Tw=;
+        b=BJfHsPMs74fjFkLwE8/x/lDu1E3HwbRkPGKGBqhlhHzRKHDae/r7b8KgJPzcPbqlHE
+         8upTO+eNKM3NhP9+VsnGZMLx1vtcn9PBnql6qjKO5Ps3eOKso92oJujj6CpMYVkg+COj
+         k2WHpwnouL1W80ODBL6O/Nsv/JOHaOysLLEteDxwTKx3H9FHlESJiPNC61PbAb7iWA2w
+         cDlEpdn0t2GWbkWI58NIk1gj2GU0uWLp3aaif6B9+a9ic3DwERK1hiUn+Cnq8UjEKppu
+         fQTSZljfGLxgXR3uMPmpVd1A8KzT88bLCTAxzKYPx6vT8hIno5EkfvNs7ni6N/jhZbE6
+         q/Bg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1736450993; x=1737055793;
+        h=to:from:subject:message-id:list-id:feedback-id:precedence
+         :list-unsubscribe:reply-to:date:mime-version:x-gm-message-state:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=OjzKljGdrxuRuTOTrb5+CKo1QxOOYdn58nb330OG4Tw=;
+        b=rz0yBVW0eFvQpj6h0DfXpbq+VQFCiQh+FvA3DkGWSDjTclhst/Pe/5SBOz9Oft9j7M
+         Jr2EEs1VtoRGYVvGyGG28Tuwnq7nCj6rraveGQEt+jN4tqqlj1i72uT6K7DJo6IvuDve
+         ckf10jX40uEXud3taNbxpJKMkPoh4iIWcUelng+KjPQ/gQlxcWak6sdVt8jvBufXhNBy
+         GixBjVl1SoJ18AXJVsle3cGEG9m5IdLWS11S902Humrn8zXwK4abfWz8q8Y7yU0XcBW3
+         LjTyBrB2R2huZawpfHb6qq3HkSEMCoaTn3U531Ir0+/col9+5LbCBFpdyPM5f/5ijMZg
+         urMQ==
+X-Gm-Message-State: AOJu0YzizmtOSA74lynZoFiArMQmGCUPGyGgJu/d4AXirtr0J8s+7egV
+	F1x81Rj+bzvzDswiceQKkfsIcBNhVlP/z7OcRI8zI3MSyiU=
+X-Google-Smtp-Source: AGHT+IH/2CcAMLJTzKHVWOwmt//ceI534paMPJSWB78j/vSjC75Sq1ofzeTeBsqlXQkGaQC9+Ydlh6g=
+MIME-Version: 1.0
+X-Received: by 2002:a17:90b:2f4e:b0:2eb:140d:f6df with SMTP id
+ 98e67ed59e1d1-2f548e98382mr11106655a91.1.1736450993657; Thu, 09 Jan 2025
+ 11:29:53 -0800 (PST)
+Date: Thu, 09 Jan 2025 11:29:53 -0800
+Reply-To: Kaggle <noreply@kaggle.com>
+X-Google-Id: 4041189
+List-Unsubscribe: <https://notifications.google.com/g/p/ANiao5pldHuFb4pUa17BToszpAR4jpoxbolDG6TgNy3yHUtSUPNpXxfb30ifRKGfmGA0Lyl_HgrI-FjgwN9GkRX6YJ8TRYlCV30I-5i7g09uYwnKEjOkSSL0W0-mkYiLSogPayITARyF5MNRLYZsDutCrFoUmJ_OquoiNmqv7uiTEWLK9eBUP5uyGEDfk9BMsEN7BOhUG8kEg2oXjNkRD5Rm9q1eMHyxC2CpJBYvN6uTnnp-ii8ibgda671lYRwILxUM_EBvkECKYZJMsA5X>
+Precedence: bulk
+Feedback-ID: P2603-0:C20126812:M110416707-en-US:gamma
+List-Id: <d3d572f2a797bc005fbf0c631ac17de03856ef11.google.com>
+X-Notifications: GAMMA:<5137b1c11cab71fe54d45b063bef5d6b0d8c2126-20126812-110914944@google.com>
+X-Notifications-Bounce-Info: AdTXxahMh7ThrdaBdFsqZDwIjkWT26ATdn2wJnyadQwX_JAhClDk9Lf1QPdZm9apES50jwUWBZXKHRwY8_6SomDSOAxNXk6ROt4FBoM1lO6M1Fee_oQvbDBBgUDcpbjYj0N7UbkXyhcjfjo46YmyVnRIdLNTYcQtqt4yZve82ssk3OVQwV10aE9H4ECXzxTS_XWpMzBd3D4NNwBfRTeObVxa7el-tw_RTawZ3M6RcBVD-aPXDFqSbElAjbqGX4MTL6Q_kkj1bNqH-x51Sun0u3q5zLuDvwrsyaL8MIc4kh2fuKpC7eUT8evgZsc5YNJGspBo457aIYOosXSFzEjHb6fl5y0GGSsvlP5Xpf2ihH4xmlFIFR8qtRY9YDF9JNhXNfXCCGYMd0qXdAwXH-JBxISWjQPUsxOJC2VYTBLt1cqamF8i_NLhWWoWCDveo3zsnWEx3iwvZG3SJvq9sw7IYluSjwU4iNIqcyvJ7iehksz-t_L5cSbye1MAcSnNbTK5ZGQe5MGT6IG6cwXOAT_cYTn7SgMNjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <5137b1c11cab71fe54d45b063bef5d6b0d8c2126-20126812-110914944@google.com>
+Subject: Our free, hands-on data science courses
+From: Kaggle <noreply@kaggle.com>
+To: namhyun415@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000a599ca062b4b0034"
+
+--000000000000a599ca062b4b0034
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+Kaggle
+
+
+
+
+
+
+Hi kongnamhyun,
+
+Are you here to learn data science or improve your current skills? Our  
+hands-on courses are the fastest path to a data science career. In only a  
+few hours, you'll gain practical skills that you can immediately apply to  
+Kaggle competitions, or your own data science projects.
+
+
+
+
+
+Check out our courses
+
+
+
+Whether you're completely new to Python or an expert looking for advanced  
+techniques to improve your machine learning models, you're in the right  
+place!
+
+Happy learning,
+
+The Kaggle Team
+
+
+
+Kaggle, Inc 1600 Amphitheatre Pkwy Mountain View, CA 94043
+
+This email was sent to namhyun415@gmail.com because you indicated that  
+you'd like to receive news and updates about Kaggle. If you don't want to  
+receive these emails in the future, please unsubscribe here. You can also  
+change your preferences on your account's profile page by logging in at  
+kaggle.com.
+
+
+
+
+
+--000000000000a599ca062b4b0034
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html xmlns=3Dhttp://www.w3.org/1999/xhtml xmlns:v=3Durn:schemas-microsoft-=
+com:vml xmlns:o=3Durn:schemas-microsoft-com:office:office lang=3Den xml:lan=
+g=3Den>
+  <head>
+    <meta http-equiv=3DContent-Type content=3D"text/html; charset=3DUTF-8">
+    <title>Welcome to Kaggle</title>
+    <style type=3Dtext/css>
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* greek-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* greek */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+      }
+      /* cyrillic-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* greek-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* greek */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+      }
+      /* cyrillic-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* greek-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* greek */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+      }
+      /* latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQ=
+tMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+      }
+      html {
+        background: #f5f5f5;
+        font-family: "Inter", sans-serif;
+      }
+
+      /* WINDOWS 10 MAIL LINK FIX */
+      a {
+        text-decoration: none;
+      }
+
+      /* iOS GMAIL WEB FONT SIZE FIX */
+      .gmail-fix {
+        display: none;
+        display: none !important;
+      }
+
+      /* iOS GMAIL APP WIDTH FIX */
+      u + #new-gmail-fix {
+        display: block !important;
+      }
+
+      /* /////////////////// FIX */
+      .cta-hover:hover {
+        background-color: #639420 !important;
+        color: #ffffff !important;
+      }
+
+      /* /////////////////// FIX */
+      /* CTA ROLLOVER IF SUPPORTED */
+      .cta-hover:hover {
+        color: #ffffff !important;
+        background-color: #639420 !important;
+      }
+
+      .overline {
+        font-family: "Inter", sans-serif;
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+        color: #202124;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+      }
+
+      h1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        color: #202124;
+        letter-spacing: -0.02px;
+        margin: 0;
+      }
+
+      .body1 {
+        font-family: Inter-Medium;
+        font-size: 16px;
+        color: #3c4043;
+        letter-spacing: -0.02px;
+        line-height: 24px;
+      }
+
+      h2 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #202124;
+        letter-spacing: -0.02px;
+        margin: 38px 0 0 0;
+      }
+
+      body {
+      }
+      .side-padding {
+          padding: 0 92px 0 92px;
+          margin: 0;
+        }
+
+      @media screen and (min-width: 600px) {
+        .side-padding {
+          padding: 0 92px 0 92px;
+          margin: 0;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .side-padding {
+          padding: 0 24px 0 24px;
+          margin: 0;
+        }
+      }
+    </style>
+
+    <!--[if mso]>
+      <style type=3D"text/css">
+        table {
+          border-collapse: collapse;
+          mso-table-lspace: 0pt;
+          mso-table-rspace: 0pt;
+        }
+        table td {
+          border-collapse: collapse;
+        }
+        .mso-cta {
+          padding: 10px 0 10px 0 !important;
+          font-weight: bold !important;
+        }
+      </style>
+    <![endif]-->
+  </head>
+
+  <body bgcolor=3D#F5F5F5 style=3D"padding: 0; margin: 0; background: #f5f5=
+f5">
+    <center>
+      <!-- OUTER WRAPPER -->
+      <table align=3Dcenter bgcolor=3D#F5F5F5 border=3D0 cellpadding=3D0 ce=
+llspacing=3D0 width=3D100% role=3Dpresentation>
+        <tbody>
+          <tr>
+            <td align=3Dcenter style=3D"padding: 0px 0 0 0">
+              <!-- CONTENT CONTAINER -->
+              <table align=3Dcenter border=3D0 cellpadding=3D0 cellspacing=
+=3D0 width=3D600 role=3Dpresentation>
+                <tbody>
+                  <tr bgcolor=3D#F5F5F5 height=3D32>
+                    <td style=3D"padding: 0 0 0 0; height: 32px"></td>
+                  </tr>
+                  <tr bgcolor=3D#F5F5F5>
+                    <td align=3Dcenter style=3D"padding: 0 0 30px 0" width=
+=3D600px>
+                      <img alt=3DKaggle border=3D0 src=3Dhttps://storage.go=
+ogleapis.com/kaggle-media/Images/Kaggle_Blue.png alt=3D"=E2=80=9CKaggle=E2=
+=80=9D" style=3D"
+                          display: block;
+                          outline: none;
+                          height: auto;
+                          height: 40px;
+                          width: 104px;
+                        " width=3D104>
+                    </td>
+                  </tr>
+               =20
+                  <!-- TEXT CONTENT CONTAINER -->
+                  <tr bgcolor=3D#FFFFFF>
+                    <td align=3Dcenter style=3D"padding: 0 0 0 0" width=3D6=
+00px>
+                      <table align=3Dcenter border=3D0 cellpadding=3D0 cell=
+spacing=3D0 width=3D600 role=3Dpresentation>
+                        <tbody>
+                          <tr bgcolor=3D#FFFFFF height=3D36>
+                            <td style=3D"padding: 0 0 0 0; height: 36px"></=
+td>
+                          </tr>
+                          <tr bgcolor=3D#FFFFFF>
+                            <td class=3Dside-padding style=3D"padding: 0 44=
+px 0 44px">
+                            =20
+                              <p style=3D"
+                                  font-family: &#39;Inter&#39;, sans-serif;
+                                  font-weight: 500;
+                                  font-size: 16px;
+                                  color: #3c4043;
+                                  letter-spacing: -0.02px;
+                                  line-height: 24px;
+                                ">
+                                Hi kongnamhyun,
+                              </p>
+=20
+    <p style=3D"
+                                  font-family: &#39;Inter&#39;, sans-serif;
+                                  font-weight: 500;
+                                  font-size: 16px;
+                                  color: #3c4043;
+                                  letter-spacing: -0.02px;
+                                  line-height: 24px;
+                                ">
+                          Are you here to learn data science or improve you=
+r current skills? Our hands-on courses are the fastest path to a data scien=
+ce career. In only a few hours, you=E2=80=99ll gain practical skills that y=
+ou can immediately apply to Kaggle competitions, or your own data science p=
+rojects.
+
+                              </p>
+
+                             =20
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+
+             =20
+               =20
+                  <tr bgcolor=3D#FFFFFF>
+                    <td align=3Dcenter>
+
+                      <div style=3D"padding-top: -60px;">
+                        <!--[if mso]>
+                          <v:roundrect
+                            xmlns:v=3D"urn:schemas-microsoft-com:vml"
+                            xmlns:w=3D"urn:schemas-microsoft-com:office:wor=
+d"
+                            href=3D"https://www.kaggle.com/learn/?utm_mediu=
+m=3Demail&utm_source=3Dgamma&utm_campaign=3Dgamma-onboarding-learn"
+                            style=3D"
+                              height: 36px;
+                              v-text-anchor: middle;
+                              width: 200px;
+                            "
+                            arcsize=3D"50%"
+                            strokecolor=3D"#e6e6e8"
+                            fillcolor=3D"#fafafb"
+                          >
+                            <w:anchorlock />
+                            <center
+                              style=3D"
+                                color: #2f353e;
+                                font-family: sans-serif;
+                                font-size: 13px;
+                                font-weight: bold;
+                              "
+                            >
+Check out our courses                            </center>
+                          </v:roundrect> <!
+                        [endif]--><a href=3Dhttps://notifications.google.co=
+m/g/p/ANiao5pcPNyM7thBgmPzogyKMjblj5LdfqKTx6qiV8ypN914Qju7M79rnFWXMa814q27v=
+RPUL2TKylPuv_F7V9rT_QHUk7-t4ppb-6xftcea6j5xdMtO5DsoewAIL7YktKYrci1EyqR_eLY1=
+SXQxeW1C4FKfx6N67e_5PigwJ_PBXaYqdrn4zKQqx--CSJvYKpeYBHs3vD7Nfnd_1apGbdyx7g6=
+WNBw4YS0_7ijME5uxD4ZC0YNFH17d4TjITMUGASl2ZhBK2pfUyjko style=3D"
+                            background-color: #000000;
+                            padding: 11px 24px 11px 24px;
+                            margin: 10px 0 0px 0;
+                            border-radius: 20px;
+                            font-family: &#39;Inter&#39;, sans-serif;
+                            font-weight: 600;
+                            font-size: 14px;
+                            color: #ffffff;
+                            letter-spacing: 0;
+                            display: inline-block;
+                            text-align: center;
+                            text-decoration: none;
+                            -webkit-text-size-adjust: none;
+                            mso-hide: all;
+                          " title=3D"Check out our courses=E2=80=8B">Check =
+out our courses</a>
+                      </div>
+                    </td>
+                  </tr>
+             =20
+                  <tr bgcolor=3D#FFFFFF>
+                    <td class=3Dside-padding style=3D"padding: 0 44px 0 44p=
+x">
+                      <p style=3D"
+                          font-family: &#39;Inter&#39;, sans-serif;
+                          font-weight: 500;
+                          font-size: 16px;
+                          color: #3c4043;
+                          letter-spacing: -0.02px;
+                          line-height: 24px;
+                        ">
+
+Whether you=E2=80=99re completely new to Python or an expert looking for ad=
+vanced techniques to improve your machine learning models, you=E2=80=99re i=
+n the right place!                    </p>
+                      <p style=3D"
+                          font-family: &#39;Inter&#39;, sans-serif;
+                          font-weight: 500;
+                          font-size: 16px;
+                          padding-bottom: 40px;
+                          color: #3c4043;
+                          letter-spacing: -0.02px;
+                          line-height: 24px;
+                        ">
+                        Happy learning,<br><br>The Kaggle Team
+
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class=3Dside-padding style=3D"padding: 0 24px 0 24p=
+x">
+                      <p style=3D"
+                          font-family: &#39;Inter&#39;, sans-serif;
+                          font-weight: 500;
+                          font-size: 12px;
+                          color: #5f6368;
+                          padding-top: 30px;
+                          letter-spacing: 0;
+                          text-align: center;
+                          line-height: 20px;
+                        ">
+                        Kaggle, Inc 1600 Amphitheatre Pkwy Mountain View, C=
+A
+                        94043
+                      </p>
+                      <p style=3D"
+                          font-family: &#39;Inter&#39;, sans-serif;
+                          font-weight: 500;
+                          font-size: 12px;
+                          color: #5f6368;
+                          letter-spacing: 0;
+                          text-align: center;
+                          line-height: 20px;
+                        ">
+                    This email was sent to namhyun415@gmail.com because you
+                        indicated that you&#39;d like to receive news and u=
+pdates
+                        about Kaggle. If you don&#39;t want to receive thes=
+e emails
+                        in the future, please
+                        <a href=3Dhttps://notifications.google.com/g/p/ANia=
+o5pldHuFb4pUa17BToszpAR4jpoxbolDG6TgNy3yHUtSUPNpXxfb30ifRKGfmGA0Lyl_HgrI-Fj=
+gwN9GkRX6YJ8TRYlCV30I-5i7g09uYwnKEjOkSSL0W0-mkYiLSogPayITARyF5MNRLYZsDutCrF=
+oUmJ_OquoiNmqv7uiTEWLK9eBUP5uyGEDfk9BMsEN7BOhUG8kEg2oXjNkRD5Rm9q1eMHyxC2CpJ=
+BYvN6uTnnp-ii8ibgda671lYRwILxUM_EBvkECKYZJMsA5X style=3D"color: #000000; te=
+xt-decoration: underline" title=3D"Unsubscribe here">unsubscribe here</a>. =
+You can also change your preferences on your
+                        account&#39;s profile page by logging in at
+                        <a href=3Dhttps://notifications.google.com/g/p/ANia=
+o5oTuisVuXU3nE1Qlq8n1a1r70p6aKvbHm9QfKbz8WGL69sb1zWKKi-vM0v9IL6xY1H0AOlUG-B=
+pTgwiH3H0605XSNRQNhyvbtQd_l_yCGBWtfbKOp6T2u5iJtE1M3CcaFvGN7vEsWnS0JD2Druapl=
+BsGPv1om3vbgqOkQ style=3D"color: #000000; text-decoration: underline" title=
+=3DKaggle.com>kaggle.com.</a>
+</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+  <img alt=3D"" height=3D1 width=3D3 src=3Dhttps://notifications.google.com=
+/g/img/ANiao5q6iIwi3cedFjy9gCrVDSGkOb6aF0UogBLunNppQUJMsBiV_kHwcv-CNh-tV5I1=
+DJTz9kd2iNaEZx5D_Ep-MgMvCDuBQ8yNdtDJwL9_0hKc8an5myJcfLErjkDhaLFU8uFiEQ.gif>=
+</body>
+</html>
+--000000000000a599ca062b4b0034--

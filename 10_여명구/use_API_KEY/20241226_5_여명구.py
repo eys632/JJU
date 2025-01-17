@@ -1,14 +1,12 @@
-import os
 from datetime import datetime
 from langchain_core.prompts import PromptTemplate
-# from langchain_community.chat_models import ChatOpenAI
 from langchain_openai import ChatOpenAI
+import os
+from dotenv import load_dotenv
 
-# OpenAI API 키 설정
-# 4o
-# os.environ['OPENAI_API_KEY'] = ''
-# # 3.5
-os.environ['OPENAI_API_KEY'] = ''
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # 날짜 함수 정의
 def get_today():

@@ -1,0 +1,1 @@
+'PassengerId: 2\nSurvived: 1\nPclass: 1\nName: Cumings, Mrs. John Bradley (Florence Briggs Thayer)\nSex: female\nAge: 38\nSibSp: 1\nParch: 0\nTicket: PC 17599\nFare: 71.2833\nCabin: C85\nEmbarked: C'

@@ -1,0 +1,6 @@
+1 - 계산기 코드 작성
+(notion에 업로드)
+
+2 - streamlit으로 계산기 구현
+(notion에 업로드)
+https://jeonju-5-test2.streamlit.app/

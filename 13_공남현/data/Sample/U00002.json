@@ -1,0 +1,32 @@
+{
+   "01_dataset" : {
+      "1_identifier" : "2022-2-16-137",
+      "2_name" : "한국어 대학 강의 데이터",
+      "3_src_path" : "source/gen/basi/C14782/U00002.wav",
+      "4_label_path" : "labels/gen/basi/C14782/U00002.json",
+      "5_category" : "gen",
+      "6_type" : "음성",
+      "7_copyright" : "Y",
+      "8_src_length" : 1632,
+      "9_speech_length" : "3.51575"
+   },
+   "02_srcinfo" : {
+      "1_id" : "C14782"
+   },
+   "03_lectureinfo" : {
+      "1_city" : "전라도",
+      "2_university_type" : "전문대",
+      "3_major_category" : "basi",
+      "5_collection_type" : "화상회의 온라인강의"
+   },
+   "05_speakerinfo" : {
+      "1_id" : "S00300",
+      "2_gender" : "F",
+      "3_age" : "40대",
+      "4_role" : "강사",
+      "5_dialect" : "표준어"
+   },
+   "06_transcription" : {
+      "1_text" : "이제 시험은 잘 보셨나요?"
+   }
+}

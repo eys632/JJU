@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질의응답 프로그램</title>
+</head>
+<body>
+    <h1>질의응답 프로그램</h1>
+    <form action="/ask" method="post">
+        <label for="question">질문을 입력하세요:</label>
+        <input type="text" id="question" name="question" required>
+        <button type="submit">질문하기</button>
+    </form>
+    {% if question %}
+    <h2>질문: {{ question }}</h2>
+    <h2>답변: {{ answer }}</h2>
+    {% endif %}
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질의응답 프로그램</title>
+    Bootstrap CSS 추가
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">질의응답 프로그램</h1>
+        <form action="/ask" method="post" class="mb-4">
+            <div class="form-group">
+                <label for="question">질문을 입력하세요:</label>
+                <input type="text" id="question" name="question" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">질문하기</button>
+        </form>
+        {% if question %}
+        <div class="card">
+            <div class="card-header">
+                질문
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ question }}</h5>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                답변
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ answer }}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    Bootstrap JS 및 jQuery 추가 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> -->

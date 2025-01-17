@@ -41,22 +41,26 @@ async def main():
     sentence5 = "I like to eat apples."
     sentences = [sentence1, sentence2, sentence3, sentence4, sentence5]
 
-    # 문장별로 번역 및 임베딩 처리
-    embedded_sentences = [
-        embeddings.embed_query(await preprocess(sentence)) for sentence in sentences
-    ]
+    # 결과를 저장할 파일 열기
+    with open("results.txt", "w", encoding="utf-8") as file:
+        # 문장별로 번역 및 임베딩 처리
+        embedded_sentences = [
+            embeddings.embed_query(await preprocess(sentence)) for sentence in sentences
+        ]
 
-    # 코사인 유사도 계산 함수
-    def similarity(a, b):
-        return cosine_similarity([a], [b])[0][0]
+        # 코사인 유사도 계산 함수
+        def similarity(a, b):
+            return cosine_similarity([a], [b])[0][0]
 
-    # 유사도 계산 및 출력
-    for i, sentence in enumerate(embedded_sentences):
-        for j, other_sentence in enumerate(embedded_sentences):
-            if i < j:
-                print(
-                    f"[유사도 {similarity(sentence, other_sentence):.4f}] {sentences[i]} \t <=====> \t {sentences[j]}"
-                )
+        # 유사도 계산 및 출력
+        for i, sentence in enumerate(embedded_sentences):
+            for j, other_sentence in enumerate(embedded_sentences):
+                if i < j:
+                    result = (
+                        f"[유사도 {similarity(sentence, other_sentence):.4f}] {sentences[i]} \t <=====> \t {sentences[j]}"
+                    )
+                    print(result)  # 화면에 출력
+                    file.write(result + "\n")  # 파일에 저장
 
 # 비동기 함수 실행
 asyncio.run(main())

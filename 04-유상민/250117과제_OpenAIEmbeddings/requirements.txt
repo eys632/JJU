@@ -1,0 +1,5 @@
+scikit-learn
+langchain-openai
+python-dotenv
+openai
+deep-translator

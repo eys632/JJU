@@ -14,6 +14,10 @@ def main(input_data):
     input_type = detect_input_type(input_data)
     file_type = detect_file_type(input_data) if input_type == "FILE" else "URL"
 
+    # URL로 잘못 감지되지 않도록 보완
+    if file_type != "URL":
+        input_type = "FILE"
+
     print(f"1. Input 데이터 유형: {input_type}")
     print(f"2. 파일 타입: {file_type}")
 
@@ -37,8 +41,6 @@ def main(input_data):
         print(traceback.format_exc())
 
 if __name__ == "__main__":
-    # 입력 파일 경로 또는 URL 설정
-    input_data = "C:/Users/dbtkd/Documents/GitHub/JJU-1/04-유상민/250110과제_LoaderSplitterPackage/input 데이터 모음/231024_포스코기술투자의 여신전문금융업 등록 말소.pdf"
-
-
+    # 입력 파일 경로 설정
+    input_data = "/workspaces/JJU-1/04-유상민/250110과제_LoaderSplitterPackage/input데이터 모음/231024_포스코기술투자의 여신전문금융업 등록 말소.pdf"
     main(input_data)

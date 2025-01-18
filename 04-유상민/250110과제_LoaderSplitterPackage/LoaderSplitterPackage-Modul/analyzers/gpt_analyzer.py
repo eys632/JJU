@@ -1,4 +1,4 @@
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 
@@ -6,7 +6,7 @@ def analyze_with_gpt(file_type, loader_results_and_split_results):
     model = ChatOpenAI(
         model="gpt-4o",
         max_tokens=2048,
-        temperature=0.7
+        temperature=0
     )
 
     loader_results, split_results = loader_results_and_split_results
@@ -22,10 +22,12 @@ def analyze_with_gpt(file_type, loader_results_and_split_results):
         template="""
         당신은 파일 분석 전문가입니다. {file_type} 파일에 대한 분석을 수행해주세요.
 
-        사용 가능한 Splitter 목록:
+        1. 사용한 loader의 목록을 적어주세요:
+
+        2. 사용 가능한 Splitter 목록을 적어주세요:
         {splitter_list}
 
-        분석해야 할 내용:
+        3. 분석해야 할 내용:
         {split_results}
 
         다음 형식으로 상세한 분석 결과를 제공해주세요:
@@ -43,6 +45,8 @@ def analyze_with_gpt(file_type, loader_results_and_split_results):
         | 문맥 일관성 | XX | 설명 |
 
         3. 데이터 품질에 대한 종합적 평가:
+        1. loader모델들 중 가장 효과적인 모델:
+        2. splitter모델들 중 가장 효과적인 모델:
         [전반적인 데이터 품질에 대한 평가 및 개선점 제안]
         """
     )

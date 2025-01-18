@@ -23,7 +23,6 @@ def detect_file_type(file_path):
         '.html': 'HTML',
         '.md': 'Markdown',
         '.hwp': 'HWP',
-        '.py': 'Python'
     }
 
     return file_types.get(file_extension, "Unknown File Type")

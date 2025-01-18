@@ -1,59 +1,28 @@
+# loaders/secure_file_loader.py
+
 import os
 import yaml
 import pdfplumber
 from typing import Dict
 import logging
-from dotenv import load_dotenv
-
-# 환경 변수 로드
-load_dotenv()
+from exceptions.file_loader_exceptions import (
+    FileLoaderError,
+    InvalidFileExtensionError,
+    DirectoryTraversalError,
+    YamlParsingError,
+    PdfProcessingError,
+)
+from config.settings import BASE_DIR
 
 # 로깅 설정
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# 커스텀 예외 클래스
-class FileLoaderError(Exception):
-    """기본 파일 로더 예외 클래스"""
-    pass
-
-class InvalidFileExtensionError(FileLoaderError):
-    """유효하지 않은 파일 확장자 예외"""
-    pass
-
-class DirectoryTraversalError(FileLoaderError):
-    """디렉토리 트래버설 공격 방지 예외"""
-    pass
-
-class YamlParsingError(FileLoaderError):
-    """YAML 파싱 중 발생한 예외"""
-    pass
-
-class PdfProcessingError(FileLoaderError):
-    """PDF 처리 중 발생한 예외"""
-    pass
-
 class SecureFileLoader:
-    """
-    파일을 안전하게 로드하기 위한 로더 클래스.
-    - 기본 디렉토리(기본값: data/)를 기준으로만 파일을 열 수 있도록 하여
-      디렉토리 이동 공격(Directory Traversal Attack)을 방지합니다.
-    - 파일 확장자 유효성 검증을 통해 잘못된 확장자를 가진 파일 불러오기를 방지합니다.
-    - 예외 처리를 통해 파일 불러오기 실패 시 에러를 확인할 수 있게 합니다.
-    """
-
-    def __init__(self, base_dir: str = "data") -> None:
-        """
-        :param base_dir: 로딩할 파일이 위치한 기본 디렉토리 경로
-        """
+    def __init__(self, base_dir: str = BASE_DIR) -> None:
         self.base_dir = base_dir
 
     def _validate_and_construct_path(self, filename: str) -> str:
-        """
-        파일명을 검증하고 안전한 파일 경로를 생성합니다.
-        - os.path.basename를 통해 디렉토리 경로 제거
-        - os.path.join으로 기본 디렉토리에 연결
-        """
         valid_extensions = [".pdf", ".yaml", ".yml"]
         if not any(filename.lower().endswith(ext) for ext in valid_extensions):
             logger.error(f"유효한 확장자가 아닙니다. 사용 가능한 확장자: {', '.join(valid_extensions)}")
@@ -73,11 +42,6 @@ class SecureFileLoader:
         return full_path
 
     def load_yaml(self, filename: str) -> Dict:
-        """
-        YAML 파일 로드 함수.
-        :param filename: 불러올 YAML 파일명
-        :return: 파싱된 YAML 데이터(dict)
-        """
         path = self._validate_and_construct_path(filename)
         try:
             with open(path, 'r', encoding='utf-8') as file:
@@ -95,11 +59,6 @@ class SecureFileLoader:
         return data
 
     def load_pdf(self, filename: str) -> str:
-        """
-        PDF 파일 텍스트 로드 함수.
-        :param filename: 불러올 PDF 파일명
-        :return: PDF 전체 페이지의 텍스트를 합쳐서 반환한 문자열
-        """
         path = self._validate_and_construct_path(filename)
         all_text = []
         try:

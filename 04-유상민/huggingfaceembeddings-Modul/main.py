@@ -1,7 +1,7 @@
 import json
 from loaders import load_file
 from splitters import split_texts
-from analyzers import generate_embeddings, generate_questions, analyze_with_gpt
+from analyzers import generate_embeddings, find_most_similar, generate_questions, analyze_with_gpt
 from utils import load_env, detect_input_type, detect_file_type
 
 def main(input_data):
@@ -21,7 +21,7 @@ def main(input_data):
         loader_results = load_file(file_type, input_data)
         if not loader_results.strip():
             raise ValueError(f"Loader 결과가 비어 있습니다. file_type: {file_type}, input_data: {input_data}")
-        print(f"Loader Results: {loader_results[:500]}")
+        print(f"Loader Results: {loader_results[:100]}")  # 첫 100자 미리보기
 
         # 텍스트 분리
         split_results = split_texts(file_type, loader_results)
@@ -49,11 +49,18 @@ def main(input_data):
         print(f"Generated Questions: {questions}")
 
         # GPT 분석 및 답변 생성
-        answers = analyze_with_gpt(file_type, (loader_results, split_results), " ".join(document_chunks))
-        print(f"Generated Answers: {answers}")
+        qa_pairs = []
+        for question in questions:
+            best_chunk, score = find_most_similar(question, document_chunks, embeddings)
+            answer = analyze_with_gpt(file_type, (loader_results, split_results), best_chunk)
+            qa_pairs.append({
+                "질문": question,
+                "답변": answer.strip() if isinstance(answer, str) else "답변 생성 실패",
+                "점수": round(float(score), 4)
+            })
+            print(f"질문: {question}\n답변: {answer}\n유사도 점수: {round(float(score), 4)}\n")
 
-        # 질문-답변 JSON 저장
-        qa_pairs = [{"질문": q, "답변": a} for q, a in zip(questions, answers)]
+        # 결과 저장
         with open("Result.json", "w") as f:
             json.dump(qa_pairs, f, indent=4, ensure_ascii=False)
 

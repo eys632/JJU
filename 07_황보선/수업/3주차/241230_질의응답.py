@@ -1,7 +1,7 @@
 # import os
 # import google.generativeai as genai
 
-# os.environ["GEMINI_API_KEY"]= 'AIzaSyCdSNlf2dYmXew6cK6kJhaG8drFBjctAq8'
+# os.environ["GEMINI_API_KEY"]= ''
 # genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
 # # Create the model
@@ -37,7 +37,7 @@
 
 # app = Flask(__name__)
 
-# os.environ["GEMINI_API_KEY"] = 'AIzaSyCdSNlf2dYmXew6cK6kJhaG8drFBjctAq8'
+# os.environ["GEMINI_API_KEY"] = ''
 # genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
 # generation_config = {

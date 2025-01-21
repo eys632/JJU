@@ -1,3 +1,7 @@
 scikit-learn==1.6.1
 python-dotenv==1.0.1
 langchain-openai==0.3.0
+googletrans==4.0.2
+langchain-huggingface==0.1.2
+PyPDF2==3.0.1
+langchain-upstage==0.6.0

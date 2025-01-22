@@ -1,0 +1,56 @@
+﻿{
+  "video": {
+    "video_id": "SS0002_09_S19_1107_sound",
+    "video_frames": 341,
+    "video_fps": 30,
+    "video_duration": 11.4,
+    "video_width": 1280,
+    "video_height": 720,
+    "video_file_name": "04.쇼핑활동/19.입장 및 소개/mp4/SS0002_09_S19_1107_sound",
+    "date_captured": "2022-11-07",
+    "location": "추억",
+    "client_gender": 2,
+    "client_age": 22,
+    "client_accessory": "['목걸이', '귀걸이', '안경']",
+    "client_appearance": "[5, 7, 9]",
+    "client_number": 1,
+    "interactions": [
+      {
+        "human_event": {
+          "start": "00:01.0800",
+          "end": "00:04.0300",
+          "actions": [
+            {
+              "action_class": "[5]",
+              "action_discription": "목걸이를 착용한 20대 여자가 서성거린다.",
+              "action_start": "00:01.0800",
+              "action_end": "00:04.0300"
+            }
+          ],
+          "utterances": [
+            {
+              "utterance_intend": "[3]",
+              "utterance_cap": "여기 파란색 셔츠 찾고 있는데, 여기 뭐 하는 매장이에요?",
+              "utterance_start": "00:01.0800",
+              "utterance_end": "00:04.0300"
+            }
+          ]
+        },
+        "faces": [
+          {
+            "face_bbox": null,
+            "face_class": null
+          }
+        ],
+        "robot_response": [
+          {
+            "answer": "남녀 모두 편하게 입으실 수 있도록 캐주얼한 옷 위주로 판매하는 매장입니다. 입장 도와드리겠습니다.",
+            "start": "00:04.9300",
+            "end": "00:10.5600",
+            "action_class": "[2, 5]"
+          }
+        ]
+      }
+    ]
+  }
+}

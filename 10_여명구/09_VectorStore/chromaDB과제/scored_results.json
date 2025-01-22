@@ -1,0 +1,52 @@
+[
+    {
+        "질문": "YETI 프레임워크는 기존 HoloAssist와 비교했을 때 어떤 주요 개선점을 제공하는가?",
+        "답변": "that more sophisticated features may complicate the pro-cess of detecting Follow-up interventions.\nFurther Comparison with HoloAssist:\nThe performance gains of YETI over HoloAssist can be\nattributed to several factors:\n•Global / Local Context: YETI’s ability to leverage its\nhistory contributes to its improved accuracy in detecting\nproactive interventions. By considering both the broader\ncontext of the interaction, as in the case of Global YETI,\nand the specific details of the current situation, as in the\ncase of local YETI, YETI can better understand the user’s\nintentions and needs.",
+        "점수": 7.35
+    },
+    {
+        "질문": "YETI가 프로액티브 개입을 위해 사용하는 주요 특징 신호는 무엇이며, 이들이 어떻게 동작하는가?",
+        "답변": "tervention require extensive computational resources and\nmulti-modal sensor data, including RGB streams, hand and\nhead pose estimation, sensor readings like IMU (Inertial\nMeasurement Unit), and depth information. The com-\nplexity of acquiring and processing this data in real-time\npresents a significant barrier to practical deployment. In\ncontrast, YETI employs efficient algorithmic signals that\ncan be computed on-the-fly, dramatically reducing the com-\nputational overhead while maintaining high intervention ac-\ncuracy.\nFeatures Size (MB) ×SSIM ×CObj\nDepth Estimation 137,408 6,543 6,870",
+        "점수": 6.34
+    },
+    {
+        "질문": "SSIM(Structural Similarity Index Measure)이 YETI에서 어떤 역할을 하며, 특정 프레임을 필터링하는 이유는 무엇인가?",
+        "답변": "SSIM threshold ( τ) 0.9\nConversation interval ( m) 1\nExtrema range ( r) ±1\nMinimum history ( k) 5\nTable 3. Hyperparameters used in our experiments. τcontrols\nframe similarity filtering, msets minimum gap between interven-\ntions, rdefines the range for local minima detection, and kspeci-\nfies required history length before intervention.\nWe evaluate two variants of our YETI algorithm:\n•Global YETI : Uses the first detected local extrema as a\nfixed threshold throughout the sequence\n•Local YETI : Continuously updates the extrema threshold\nbased on recent history",
+        "점수": 6.69
+    },
+    {
+        "질문": "YETI 알고리즘에서 설정 가능한 주요 하이퍼파라미터(예: SSIM 임계값, Conversation Interval 등)의 값과 그 중요성은 무엇인가?",
+        "답변": "threshold. A frame’s SSIM value with its corresponding\nframe must satisfy it to be considered in the YETI algo-\nrithm, to filter out highly similar frames where the user\nis not doing anything. In other words, if a frame and its\nproceeding frame have an SSIM of ≥τ, the frame will\nnot be considered for an autonomous intervention.\n•Conversation Interval ( m):This parameter enforces a\nminimum temporal gap between consecutive interven-\ntions, ensuring that the AI agent does not intervene too\nfrequently. It defines the duration that must pass after an\nintervention before another can be initiated.",
+        "점수": 6.85
+    },
+    {
+        "질문": "YETI의 글로벌(Global) 및 로컬(Local) 접근 방식의 차이는 무엇이며, 각각의 장단점은 무엇인가?",
+        "답변": "3 41.13 80.49 54.44 22.41 85.42 35.50 11.50 83.28 20.22 27.31 82.53 41.04\n4 41.08 77.09 53.61 22.53 82.81 35.43 11.54 80.46 20.19 27.33 79.34 40.65\n5 40.95 73.91 52.70 22.31 80.03 34.89 11.59 77.92 20.19 26.96 76.22 39.83\nLocal YETI1 46.88 60.38 52.77 26.55 68.62 38.29 14.71 68.02 24.18 30.07 62.05 40.51\n2 47.01 56.4 51.27 26.54 64.97 37.69 13.92 63.37 22.82 30.39 58.54 40.01\n3 47.15 56.39 51.36 25.93 64.46 36.99 14.35 63.52 23.41 30.75 59.26 40.49\n4 46.43 53.66 49.78 25.78 62.39 36.49 13.32 58.98 21.73 30.41 56.45 39.53",
+        "점수": 5.86
+    },
+    {
+        "질문": "YETI가 실시간으로 개입 결정을 내리는 데 있어 기존 분류기(Random Forest, MLP 등)보다 적합한 이유는 무엇인가?",
+        "답변": "Interactions Interventions Confirm Action Correct Mistake Follow Up\nRandom Forest Classifier\nDecision Tree Classifier 93.55 95.9 98.41 99.42 98.07\nMLP Classifier\nGlobal YETI (Ours) 86.97 84.85 80.75 79.97 82.36\nLocal YETI (Ours) 93.76 93.36 93.05 93.32 93.31\nTable 7. Accuracies of different classification models in proactivity prediction. Random Forest (RF), Decision Tree (DT) and Multi-\nLayer Perceptron (MLP) Classifiers have high accuracies as they can predict when the AI Agent should not be proactively interacting",
+        "점수": 6.01
+    },
+    {
+        "질문": "YETI 프레임워크가 AR 기기를 활용하여 사용자와 협업할 때 발생하는 주요 도전 과제는 무엇이며, 이를 어떻게 해결했는가?",
+        "답변": "user feedback and evolving task dynamics. This adaptive\napproach is anticipated to enhance the personalization and\neffectiveness of AI assistance, making it more attuned to\nindividual user preferences and behaviors.In summary, the YETI algorithm represents a significant\nadvancement in the development of proactive AI assistants,\noffering enhanced performance with reduced computational\ndemands. By enabling timely and context-aware interven-\ntions, YETI has the potential to transform human-AI col-\nlaboration in AR environments and beyond. Our ongoing",
+        "점수": 5.94
+    },
+    {
+        "질문": "YETI가 HoloAssist 데이터셋의 프로액티브 개입 유형(예: Confirm Action, Correct Mistake, Follow Up)별로 어떻게 성능을 발휘했는가?",
+        "답변": "4 comparing the performance of YETI to the HoloAssist\nbaseline in detecting proactive interventions.\nOverall Performance:\nYETI consistently outperforms HoloAssist [21] overall,\ndemonstrating a significant improvement in accurately de-\ntecting proactive interventions in most scenarios. This su-\nperior performance is observed in both the Global and Lo-\ncal variants of YETI. Notably, YETI achieves substantially\nhigher recall in all categories, indicating its effectiveness\nin identifying a greater proportion of actual proactive in-\nterventions. This improvement is crucial for ensuring that",
+        "점수": 6.99
+    },
+    {
+        "질문": "YETI가 특정 작업(예: 컴퓨터 조립, 커피 만들기 등)에서 사용자의 안전을 보장하기 위해 어떤 방식으로 개입하는가?",
+        "답변": "user feedback and evolving task dynamics. This adaptive\napproach is anticipated to enhance the personalization and\neffectiveness of AI assistance, making it more attuned to\nindividual user preferences and behaviors.In summary, the YETI algorithm represents a significant\nadvancement in the development of proactive AI assistants,\noffering enhanced performance with reduced computational\ndemands. By enabling timely and context-aware interven-\ntions, YETI has the potential to transform human-AI col-\nlaboration in AR environments and beyond. Our ongoing",
+        "점수": 5.9
+    },
+    {
+        "질문": "향후 YETI 프레임워크를 개선하거나 확장하기 위해 계획 중인 연구 방향이나 가능성은 무엇인가?",
+        "답변": "fective AI assistance algorithms.\nLooking ahead, there are several promising avenues for\nfuture research. First, we aim to enhance YETI’s inter-\nvention capabilities by incorporating richer sensory data,\nincluding hand pose, eye gaze, head orientation, Inertial\nMeasurement Unit (IMU) readings, and depth information.\nIntegrating these modalities is expected to provide a more\ncomprehensive understanding of the user’s context and in-\ntentions, thereby enabling more nuanced and timely inter-\nventions. Second, we plan to evaluate YETI’s performance",
+        "점수": 6.01
+    }
+]

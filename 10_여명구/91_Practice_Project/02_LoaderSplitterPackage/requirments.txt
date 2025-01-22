@@ -1,13 +1,2 @@
-os
-json
-PyPDFLoader
-PyMuPDFLoader
-UnstructuredPDFLoader
-PyPDFium2Loader
-PDFMinerLoader
-CSVLoader
-UnstructuredExcelLoader
-TextLoader
-WebBaseLoader
-PythonLoader
-HWPLoader
+langchain-community==0.3.14
+langchain-teddynote==0.3.41

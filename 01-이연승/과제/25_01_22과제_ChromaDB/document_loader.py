@@ -5,11 +5,12 @@ import pdfplumber
 import os
 
 class DocumentLoader:
-    def __init__(self, file_path, output_dir="output"):
+    def __init__(self, file_path, output_dir=None):
         """Initialize with the PDF file path and output directory."""
         self.file_path = file_path
-        self.output_dir = output_dir
-        os.makedirs(output_dir, exist_ok=True)  # Create output directory if it doesn't exist
+        # output_dir을 명시하지 않으면 기본 경로로 설정
+        self.output_dir = output_dir or "C:\\Users\\eys63\\GitHub\\JJU\\01-이연승\\과제\\25_01_22과제_ChromaDB\\output"
+        os.makedirs(self.output_dir, exist_ok=True)  # Create output directory if it doesn't exist
 
     def load_with_pypdf(self):
         """Extract text using PyPDF2."""
@@ -89,7 +90,7 @@ class DocumentLoader:
 
 
 if __name__ == "__main__":
-    # PDF 경로를 코드 내부에서 설정
+    # PDF 경로 설정
     pdf_path = r"C:\Users\eys63\GitHub\JJU\01-이연승\data\Linear Algebra and Its Applications, chapter1.pdf"
 
     # DocumentLoader 객체 생성 및 실행

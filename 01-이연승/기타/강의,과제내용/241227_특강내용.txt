@@ -1,0 +1,9 @@
+코랩 - 문서 불러와서 자르는 것, 자른 것을 데이터 베이스에 어떻게 저장하는지, 어떻게 저장되는지 - 글을 어떻게 처리하는지
+https://colab.research.google.com/drive/1R_FwC7kvCjc0gnTBMpuP4dQpSBK2EkC-#scrollTo=RHiY8PxPrQv4
+
+LLM모델에 내가 알고싶은 txt, pdf, 웹주소, 유튜브 등을 업로드해서 업로드한 자료 안에서만 답변을 주는 서비스
+https://notebooklm.google/
+
+CharacterTextSplitter와 RecursiveCharacterTextSplitter 차이를 분석하는 활동 함
+이해 안됨
+

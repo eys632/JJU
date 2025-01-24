@@ -1,0 +1,15 @@
+[유사도 0.9652] 안녕하세요? 반갑습니다.          <=====>         안녕하세요? 반갑습니다!
+[유사도 0.8226] 안녕하세요? 반갑습니다.          <=====>         안녕? 만나서 반가워.
+[유사도 0.8492] 안녕하세요? 반갑습니다.          <=====>         Hi, nice to meet you.
+[유사도 0.2855] 안녕하세요? 반갑습니다.          <=====>         I like to eat apples.
+[유사도 0.8994] 안녕하세요? 반갑습니다.          <=====>         Hi? Freut mich, Sie kennenzulernen
+[유사도 0.8042] 안녕하세요? 반갑습니다!          <=====>         안녕? 만나서 반가워.
+[유사도 0.8284] 안녕하세요? 반갑습니다!          <=====>         Hi, nice to meet you.
+[유사도 0.2801] 안녕하세요? 반갑습니다!          <=====>         I like to eat apples.
+[유사도 0.8804] 안녕하세요? 반갑습니다!          <=====>         Hi? Freut mich, Sie kennenzulernen
+[유사도 0.8756] 안녕? 만나서 반가워.     <=====>         Hi, nice to meet you.
+[유사도 0.3297] 안녕? 만나서 반가워.     <=====>         I like to eat apples.
+[유사도 0.8983] 안녕? 만나서 반가워.     <=====>         Hi? Freut mich, Sie kennenzulernen
+[유사도 0.3053] Hi, nice to meet you.    <=====>         I like to eat apples.
+[유사도 0.9529] Hi, nice to meet you.    <=====>         Hi? Freut mich, Sie kennenzulernen
+[유사도 0.3119] I like to eat apples.    <=====>         Hi? Freut mich, Sie kennenzulernen

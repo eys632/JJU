@@ -1,11 +1,19 @@
-# 0. API 키를 환경변수로 관리하기 위한 설정 파일
+# Setup------------------------------------------
+# 0.0 API 키를 환경변수로 관리하기 위한 설정 파일
 import os
 from dotenv import load_dotenv
 
 # API 키 정보 로드
 load_dotenv()
 
+# 0.1 LangSmith 로깅 설정
+from newstool import logging
+
+# 프로젝트 이름을 입력합니다.
+logging.langsmith("ls_JJU_Agent_01")
+
 # print(os.environ['OPENAI_API_KEY'])
+# ------------------------------------------------
 
 from langchain.tools import tool
 from typing import List, Dict, Annotated
@@ -79,29 +87,6 @@ agent_executor = AgentExecutor(
     max_execution_time=10,
     handle_parsing_errors=True,
 )
-
-# # # ---------------------
-# # # 8. Stremam Parser
-# # # ---------------------
-
-# # from newstool.messages import AgentStreamParser
-
-# # agent_stream_parser = AgentStreamParser()
-
-# # # 질의에 대한 답변을 스트리밍으로 출력 요청
-# # result = agent_executor.stream(
-# #     # {"input": "인공지능의 최신 뉴스를 검색하세요."}
-# #     {"input": """
-# #      matplotlib 을 사용하여 titanic.dataset을 이용하여 연령별 탑승인원을 시각화 해.
-# #      10살 단위로 pie 차트를 그리는 코드를 작성하고 실행하세요.
-# #      """}
-# # )
-
-# # for step in result:
-# #     # 중간 단계를 parser 를 사용하여 단계별로 출력
-# #     # print(step)
-# #     # print("=====================================")
-# #     agent_stream_parser.process_agent_steps(step)
 
 # AgentCallbacks와 AgentStreamParser를 langchain_teddynote.messages에서 가져옵니다.
 from newstool.messages import AgentCallbacks, AgentStreamParser

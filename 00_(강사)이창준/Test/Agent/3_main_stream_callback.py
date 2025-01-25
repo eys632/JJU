@@ -1,11 +1,19 @@
-# 0. API 키를 환경변수로 관리하기 위한 설정 파일
+# Setup------------------------------------------
+# 0.0 API 키를 환경변수로 관리하기 위한 설정 파일
 import os
 from dotenv import load_dotenv
 
 # API 키 정보 로드
 load_dotenv()
 
+# 0.1 LangSmith 로깅 설정
+from newstool import logging
+
+# 프로젝트 이름을 입력합니다.
+logging.langsmith("ls_JJU_Agent_01")
+
 # print(os.environ['OPENAI_API_KEY'])
+# ------------------------------------------------
 
 from langchain.tools import tool
 from typing import List, Dict, Annotated

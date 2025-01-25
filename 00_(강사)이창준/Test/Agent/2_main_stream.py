@@ -38,11 +38,6 @@ def python_repl_tool(
         return result
 
 
-# print(f"도구 이름: {search_news.name}")
-# print(f"도구 설명: {search_news.description}")
-# print(f"도구 이름: {python_repl_tool.name}")
-# print(f"도구 설명: {python_repl_tool.description}")
-
 # 1.2 도구 정의
 tools = [search_news, python_repl_tool]
 
@@ -85,9 +80,25 @@ agent_executor = AgentExecutor(
     handle_parsing_errors=True,
 )
 
-# 6. AgentExecutor 실행
-result = agent_executor.invoke({"input": "AI"})
+# ---------------------
+# 8. Stremam Parser
+# ---------------------
 
-# 뉴스 헤더만 출력
-print("뉴스 헤더:")
-print(result["output"])
+from newstool.messages import AgentStreamParser
+
+agent_stream_parser = AgentStreamParser()
+
+# 질의에 대한 답변을 스트리밍으로 출력 요청
+result = agent_executor.stream(
+    # {"input": "인공지능의 최신 뉴스를 검색하세요."}
+    {"input": """
+     matplotlib 을 사용하여 titanic.dataset을 이용하여 연령별 탑승인원을 시각화 해.
+     10살 단위로 pie 차트를 그리는 코드를 작성하고 실행하세요.
+     """}
+)
+
+for step in result:
+    # 중간 단계를 parser 를 사용하여 단계별로 출력
+    # print(step)
+    # print("=====================================")
+    agent_stream_parser.process_agent_steps(step)

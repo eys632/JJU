@@ -1,0 +1,5 @@
+feedparser
+python-dotenv
+langchain
+langchain-experimental
+langchain-openai

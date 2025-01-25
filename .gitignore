@@ -1,2 +1,6 @@
 # ...existing code...
+<<<<<<< Updated upstream
+=======
+.env
+>>>>>>> Stashed changes
 .env

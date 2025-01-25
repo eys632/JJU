@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from loaders.secure_file_loader import SecureFileLoader
 from services.qna_service import QnAService
 from utils.helper_functions import preprocess_text
-# import magic  # 파일 MIME 타입 확인을 위해 필요
+import magic  # 파일 MIME 타입 확인을 위해 필요
 import re  # 정규표현식 사용
 
 # 환경 변수 로드

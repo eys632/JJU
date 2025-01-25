@@ -1,0 +1,192 @@
+[Query]: YETI 프레임워크는 기존 HoloAssist와 비교했을 때 어떤 주요 개선점을 제공하는가?
+  intfloat/multilingual-e5-large-instruct_default: Highest Score = 0.8618
+  BAAI/bge-m3_default: Highest Score = 0.7251
+  BAAI/bge-m3_dense: Highest Score = 0.7251
+  BAAI/bge-m3_lexical: Highest Score = 0.3284
+  BAAI/bge-m3_colbert: Highest Score = 0.4820
+
+=== Best Model ===
+Model: intfloat/multilingual-e5-large-instruct_default
+Document Snippet: For the comparative analysis between our YETI methods
+and HoloAssist, it is important to note we limited our eval-
+uation to videos where the user and the expert agent both
+initiated conversations. This stipulation more closely aligns
+with the real-world assistive AI Agent scenario we had in
+mind, w...
+Score: 0.8618
+--------------------------------------------------
+
+[Query]: YETI가 프로액티브 개입을 위해 사용하는 주요 특징 신호는 무엇이며, 이들이 어떻게 동작하는가?
+  intfloat/multilingual-e5-large-instruct_default: Highest Score = 0.8386
+  BAAI/bge-m3_default: Highest Score = 0.6412
+  BAAI/bge-m3_dense: Highest Score = 0.6412
+  BAAI/bge-m3_lexical: Highest Score = 0.1251
+  BAAI/bge-m3_colbert: Highest Score = 0.4177
+
+=== Best Model ===
+Model: intfloat/multilingual-e5-large-instruct_default
+Document Snippet: YETI (YET to Intervene) Proactive Interventions by Multimodal AI Agents in
+Augmented Reality Tasks
+Supplementary Material
+6. Detailed Analysis of Results
+This section provides a more in-depth analysis of the results
+presented in Tables 1, 4, and 5 with a special focus on Table
+4 comparing the perfor...
+Score: 0.8386
+--------------------------------------------------
+
+[Query]: SSIM(Structural Similarity Index Measure)이 YETI에서 어떤 역할을 하며, 특정 프레임을 필터링하는 이유는 무엇인가?
+  intfloat/multilingual-e5-large-instruct_default: Highest Score = 0.8447
+  BAAI/bge-m3_default: Highest Score = 0.6362
+  BAAI/bge-m3_dense: Highest Score = 0.6362
+  BAAI/bge-m3_lexical: Highest Score = 0.2411
+  BAAI/bge-m3_colbert: Highest Score = 0.4019
+
+=== Best Model ===
+Model: intfloat/multilingual-e5-large-instruct_default
+Document Snippet: (a) SSIM Frame 98
+ (b) SSIM Frame 99
+(c) SSIM Signal over entire video.
+Figure 4. Plot of SSIM filtering proactive interventions by ex-
+pert agents in an image frame (time instance) of a video captur-
+ing a procedural task on how to assemble a RAM computer. Au-
+tonomous intervention happens at the 9...
+Score: 0.8447
+--------------------------------------------------
+
+[Query]: YETI 알고리즘에서 설정 가능한 주요 하이퍼파라미터(예: SSIM 임계값, Conversation Interval 등)의 값과 그 중요성은 무엇인가?
+  intfloat/multilingual-e5-large-instruct_default: Highest Score = 0.8433
+  BAAI/bge-m3_default: Highest Score = 0.6464
+  BAAI/bge-m3_dense: Highest Score = 0.6464
+  BAAI/bge-m3_lexical: Highest Score = 0.2250
+  BAAI/bge-m3_colbert: Highest Score = 0.4243
+
+=== Best Model ===
+Model: intfloat/multilingual-e5-large-instruct_default
+Document Snippet: Method SSIMOverall
+Acc. Prec. Rec. F1
+Global YETI0.5 91.49 55.38 68.88 61.39
+0.6 90.20 54.14 77.36 63.69
+0.7 88.62 53.06 83.92 65.01
+0.8 87.55 52.39 85.99 65.11
+0.9 86.97 52.23 87.04 65.28
+Local YETI0.5 94.13 64.25 41.12 50.14
+0.6 93.98 62.75 48.05 54.42
+0.7 93.88 63.46 55.14 59.01
+0.8 93.81 64.42 5...
+Score: 0.8433
+--------------------------------------------------
+
+[Query]: YETI의 글로벌(Global) 및 로컬(Local) 접근 방식의 차이는 무엇이며, 각각의 장단점은 무엇인가?
+  intfloat/multilingual-e5-large-instruct_default: Highest Score = 0.8228
+  BAAI/bge-m3_default: Highest Score = 0.5840
+  BAAI/bge-m3_dense: Highest Score = 0.5840
+  BAAI/bge-m3_lexical: Highest Score = 0.1394
+  BAAI/bge-m3_colbert: Highest Score = 0.4005
+
+=== Best Model ===
+Model: intfloat/multilingual-e5-large-instruct_default
+Document Snippet: Method SSIMOverall
+Acc. Prec. Rec. F1
+Global YETI0.5 91.49 55.38 68.88 61.39
+0.6 90.20 54.14 77.36 63.69
+0.7 88.62 53.06 83.92 65.01
+0.8 87.55 52.39 85.99 65.11
+0.9 86.97 52.23 87.04 65.28
+Local YETI0.5 94.13 64.25 41.12 50.14
+0.6 93.98 62.75 48.05 54.42
+0.7 93.88 63.46 55.14 59.01
+0.8 93.81 64.42 5...
+Score: 0.8228
+--------------------------------------------------
+
+[Query]: YETI가 실시간으로 개입 결정을 내리는 데 있어 기존 분류기(Random Forest, MLP 등)보다 적합한 이유는 무엇인가?
+  intfloat/multilingual-e5-large-instruct_default: Highest Score = 0.8277
+  BAAI/bge-m3_default: Highest Score = 0.6125
+  BAAI/bge-m3_dense: Highest Score = 0.6125
+  BAAI/bge-m3_lexical: Highest Score = 0.1697
+  BAAI/bge-m3_colbert: Highest Score = 0.3986
+
+=== Best Model ===
+Model: intfloat/multilingual-e5-large-instruct_default
+Document Snippet: YETI (YET to Intervene) Proactive Interventions by Multimodal AI Agents in
+Augmented Reality Tasks
+Supplementary Material
+6. Detailed Analysis of Results
+This section provides a more in-depth analysis of the results
+presented in Tables 1, 4, and 5 with a special focus on Table
+4 comparing the perfor...
+Score: 0.8277
+--------------------------------------------------
+
+[Query]: YETI 프레임워크가 AR 기기를 활용하여 사용자와 협업할 때 발생하는 주요 도전 과제는 무엇이며, 이를 어떻게 해결했는가?
+  intfloat/multilingual-e5-large-instruct_default: Highest Score = 0.8260
+  BAAI/bge-m3_default: Highest Score = 0.6482
+  BAAI/bge-m3_dense: Highest Score = 0.6482
+  BAAI/bge-m3_lexical: Highest Score = 0.1694
+  BAAI/bge-m3_colbert: Highest Score = 0.4745
+
+=== Best Model ===
+Model: intfloat/multilingual-e5-large-instruct_default
+Document Snippet: active nature significantly limits their effectiveness in two
+critical scenarios: (1) novice learning environments, where
+users lack the domain knowledge to formulate appropriate
+queries, and (2) safety-critical operations, where immedi-
+ate intervention may be necessary before user recognition
+of p...
+Score: 0.8260
+--------------------------------------------------
+
+[Query]: YETI가 HoloAssist 데이터셋의 프로액티브 개입 유형(예: Confirm Action, Correct Mistake, Follow Up)별로 어떻게 성능을 발휘했는가?
+  intfloat/multilingual-e5-large-instruct_default: Highest Score = 0.8763
+  BAAI/bge-m3_default: Highest Score = 0.7342
+  BAAI/bge-m3_dense: Highest Score = 0.7342
+  BAAI/bge-m3_lexical: Highest Score = 0.4179
+  BAAI/bge-m3_colbert: Highest Score = 0.5059
+
+=== Best Model ===
+Model: intfloat/multilingual-e5-large-instruct_default
+Document Snippet: YETI (YET to Intervene) Proactive Interventions by Multimodal AI Agents in
+Augmented Reality Tasks
+Supplementary Material
+6. Detailed Analysis of Results
+This section provides a more in-depth analysis of the results
+presented in Tables 1, 4, and 5 with a special focus on Table
+4 comparing the perfor...
+Score: 0.8763
+--------------------------------------------------
+
+[Query]: YETI가 특정 작업(예: 컴퓨터 조립, 커피 만들기 등)에서 사용자의 안전을 보장하기 위해 어떤 방식으로 개입하는가?
+  intfloat/multilingual-e5-large-instruct_default: Highest Score = 0.8111
+  BAAI/bge-m3_default: Highest Score = 0.5881
+  BAAI/bge-m3_dense: Highest Score = 0.5881
+  BAAI/bge-m3_lexical: Highest Score = 0.1455
+  BAAI/bge-m3_colbert: Highest Score = 0.3930
+
+=== Best Model ===
+Model: intfloat/multilingual-e5-large-instruct_default
+Document Snippet: Method Extrema RangesOverall Confirm Action Correct Mistake Follow Up
+Prec. Rec. F-meas. Prec. Rec. F-meas. Prec. Rec. F-meas. Prec. Rec. F-meas.
+Global YETI0 41.34 70.61 52.15 22.52 76.96 34.85 11.09 73.87 19.28 27.13 73.92 39.69
+±1 41.86 88.31 56.17 22.54 91.51 36.17 11.68 90.29 20.69 27.55 89.69 ...
+Score: 0.8111
+--------------------------------------------------
+
+[Query]: 향후 YETI 프레임워크를 개선하거나 확장하기 위해 계획 중인 연구 방향이나 가능성은 무엇인가?
+  intfloat/multilingual-e5-large-instruct_default: Highest Score = 0.8111
+  BAAI/bge-m3_default: Highest Score = 0.5907
+  BAAI/bge-m3_dense: Highest Score = 0.5907
+  BAAI/bge-m3_lexical: Highest Score = 0.1355
+  BAAI/bge-m3_colbert: Highest Score = 0.3789
+
+=== Best Model ===
+Model: intfloat/multilingual-e5-large-instruct_default
+Document Snippet: YETI (YET to Intervene) Proactive Interventions by Multimodal AI Agents in
+Augmented Reality Tasks
+Supplementary Material
+6. Detailed Analysis of Results
+This section provides a more in-depth analysis of the results
+presented in Tables 1, 4, and 5 with a special focus on Table
+4 comparing the perfor...
+Score: 0.8111
+--------------------------------------------------

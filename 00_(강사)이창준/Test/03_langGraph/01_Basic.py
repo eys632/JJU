@@ -30,25 +30,28 @@ from langchain_openai import ChatOpenAI
 llm = ChatOpenAI(model = "gpt-4o", temperature = 0)
 
 def chatbot(state:State):
-    return {"messages":[llm.invoke  (state["messages"])]}
+    return {"messages":[llm.invoke(state["messages"])]}
 
 ## graph 정의
 graph_builder = StateGraph(State)
 
 ## 노드 추가
 graph_builder.add_node("chatbot", chatbot)
+# graph_builder.add_node("chatbot_2", chatbot)
 
 ## 엣지 추가
 graph_builder.add_edge(START, "chatbot")
+# graph_builder.add_edge("chatbot", "chatbot_2")
+# graph_builder.add_edge("chatbot_2", "chatbot")
 graph_builder.add_edge("chatbot", END)
 
 ## 그래프 컴파일
 graph = graph_builder.compile()
 
-# ## 그래프 시각화
-# from graphs.graphs import visualize_graph_mermaid
+## 그래프 시각화
+from graphs.graphs import visualize_graph_mermaid
 
-# visualize_graph_mermaid(graph_builder)
+visualize_graph_mermaid(graph_builder)
 
 ## 그래프 실행
 query = "서울의 맛집 추천?"

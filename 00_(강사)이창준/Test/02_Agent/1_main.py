@@ -29,8 +29,13 @@ import json
 # 1.1 도구 생성
 @tool
 def search_news(query: str) -> List[Dict[str, str]]:
-    """Search Google News by input keyword"""
-    news_tool = GoogleNews()
+    """
+    Search Google News by input keyword
+    Always answer in Korean.
+    Make a markdown file with the result in same-path with name 'search.md'
+    """
+    news_tool = GoogleNews()  # 튜플이 아닌 객체로 정의
+    # output="search.md" 
     # news_tool = TavilySearch()
     return news_tool.search_by_keyword(query, k=5)
 
@@ -39,10 +44,12 @@ def python_repl_tool(
     code: Annotated[str, "The python code to execute to generate your chart."],
 ):
     """Use this to execute python code. If you want to see the output of a value,
-    you should print it out with `print(...)`. This is visible to the user."""
+    you should print it out with `print(...)`. This is visible to the user. Always answer in Korean.
+    Make a markdown file with the result in same-path with name 'code.md'. """
     result = ""
     try:
-        result = PythonREPL().run(code)
+        result = PythonREPL().run(code),
+        # output = "code.md"
     except BaseException as e:
         print(f"Failed to execute. Error: {repr(e)}")
     finally:

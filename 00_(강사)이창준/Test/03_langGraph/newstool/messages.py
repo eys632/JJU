@@ -206,6 +206,7 @@ def _display_message_tree(data, indent=0, node=None, is_root=False):
     color = depth_colors.get(indent + 1, depth_colors["default"])
 
     if isinstance(data, dict):
+        # print('test_1')
         if not is_root and node is not None:
             if is_terminal_dict(data):
                 print(
@@ -220,6 +221,7 @@ def _display_message_tree(data, indent=0, node=None, is_root=False):
                 _display_message_tree(value, indent + 1, key)
 
     elif isinstance(data, list):
+        # print('test_2')
         if not is_root and node is not None:
             print(f'{spacing}{color}{node}{depth_colors["reset"]}:')
 
@@ -228,15 +230,19 @@ def _display_message_tree(data, indent=0, node=None, is_root=False):
             _display_message_tree(item, indent + 1)
 
     elif hasattr(data, "__dict__") and not is_root:
+        # print('test_3')
         if node is not None:
             print(f'{spacing}{color}{node}{depth_colors["reset"]}:')
         _display_message_tree(data.__dict__, indent)
 
     else:
+        # print('test_4')
         if node is not None:
             if isinstance(data, str):
+                # print('test_1')
                 value_str = f'"{data}"'
             else:
+                # print('test_2')
                 value_str = str(data)
 
             print(f'{spacing}{color}{node}{depth_colors["reset"]}: {value_str}')
@@ -247,8 +253,10 @@ def display_message_tree(message):
     메시지 트리를 표시하는 주 함수입니다.
     """
     if isinstance(message, BaseMessage):
+        # print('test_1')
         _display_message_tree(message.__dict__, is_root=True)
     else:
+        # print('test_2')
         _display_message_tree(message, is_root=True)
 
 

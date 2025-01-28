@@ -93,3 +93,4 @@ def visualize_graph_mermaid(builder: StateGraph, output_file="mermaid/graph.html
         print(f"Graph saved to {os.path.abspath(output_file)}")
     except Exception as e:
         print(f"Failed to save graph: {e}")
+        

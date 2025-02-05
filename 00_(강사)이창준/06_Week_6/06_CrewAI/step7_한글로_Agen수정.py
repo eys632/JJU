@@ -1,5 +1,5 @@
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 from crewai import Agent
 
